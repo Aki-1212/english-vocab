@@ -109,6 +109,8 @@ function renderQuestion() {
   const item = quizWords[currentIndex];
   const previousAnswer = cardAnswers[currentIndex];
   $("quiz").classList.toggle("card-mode", selectedMode === "card");
+  $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
+  $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
   $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
   const progressTrack = document.querySelector(".progress-track");
   const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
@@ -128,7 +130,7 @@ function renderQuestion() {
   $("markUnknown").classList.toggle("selected", previousAnswer === false);
   $("markKnown").classList.toggle("selected", previousAnswer === true);
   if (selectedMode === "card" && previousAnswer !== null) {
-    setFeedback(previousAnswer ? "覚えているに登録済み" : "覚えていないに登録済み", previousAnswer);
+    setFeedback(previousAnswer ? "覚えている" : "覚えていない", previousAnswer);
   }
 
   if (selectedMode === "choice") {
@@ -170,7 +172,7 @@ function answerChoice(correct, clicked, item) {
       if (b.textContent === item.meaning) b.classList.add("correct");
     });
     wrongWords.push(item);
-    setFeedback(`不正解。答え：${item.meaning}`, false);
+    setFeedback(item.meaning, null);
     saveAttempt(item.id, false);
   }
   updateProgressCounts();
@@ -237,9 +239,11 @@ function answerCard(known) {
   }
   cardHistoryAnswers[currentIndex] = known;
   updateProgressCounts();
+  $("wordPanel").classList.toggle("card-known", known);
+  $("wordPanel").classList.toggle("card-unknown", !known);
   $("markUnknown").classList.toggle("selected", !known);
   $("markKnown").classList.toggle("selected", known);
-  setFeedback("登録しました", known);
+  setFeedback(known ? "覚えている" : "覚えていない", known);
   setTimeout(nextQuestion, 650);
 }
 
@@ -352,7 +356,8 @@ $("speakBtn").addEventListener("click", () => speak($("word").textContent));
 
 function setFeedback(text, correct) {
   $("feedback").textContent = text;
-  $("feedback").className = `feedback ${correct ? "correct" : "wrong"}`;
+  const state = correct === null ? "answer-only" : correct ? "correct" : "wrong";
+  $("feedback").className = `feedback ${state}`;
 }
 
 function updateProgressCounts() {
