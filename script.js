@@ -5,6 +5,7 @@ let quizWords = [];
 let currentIndex = 0;
 let score = 0;
 let wrongWords = [];
+let cardAnswers = [];
 let isAnswered = false;
 let retryMode = false;
 
@@ -50,7 +51,9 @@ function startQuiz(list, isRetry = false) {
   currentIndex = 0;
   score = 0;
   wrongWords = [];
+  cardAnswers = Array(quizWords.length).fill(null);
   retryMode = isRetry;
+  updateProgressCounts();
   showScreen("quiz");
   renderQuestion();
 }
@@ -58,6 +61,8 @@ function startQuiz(list, isRetry = false) {
 function renderQuestion() {
   isAnswered = false;
   const item = quizWords[currentIndex];
+  const previousAnswer = cardAnswers[currentIndex];
+  $("quiz").classList.toggle("card-mode", selectedMode === "card");
   $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
   const progressTrack = document.querySelector(".progress-track");
   const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
@@ -67,12 +72,18 @@ function renderQuestion() {
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = item.word;
   $("meaning").textContent = item.meaning;
-  $("meaning").classList.add("hidden");
+  $("meaning").classList.toggle("hidden", previousAnswer === null);
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
   $("cardActions").classList.toggle("hidden", selectedMode !== "card");
+  $("previousCard").disabled = currentIndex === 0;
   $("markUnknown").disabled = false;
   $("markKnown").disabled = false;
+  $("markUnknown").classList.toggle("selected", previousAnswer === false);
+  $("markKnown").classList.toggle("selected", previousAnswer === true);
+  if (selectedMode === "card" && previousAnswer !== null) {
+    setFeedback(previousAnswer ? "覚えているに登録済み" : "覚えていないに登録済み", previousAnswer);
+  }
 
   if (selectedMode === "choice") {
     $("choices").classList.remove("hidden");
@@ -116,6 +127,7 @@ function answerChoice(correct, clicked, item) {
     setFeedback(`不正解。答え：${item.meaning}`, false);
     saveAttempt(item.id, false);
   }
+  updateProgressCounts();
   setTimeout(nextQuestion, 900);
 }
 
@@ -133,17 +145,19 @@ $("wordPanel").addEventListener("click", event => {
 
 function answerCard(known) {
   if (isAnswered) return;
+  const wasAnswered = cardAnswers[currentIndex] !== null;
   isAnswered = true;
   $("markUnknown").disabled = true;
   $("markKnown").disabled = true;
+  $("previousCard").disabled = true;
   const item = quizWords[currentIndex];
-  if (known) {
-    score++;
-    saveAttempt(item.id, true);
-  } else {
-    wrongWords.push(item);
-    saveAttempt(item.id, false);
-  }
+  cardAnswers[currentIndex] = known;
+  score = cardAnswers.filter(answer => answer === true).length;
+  wrongWords = quizWords.filter((_, index) => cardAnswers[index] === false);
+  if (!wasAnswered) saveAttempt(item.id, known);
+  updateProgressCounts();
+  $("markUnknown").classList.toggle("selected", !known);
+  $("markKnown").classList.toggle("selected", known);
   setFeedback(
     known ? "✓ 覚えているに登録しました" : "✓ 覚えていないに登録しました",
     known
@@ -153,6 +167,11 @@ function answerCard(known) {
 
 $("markUnknown").addEventListener("click", () => answerCard(false));
 $("markKnown").addEventListener("click", () => answerCard(true));
+$("previousCard").addEventListener("click", () => {
+  if (currentIndex === 0 || isAnswered) return;
+  currentIndex--;
+  renderQuestion();
+});
 
 document.addEventListener("keydown", event => {
   if (selectedMode !== "card" || !$("quiz").classList.contains("active")) return;
@@ -229,6 +248,11 @@ $("speakBtn").addEventListener("click", () => speak($("word").textContent));
 function setFeedback(text, correct) {
   $("feedback").textContent = text;
   $("feedback").className = `feedback ${correct ? "correct" : "wrong"}`;
+}
+
+function updateProgressCounts() {
+  $("knownCount").textContent = score;
+  $("unknownCount").textContent = wrongWords.length;
 }
 
 function shuffle(arr) {

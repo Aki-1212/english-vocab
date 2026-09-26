@@ -34,6 +34,8 @@ h2 { margin-top: 0; }
 .quiz-progress-label { display: flex; justify-content: space-between; color: #6b7280; font-size: 13px; margin-bottom: 6px; }
 .progress-track { height: 7px; overflow: hidden; border-radius: 999px; background: #e5e7eb; }
 .progress-bar { width: 0; height: 100%; border-radius: inherit; background: #4b8067; transition: width .25s ease; }
+.progress-counts { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; color: #6b7280; font-size: 11px; }
+.progress-counts strong { color: #374151; font-size: 12px; }
 .word-panel { position: relative; text-align: center; padding-top: 48px; }
 .word-number { color: #6b7280; font-size: 14px; }
 .word { font-size: clamp(40px, 10vw, 64px); font-weight: 800; margin: 18px 0; word-break: break-word; }
@@ -43,6 +45,9 @@ h2 { margin-top: 0; }
 }
 .word-panel > .speak-btn { position: absolute; top: 16px; right: 16px; }
 .meaning { margin: 20px auto 0; padding: 14px; border-radius: 12px; background: #f3f4f6; font-size: 18px; }
+#quiz.card-mode .word { margin: 10px 0 4px; }
+#quiz.card-mode .feedback { min-height: 0; margin-top: 0; }
+#quiz.card-mode .meaning { margin-top: 8px; }
 .hidden { display: none !important; }
 .choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 .answer-btn {
@@ -56,6 +61,13 @@ h2 { margin-top: 0; }
 .answer-btn:disabled { cursor: default; }
 .card-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .card-actions > button { min-width: 0; padding: 13px 8px; }
+#markUnknown { background: #fff2e6; color: #934b0b; border: 1px solid #f0c99f; }
+#markUnknown:hover:not(:disabled), #markUnknown.selected { background: #fce2ca; }
+#markKnown { background: #eaf5ed; color: #28623b; border: 1px solid #b7d6c0; }
+#markKnown:hover:not(:disabled), #markKnown.selected { background: #d6ebdc; }
+#previousCard { grid-column: 1 / -1; }
+.card-actions > button:disabled { cursor: default; opacity: .65; }
+.card-actions > button:disabled.selected { opacity: 1; }
 .primary-btn, .secondary-btn {
   border: 0; border-radius: 12px; padding: 13px 20px; cursor: pointer; font-weight: 700;
 }
