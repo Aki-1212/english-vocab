@@ -498,5 +498,4505 @@
     "id": 100,
     "word": "save",
     "meaning": "節約する、保存する、取っておく"
-  }
+  },
+  {
+  "id": 101,
+  "word": "map",
+  "meaning": "地図"
+},
+{
+  "id": 102,
+  "word": "ride",
+  "meaning": "乗る、車に乗せること"
+},
+{
+  "id": 103,
+  "word": "almost",
+  "meaning": "もう少しで、ほとんど、〜に近い"
+},
+{
+  "id": 104,
+  "word": "goods",
+  "meaning": "品物"
+},
+{
+  "id": 105,
+  "word": "quickly",
+  "meaning": "すばやく"
+},
+{
+  "id": 106,
+  "word": "wide",
+  "meaning": "幅広い"
+},
+{
+  "id": 107,
+  "word": "famous",
+  "meaning": "有名な"
+},
+{
+  "id": 108,
+  "word": "power",
+  "meaning": "電力、権力、力"
+},
+{
+  "id": 109,
+  "word": "book",
+  "meaning": "予約する、本"
+},
+{
+  "id": 110,
+  "word": "wrong",
+  "meaning": "間違った"
+},
+{
+  "id": 111,
+  "word": "play",
+  "meaning": "劇、演奏する、演じる、プレーする、遊ぶ"
+},
+{
+  "id": 112,
+  "word": "usual",
+  "meaning": "通常の、いつもの"
+},
+{
+  "id": 113,
+  "word": "certain",
+  "meaning": "確かな、ある決まった、特定の"
+},
+{
+  "id": 114,
+  "word": "difficult",
+  "meaning": "難しい"
+},
+{
+  "id": 115,
+  "word": "store",
+  "meaning": "保管する、保存する、店"
+},
+{
+  "id": 116,
+  "word": "clear",
+  "meaning": "はっきりした、わかりやすい、片付ける"
+},
+{
+  "id": 117,
+  "word": "forget",
+  "meaning": "忘れる"
+},
+{
+  "id": 118,
+  "word": "rise",
+  "meaning": "上がる 上昇"
+},
+{
+  "id": 119,
+  "word": "chance",
+  "meaning": "可能性、機会"
+},
+{
+  "id": 120,
+  "word": "draw",
+  "meaning": "（ペンや鉛筆で絵を）描く、引く"
+},
+{
+  "id": 121,
+  "word": "glad",
+  "meaning": "うれしい"
+},
+{
+  "id": 122,
+  "word": "warm",
+  "meaning": "温かい、暖かい"
+},
+{
+  "id": 123,
+  "word": "matter",
+  "meaning": "事柄、問題、件、重要である"
+},
+{
+  "id": 124,
+  "word": "useful",
+  "meaning": "役立つ"
+},
+{
+  "id": 125,
+  "word": "refer",
+  "meaning": "参照する、紹介する、〜についてである、言及する"
+},
+{
+  "id": 126,
+  "word": "safe",
+  "meaning": "安全な"
+},
+{
+  "id": 127,
+  "word": "simple",
+  "meaning": "単純な、簡単な、シンプルな"
+},
+{
+  "id": 128,
+  "word": "discover",
+  "meaning": "発見する"
+},
+{
+  "id": 129,
+  "word": "park",
+  "meaning": "車を停める、公園"
+},
+{
+  "id": 130,
+  "word": "promise",
+  "meaning": "約束する、約束"
+},
+{
+  "id": 131,
+  "word": "proud",
+  "meaning": "誇りに思う"
+},
+{
+  "id": 132,
+  "word": "pretty",
+  "meaning": "かなり、かわいい"
+},
+{
+  "id": 133,
+  "word": "noise",
+  "meaning": "騒音"
+},
+{
+  "id": 134,
+  "word": "perhaps",
+  "meaning": "もしかすると、たぶん、よろしければ"
+},
+{
+  "id": 135,
+  "word": "farm",
+  "meaning": "農場、農園、農地"
+},
+{
+  "id": 136,
+  "word": "product",
+  "meaning": "製品"
+},
+{
+  "id": 137,
+  "word": "invite",
+  "meaning": "招待する、求める"
+},
+{
+  "id": 138,
+  "word": "offer",
+  "meaning": "申し出る、提供する、申し出、オファー"
+},
+{
+  "id": 139,
+  "word": "provide",
+  "meaning": "提供する"
+},
+{
+  "id": 140,
+  "word": "include",
+  "meaning": "含む"
+},
+{
+  "id": 141,
+  "word": "report",
+  "meaning": "報告書、報告する、出向く"
+},
+{
+  "id": 142,
+  "word": "problem",
+  "meaning": "問題"
+},
+{
+  "id": 143,
+  "word": "likely",
+  "meaning": "おそらく、｜〜しそうだ"
+},
+{
+  "id": 144,
+  "word": "request",
+  "meaning": "〜を求める、頼む、依頼、要請"
+},
+{
+  "id": 145,
+  "word": "cost",
+  "meaning": "（費用が）掛かる、費用"
+},
+{
+  "id": 146,
+  "word": "complete",
+  "meaning": "完了させる、完成させる、記入する、完了した"
+},
+{
+  "id": 147,
+  "word": "form",
+  "meaning": "用紙、フォーム、結成する"
+},
+{
+  "id": 148,
+  "word": "experience",
+  "meaning": "経験、〜を経験する"
+},
+{
+  "id": 149,
+  "word": "attend",
+  "meaning": "出席する、参加する"
+},
+{
+  "id": 150,
+  "word": "announce",
+  "meaning": "発表する"
+},
+{
+  "id": 151,
+  "word": "position",
+  "meaning": "職、位置、位置に置く、位置を合わせる"
+},
+{
+  "id": 152,
+  "word": "repair",
+  "meaning": "修理、修理する"
+},
+{
+  "id": 153,
+  "word": "local",
+  "meaning": "地元の、地域の、地元の人"
+},
+{
+  "id": 154,
+  "word": "purpose",
+  "meaning": "目的"
+},
+{
+  "id": 155,
+  "word": "discuss",
+  "meaning": "話し合う"
+},
+{
+  "id": 156,
+  "word": "expect",
+  "meaning": "予期する、予定する"
+},
+{
+  "id": 157,
+  "word": "increase",
+  "meaning": "増やす、増える、増加"
+},
+{
+  "id": 158,
+  "word": "mention",
+  "meaning": "述べる"
+},
+{
+  "id": 159,
+  "word": "tour",
+  "meaning": "見学、旅行、見学する、旅行する"
+},
+{
+  "id": 160,
+  "word": "charge",
+  "meaning": "料金、責任、請求する、充電する"
+},
+{
+  "id": 161,
+  "word": "discount",
+  "meaning": "割引、割引にする"
+},
+{
+  "id": 162,
+  "word": "research",
+  "meaning": "調査、研究、調査する、研究する"
+},
+{
+  "id": 163,
+  "word": "hire",
+  "meaning": "雇う、採用者"
+},
+{
+  "id": 164,
+  "word": "recently",
+  "meaning": "少し前に"
+},
+{
+  "id": 165,
+  "word": "main",
+  "meaning": "主な、主要な"
+},
+{
+  "id": 166,
+  "word": "account",
+  "meaning": "口座、アカウント、取引先、説明、説明する、（割合を）占める"
+},
+{
+  "id": 167,
+  "word": "international",
+  "meaning": "国際的な、海外の"
+},
+{
+  "id": 168,
+  "word": "copy",
+  "meaning": "（本・雑誌等の）冊・部、コピー、コピーする"
+},
+{
+  "id": 169,
+  "word": "probably",
+  "meaning": "おそらく"
+},
+{
+  "id": 170,
+  "word": "process",
+  "meaning": "工程、手続き、処理する"
+},
+{
+  "id": 171,
+  "word": "result",
+  "meaning": "結果、生じる、（結果に）終わる"
+},
+{
+  "id": 172,
+  "word": "president",
+  "meaning": "社長"
+},
+{
+  "id": 173,
+  "word": "material",
+  "meaning": "材料、資料"
+},
+{
+  "id": 174,
+  "word": "record",
+  "meaning": "記録、記録的な、記録する"
+},
+{
+  "id": 175,
+  "word": "apply",
+  "meaning": "応募する、申請する、適用する"
+},
+{
+  "id": 176,
+  "word": "detail",
+  "meaning": "詳細、詳しく述べる"
+},
+{
+  "id": 177,
+  "word": "rate",
+  "meaning": "料金、割合、評価する"
+},
+{
+  "id": 178,
+  "word": "industry",
+  "meaning": "産業、業界"
+},
+{
+  "id": 179,
+  "word": "public",
+  "meaning": "公共の、一般の、一般の人"
+},
+{
+  "id": 180,
+  "word": "yet",
+  "meaning": "まだ、もう"
+},
+{
+  "id": 181,
+  "word": "possible",
+  "meaning": "可能な"
+},
+{
+  "id": 182,
+  "word": "furniture",
+  "meaning": "家具"
+},
+{
+  "id": 183,
+  "word": "arrange",
+  "meaning": "手配する、並べる"
+},
+{
+  "id": 184,
+  "word": "notice",
+  "meaning": "通知、気付く"
+},
+{
+  "id": 185,
+  "word": "create",
+  "meaning": "想像する、作り出す"
+},
+{
+  "id": 186,
+  "word": "serve",
+  "meaning": "（食事を）出す、サービスを提供する、役割を果たす"
+},
+{
+  "id": 187,
+  "word": "prepare",
+  "meaning": "準備する、用意する、支度する"
+},
+{
+  "id": 188,
+  "word": "policy",
+  "meaning": "規定、方針"
+},
+{
+  "id": 189,
+  "word": "package",
+  "meaning": "小包、一式"
+},
+{
+  "id": 190,
+  "word": "agency",
+  "meaning": "代理店"
+},
+{
+  "id": 191,
+  "word": "introduce",
+  "meaning": "紹介する、導入する"
+},
+{
+  "id": 192,
+  "word": "reserve",
+  "meaning": "予約する、確保する"
+},
+{
+  "id": 193,
+  "word": "allow",
+  "meaning": "許す、可能にする"
+},
+{
+  "id": 194,
+  "word": "press",
+  "meaning": "押す、報道機関、マスコミ"
+},
+{
+  "id": 195,
+  "word": "weather",
+  "meaning": "天気、天候"
+},
+{
+  "id": 196,
+  "word": "support",
+  "meaning": "支援、支持、支援する、支持する"
+},
+{
+  "id": 197,
+  "word": "publish",
+  "meaning": "出版する、公表する"
+},
+{
+  "id": 198,
+  "word": "describe",
+  "meaning": "（言葉や文章で）説明する、描写する"
+},
+{
+  "id": 199,
+  "word": "add",
+  "meaning": "加える"
+},
+{
+  "id": 200,
+  "word": "deliver",
+  "meaning": "配達する、（演説等を）行う"
+},
+{
+  "id": 201,
+  "word": "state",
+  "meaning": "述べる、明記する｜状態、州"
+},
+{
+  "id": 202,
+  "word": "accept",
+  "meaning": "受け入れる"
+},
+{
+  "id": 203,
+  "word": "accounting",
+  "meaning": "会計、経理"
+},
+{
+  "id": 204,
+  "word": "based",
+  "meaning": "拠点を置く、本社がある"
+},
+{
+  "id": 205,
+  "word": "own",
+  "meaning": "（所有格の後で）自分自身の｜所有する"
+},
+{
+  "id": 206,
+  "word": "develop",
+  "meaning": "(計画等を）作り出す、開発する、発展させる"
+},
+{
+  "id": 207,
+  "word": "excellent",
+  "meaning": "素晴らしい"
+},
+{
+  "id": 208,
+  "word": "bill",
+  "meaning": "請求書｜請求書を送る"
+},
+{
+  "id": 209,
+  "word": "produce",
+  "meaning": "生産する、製作する｜農産物"
+},
+{
+  "id": 210,
+  "word": "host",
+  "meaning": "主催する、司会をする｜主催者、司会者"
+},
+{
+  "id": 211,
+  "word": "explain",
+  "meaning": "説明する"
+},
+{
+  "id": 212,
+  "word": "less",
+  "meaning": "より少なく｜より少ない"
+},
+{
+  "id": 213,
+  "word": "passenger",
+  "meaning": "乗客"
+},
+{
+  "id": 214,
+  "word": "succesful",
+  "meaning": "成功した、うまく行く"
+},
+{
+  "id": 215,
+  "word": "activity",
+  "meaning": "活動"
+},
+{
+  "id": 216,
+  "word": "lead",
+  "meaning": "率いる｜トップ、長、主演"
+},
+{
+  "id": 217,
+  "word": "traffic",
+  "meaning": "交通"
+},
+{
+  "id": 218,
+  "word": "actually",
+  "meaning": "実際"
+},
+{
+  "id": 219,
+  "word": "follow",
+  "meaning": "従う、後について行く、後で行う、道を行く"
+},
+{
+  "id": 220,
+  "word": "inform",
+  "meaning": "（人に）知らせる"
+},
+{
+  "id": 221,
+  "word": "prefer",
+  "meaning": "〜を（・・・よりも）好む"
+},
+{
+  "id": 222,
+  "word": "final",
+  "meaning": "最終的な、最終の"
+},
+{
+  "id": 223,
+  "word": "professional",
+  "meaning": "プロの、専門職の、職業上の｜プロ、専門家"
+},
+{
+  "id": 224,
+  "word": "improve",
+  "meaning": "改善する、改良する"
+},
+{
+  "id": 225,
+  "word": "medical",
+  "meaning": "医療の"
+},
+{
+  "id": 226,
+  "word": "official",
+  "meaning": "正式な、公式の、正規の｜幹部"
+},
+{
+  "id": 227,
+  "word": "continue",
+  "meaning": "続く、続ける"
+},
+{
+  "id": 228,
+  "word": "total",
+  "meaning": "合計の｜合計｜合計〜になる"
+},
+{
+  "id": 229,
+  "word": "branch",
+  "meaning": "支店"
+},
+{
+  "id": 230,
+  "word": "entrance",
+  "meaning": "入口、入場"
+},
+{
+  "id": 231,
+  "word": "fair",
+  "meaning": "展示即売会、説明会｜まずまずの、公平な"
+},
+{
+  "id": 232,
+  "word": "attention",
+  "meaning": "注意、注目"
+},
+{
+  "id": 233,
+  "word": "cleaning",
+  "meaning": "清掃"
+},
+{
+  "id": 234,
+  "word": "expensive",
+  "meaning": "高価な、お金のかかる"
+},
+{
+  "id": 235,
+  "word": "seated",
+  "meaning": "座っている、腰掛けている"
+},
+{
+  "id": 236,
+  "word": "share",
+  "meaning": "共有する、シェアする｜株、保有率"
+},
+{
+  "id": 237,
+  "word": "daily",
+  "meaning": "毎日｜毎日の"
+},
+{
+  "id": 238,
+  "word": "instead",
+  "meaning": "代わりに"
+},
+{
+  "id": 239,
+  "word": "national",
+  "meaning": "全国的な、国の、国立の、国民の"
+},
+{
+  "id": 240,
+  "word": "perform",
+  "meaning": "遂行する、演じる、公演する"
+},
+{
+  "id": 241,
+  "word": "remove",
+  "meaning": "取り出す、取り除く、取り去る"
+},
+{
+  "id": 242,
+  "word": "suggest",
+  "meaning": "提案する、示唆する"
+},
+{
+  "id": 243,
+  "word": "direction",
+  "meaning": "道順、指示、方向"
+},
+{
+  "id": 244,
+  "word": "express",
+  "meaning": "表す｜急ぎの、急行の"
+},
+{
+  "id": 245,
+  "word": "amount",
+  "meaning": "量、額"
+},
+{
+  "id": 246,
+  "word": "personal",
+  "meaning": "個人的な、個人の"
+},
+{
+  "id": 247,
+  "word": "publishing",
+  "meaning": "出版（業）"
+},
+{
+  "id": 248,
+  "word": "view",
+  "meaning": "眺め、意見｜眺める"
+},
+{
+  "id": 249,
+  "word": "wish",
+  "meaning": "〜したいと思う｜願い"
+},
+{
+  "id": 250,
+  "word": "appear",
+  "meaning": "現れる、掲載される、〜のように思える"
+},
+{
+  "id": 251,
+  "word": "arrangement",
+  "meaning": "手配、配置"
+},
+{
+  "id": 252,
+  "word": "manage",
+  "meaning": "運行管理する、対処する、何とか〜する"
+},
+{
+  "id": 253,
+  "word": "direct",
+  "meaning": "直接の、直行の｜指示する、向ける"
+},
+{
+  "id": 254,
+  "word": "paid",
+  "meaning": "有給の、支払い済みの"
+},
+{
+  "id": 255,
+  "word": "agree",
+  "meaning": "同意する、同感である"
+},
+{
+  "id": 256,
+  "word": "cause",
+  "meaning": "引き起こす｜原因、大義"
+},
+{
+  "id": 257,
+  "word": "damage",
+  "meaning": "ダメージ、損傷｜ダメージを与える、損なう"
+},
+{
+  "id": 258,
+  "word": "raise",
+  "meaning": "上げる、（お金を）集める、高める｜昇給"
+},
+{
+  "id": 259,
+  "word": "respond",
+  "meaning": "返事をする、応じる"
+},
+{
+  "id": 260,
+  "word": "directly",
+  "meaning": "直接"
+},
+{
+  "id": 261,
+  "word": "limited",
+  "meaning": "限られた"
+},
+{
+  "id": 262,
+  "word": "packaging",
+  "meaning": "梱包、パッケージ"
+},
+{
+  "id": 263,
+  "word": "degree",
+  "meaning": "学位、程度、（温度や角度の単位の）度"
+},
+{
+  "id": 264,
+  "word": "further",
+  "meaning": "さらなる｜さらに"
+},
+{
+  "id": 265,
+  "word": "quite",
+  "meaning": "かなり"
+},
+{
+  "id": 266,
+  "word": "regular",
+  "meaning": "通常の、定期的な、常連の"
+},
+{
+  "id": 267,
+  "word": "broadcast",
+  "meaning": "放送する｜放送"
+},
+{
+  "id": 268,
+  "word": "contain",
+  "meaning": "含む、中に入っている"
+},
+{
+  "id": 269,
+  "word": "experienced",
+  "meaning": "経験豊富な"
+},
+{
+  "id": 270,
+  "word": "fix",
+  "meaning": "直す、しっかり固定する、（日時等を）定める"
+},
+{
+  "id": 271,
+  "word": "opinion",
+  "meaning": "意見"
+},
+{
+  "id": 272,
+  "word": "society",
+  "meaning": "社会、協会"
+},
+{
+  "id": 273,
+  "word": "condition",
+  "meaning": "状態"
+},
+{
+  "id": 274,
+  "word": "correct",
+  "meaning": "正確な、正しい｜修正する"
+},
+{
+  "id": 275,
+  "word": "audience",
+  "meaning": "聴衆、観客"
+},
+{
+  "id": 276,
+  "word": "general",
+  "meaning": "全体的な、一般的な"
+},
+{
+  "id": 277,
+  "word": "advise",
+  "meaning": "勧める、忠告する、助言する"
+},
+{
+  "id": 278,
+  "word": "especially",
+  "meaning": "特に"
+},
+{
+  "id": 279,
+  "word": "period",
+  "meaning": "期間"
+},
+{
+  "id": 280,
+  "word": "professor",
+  "meaning": "教授、大学の先生"
+},
+{
+  "id": 281,
+  "word": "effort",
+  "meaning": "努力"
+},
+{
+  "id": 282,
+  "word": "highly",
+  "meaning": "非常に"
+},
+{
+  "id": 283,
+  "word": "lower",
+  "meaning": "下げる｜より安い、より低い"
+},
+{
+  "id": 284,
+  "word": "reason",
+  "meaning": "理由"
+},
+{
+  "id": 285,
+  "word": "similar",
+  "meaning": "似ている"
+},
+{
+  "id": 286,
+  "word": "fit",
+  "meaning": "（スペースに）入る、合う"
+},
+{
+  "id": 287,
+  "word": "intended",
+  "meaning": "意図された、向けられた"
+},
+{
+  "id": 288,
+  "word": "invitation",
+  "meaning": "招待（状）"
+},
+{
+  "id": 289,
+  "word": "patient",
+  "meaning": "患者｜我慢強い"
+},
+{
+  "id": 290,
+  "word": "responsible",
+  "meaning": "担当している、責任がある"
+},
+{
+  "id": 291,
+  "word": "certainly",
+  "meaning": "確かに、（返事で）かしこまりました"
+},
+{
+  "id": 292,
+  "word": "method",
+  "meaning": "方法"
+},
+{
+  "id": 293,
+  "word": "claim",
+  "meaning": "申し立て、主張、請求｜主張する"
+},
+{
+  "id": 294,
+  "word": "immediately",
+  "meaning": "ただちに、即座に"
+},
+{
+  "id": 295,
+  "word": "law",
+  "meaning": "法律"
+},
+{
+  "id": 296,
+  "word": "row",
+  "meaning": "列｜（船を）漕ぐ"
+},
+{
+  "id": 297,
+  "word": "downtown",
+  "meaning": "中心街の｜中心街で｜中心街"
+},
+{
+  "id": 298,
+  "word": "helpful",
+  "meaning": "役立つ、助けになる"
+},
+{
+  "id": 299,
+  "word": "track",
+  "meaning": "追跡する｜追跡、線路、走路"
+},
+{
+  "id": 300,
+  "word": "value",
+  "meaning": "価値｜大切だと思う"
+},
+{
+  "id": 301,
+  "word": "unable",
+  "meaning": "（〜することが）できない"
+},
+{
+  "id": 302,
+  "word": "regarding",
+  "meaning": "〜に関する"
+},
+{
+  "id": 303,
+  "word": "district",
+  "meaning": "地区"
+},
+{
+  "id": 304,
+  "word": "permit",
+  "meaning": "許可証｜許可する"
+},
+{
+  "id": 305,
+  "word": "profit",
+  "meaning": "利益｜利益を与える"
+},
+{
+  "id": 306,
+  "word": "rather",
+  "meaning": "かなり、むしろ"
+},
+{
+  "id": 307,
+  "word": "rest",
+  "meaning": "残り、休み｜休む、休ませる"
+},
+{
+  "id": 308,
+  "word": "familiar",
+  "meaning": "よく知っている、おなじみの"
+},
+{
+  "id": 309,
+  "word": "former",
+  "meaning": "前の、かつての｜前者"
+},
+{
+  "id": 310,
+  "word": "demand",
+  "meaning": "需要｜要求する"
+},
+{
+  "id": 311,
+  "word": "pleasure",
+  "meaning": "喜び"
+},
+{
+  "id": 312,
+  "word": "remain",
+  "meaning": "〜のままでいる"
+},
+{
+  "id": 313,
+  "word": "standard",
+  "meaning": "基準｜標準の"
+},
+{
+  "id": 314,
+  "word": "carefully",
+  "meaning": "慎重に、丁寧に"
+},
+{
+  "id": 315,
+  "word": "common",
+  "meaning": "一般的な、よくある、普通の、共通の"
+},
+{
+  "id": 316,
+  "word": "compare",
+  "meaning": "述べる"
+},
+{
+  "id": 317,
+  "word": "whole",
+  "meaning": "全部の｜全部、全体"
+},
+{
+  "id": 318,
+  "word": "abroad",
+  "meaning": "海外で、海外に"
+},
+{
+  "id": 319,
+  "word": "approach",
+  "meaning": "方法、考え方｜近く"
+},
+{
+  "id": 320,
+  "word": "duty",
+  "meaning": "任務、職務、義務"
+},
+{
+  "id": 321,
+  "word": "fare",
+  "meaning": "運賃"
+},
+{
+  "id": 322,
+  "word": "worried",
+  "meaning": "心配して"
+},
+{
+  "id": 323,
+  "word": "aware",
+  "meaning": "気づいて"
+},
+{
+  "id": 324,
+  "word": "occasion",
+  "meaning": "行事、（何かが起こる）時、好機"
+},
+{
+  "id": 325,
+  "word": "proof",
+  "meaning": "証拠、証明"
+},
+{
+  "id": 326,
+  "word": "worth",
+  "meaning": "価値がある"
+},
+{
+  "id": 327,
+  "word": "length",
+  "meaning": "〜だと思う"
+},
+{
+  "id": 328,
+  "word": "willing",
+  "meaning": "〜することを嫌がらない、〜する気がある"
+},
+{
+  "id": 329,
+  "word": "chapter",
+  "meaning": "章、支部"
+},
+{
+  "id": 330,
+  "word": "crowded",
+  "meaning": "混雑した"
+},
+{
+  "id": 331,
+  "word": "custom",
+  "meaning": "特注の｜慣習"
+},
+{
+  "id": 332,
+  "word": "anyway",
+  "meaning": "とにかく、ともあれ"
+},
+{
+  "id": 333,
+  "word": "progress",
+  "meaning": "進歩、前進、進行状況｜進む"
+},
+{
+  "id": 334,
+  "word": "regard",
+  "meaning": "みなす｜点"
+},
+{
+  "id": 335,
+  "word": "appearance",
+  "meaning": "外見、出現、出演"
+},
+{
+  "id": 336,
+  "word": "cross",
+  "meaning": "横断する"
+},
+{
+  "id": 337,
+  "word": "ability",
+  "meaning": "能力"
+},
+{
+  "id": 338,
+  "word": "collect",
+  "meaning": "集める"
+},
+{
+  "id": 339,
+  "word": "comfortable",
+  "meaning": "快適な、楽な、自信がある"
+},
+{
+  "id": 340,
+  "word": "deal",
+  "meaning": "取引、量、取引条件｜対処する"
+},
+{
+  "id": 341,
+  "word": "gather",
+  "meaning": "集める、集まる"
+},
+{
+  "id": 342,
+  "word": "officer",
+  "meaning": "幹部、役員、警察官"
+},
+{
+  "id": 343,
+  "word": "role",
+  "meaning": "役割、役柄"
+},
+{
+  "id": 344,
+  "word": "bit",
+  "meaning": "少し｜少し"
+},
+{
+  "id": 345,
+  "word": "figure",
+  "meaning": "数字、数値、人物"
+},
+{
+  "id": 346,
+  "word": "fuel",
+  "meaning": "燃料"
+},
+{
+  "id": 347,
+  "word": "reasonable",
+  "meaning": "（値段が）手頃な、妥当な"
+},
+{
+  "id": 348,
+  "word": "twice",
+  "meaning": "２回、２倍"
+},
+{
+  "id": 349,
+  "word": "arrival",
+  "meaning": "到着"
+},
+{
+  "id": 350,
+  "word": "central",
+  "meaning": "中心の、中央の"
+},
+{
+  "id": 351,
+  "word": "modern",
+  "meaning": "現代的な、近代的な"
+},
+{
+  "id": 352,
+  "word": "positive",
+  "meaning": "良い、好意的な、積極的な"
+},
+{
+  "id": 353,
+  "word": "surprised",
+  "meaning": "驚いた"
+},
+{
+  "id": 354,
+  "word": "address",
+  "meaning": "対処する、話しかける、向ける｜住所、アドレス、演説"
+},
+{
+  "id": 355,
+  "word": "education",
+  "meaning": "教育"
+},
+{
+  "id": 356,
+  "word": "tip",
+  "meaning": "アドバイス、コツ"
+},
+{
+  "id": 357,
+  "word": "automobile",
+  "meaning": "自動車"
+},
+{
+  "id": 358,
+  "word": "garage",
+  "meaning": "ガレージ、車庫"
+},
+{
+  "id": 359,
+  "word": "handle",
+  "meaning": "扱う、対処する、手で扱う｜取っ手"
+},
+{
+  "id": 360,
+  "word": "knowledge",
+  "meaning": "知識"
+},
+{
+  "id": 361,
+  "word": "private",
+  "meaning": "個人の、私立の、内密な"
+},
+{
+  "id": 362,
+  "word": "realize",
+  "meaning": "気付く、実現する"
+},
+{
+  "id": 363,
+  "word": "reply",
+  "meaning": "返事をする｜返事、返答"
+},
+{
+  "id": 364,
+  "word": "heating",
+  "meaning": "暖房"
+},
+{
+  "id": 365,
+  "word": "nearly",
+  "meaning": "ほとんど、もう少しで、近く"
+},
+{
+  "id": 366,
+  "word": "plastic",
+  "meaning": "プラスチックの、ビニールの"
+},
+{
+  "id": 367,
+  "word": "steel",
+  "meaning": "鋼鉄、鉄鋼"
+},
+{
+  "id": 368,
+  "word": "distance",
+  "meaning": "距離"
+},
+{
+  "id": 369,
+  "word": "easily",
+  "meaning": "簡単に"
+},
+{
+  "id": 370,
+  "word": "clerk",
+  "meaning": "事務員、店員、ホテルの受付係"
+},
+{
+  "id": 371,
+  "word": "electricity",
+  "meaning": "電気"
+},
+{
+  "id": 372,
+  "word": "borrow",
+  "meaning": "借りる"
+},
+{
+  "id": 373,
+  "word": "bottom",
+  "meaning": "底、一番下｜一番下の"
+},
+{
+  "id": 374,
+  "word": "separate",
+  "meaning": "別々の、別の｜分ける"
+},
+{
+  "id": 375,
+  "word": "subject",
+  "meaning": "主題、件名、科目｜〜の対象となる"
+},
+{
+  "id": 376,
+  "word": "tax",
+  "meaning": "税金"
+},
+{
+  "id": 377,
+  "word": "earn",
+  "meaning": "得る、（お金を）稼ぐ"
+},
+{
+  "id": 378,
+  "word": "formal",
+  "meaning": "正式な、公式の、フォーマルな"
+},
+{
+  "id": 379,
+  "word": "suit",
+  "meaning": "合う｜スーツ"
+},
+{
+  "id": 380,
+  "word": "balance",
+  "meaning": "残金、残額、バランス｜バランスを取る"
+},
+{
+  "id": 381,
+  "word": "content",
+  "meaning": "中身、内容、満足｜満足している"
+},
+{
+  "id": 382,
+  "word": "lift",
+  "meaning": "持ち上げる"
+},
+{
+  "id": 383,
+  "word": "respect",
+  "meaning": "尊敬、敬意、点｜尊敬する、尊重する"
+},
+{
+  "id": 384,
+  "word": "single",
+  "meaning": "たった一つの、一人用の、単独の"
+},
+{
+  "id": 385,
+  "word": "wing",
+  "meaning": "（建物の）棟、翼"
+},
+{
+  "id": 386,
+  "word": "anywhere",
+  "meaning": "どこにも、どこか、どこでも"
+},
+{
+  "id": 387,
+  "word": "guess",
+  "meaning": "〜だと思う"
+},
+{
+  "id": 388,
+  "word": "solve",
+  "meaning": "解決する"
+},
+{
+  "id": 389,
+  "word": "storm",
+  "meaning": "嵐、暴風雨"
+},
+{
+  "id": 390,
+  "word": "praise",
+  "meaning": "ほめる｜称賛"
+},
+{
+  "id": 391,
+  "word": "bright",
+  "meaning": "（色が）あざやかな、明るい、輝かしい"
+},
+{
+  "id": 392,
+  "word": "century",
+  "meaning": "１世紀"
+},
+{
+  "id": 393,
+  "word": "scientific",
+  "meaning": "科学の"
+},
+{
+  "id": 394,
+  "word": "vote",
+  "meaning": "投票する、投票"
+},
+{
+  "id": 395,
+  "word": "match",
+  "meaning": "合う、合わせる、匹敵する｜（スポーツの）試合"
+},
+{
+  "id": 396,
+  "word": "object",
+  "meaning": "（形のある）モノ、目的｜反対する"
+},
+{
+  "id": 397,
+  "word": "rush",
+  "meaning": "急ぐこと、急ぎ｜急ぐ、急がせる"
+},
+{
+  "id": 398,
+  "word": "stair",
+  "meaning": "階段"
+},
+{
+  "id": 399,
+  "word": "divide",
+  "meaning": "分ける"
+},
+{
+  "id": 400,
+  "word": "empty",
+  "meaning": "空の｜空にする"
+},
+{
+  "id": 401,
+  "word": "existing",
+  "meaning": "従来の、既存の"
+},
+{
+  "id": 402,
+  "word": "following",
+  "meaning": "〜に続いて / 次の、以下の"
+},
+{
+  "id": 403,
+  "word": "measure",
+  "meaning": "(サイズや量などを)測る、評価する / 対策"
+},
+{
+  "id": 404,
+  "word": "native",
+  "meaning": "出身の人 / 出身の、土着の"
+},
+{
+  "id": 405,
+  "word": "normal",
+  "meaning": "通常の、普通の"
+},
+{
+  "id": 406,
+  "word": "valuable",
+  "meaning": "貴重な"
+},
+{
+  "id": 407,
+  "word": "waste",
+  "meaning": "無駄、廃棄物 / 無駄にする"
+},
+{
+  "id": 408,
+  "word": "grateful",
+  "meaning": "感謝している"
+},
+{
+  "id": 409,
+  "word": "afterwards",
+  "meaning": "その後で"
+},
+{
+  "id": 410,
+  "word": "gain",
+  "meaning": "得る / 増加、利益"
+},
+{
+  "id": 411,
+  "word": "manner",
+  "meaning": "やり方、方法"
+},
+{
+  "id": 412,
+  "word": "serious",
+  "meaning": "重大な、真剣な、重要な"
+},
+{
+  "id": 413,
+  "word": "exact",
+  "meaning": "正確な"
+},
+{
+  "id": 414,
+  "word": "imagine",
+  "meaning": "想像する"
+},
+{
+  "id": 415,
+  "word": "prevent",
+  "meaning": "防ぐ、阻む"
+},
+{
+  "id": 416,
+  "word": "prove",
+  "meaning": "わかる、判明する、証明する"
+},
+{
+  "id": 417,
+  "word": "strength",
+  "meaning": "強さ、強度、(液体等の)濃さ"
+},
+{
+  "id": 418,
+  "word": "practical",
+  "meaning": "実務の、実際の、実用的な"
+},
+{
+  "id": 419,
+  "word": "available",
+  "meaning": "手に入る、利用できる、都合が付く"
+},
+{
+  "id": 420,
+  "word": "item",
+  "meaning": "品物、項目"
+},
+{
+  "id": 421,
+  "word": "purchase",
+  "meaning": "〜を購入する / 購入"
+},
+{
+  "id": 422,
+  "word": "conference",
+  "meaning": "会議"
+},
+{
+  "id": 423,
+  "word": "contact",
+  "meaning": "連絡する / 連絡、連絡先"
+},
+{
+  "id": 424,
+  "word": "article",
+  "meaning": "記事"
+},
+{
+  "id": 425,
+  "word": "review",
+  "meaning": "目を通す、論評する / 検討、論評"
+},
+{
+  "id": 426,
+  "word": "equipment",
+  "meaning": "機器"
+},
+{
+  "id": 427,
+  "word": "client",
+  "meaning": "顧客"
+},
+{
+  "id": 428,
+  "word": "location",
+  "meaning": "場所、立地"
+},
+{
+  "id": 429,
+  "word": "interview",
+  "meaning": "面接、インタビュー / 面接する、インタビューする"
+},
+{
+  "id": 430,
+  "word": "delivery",
+  "meaning": "配達"
+},
+{
+  "id": 431,
+  "word": "require",
+  "meaning": "必要とする、要求する"
+},
+{
+  "id": 432,
+  "word": "feature",
+  "meaning": "特徴、目玉、特集記事 / 大きく扱う、目玉にする"
+},
+{
+  "id": 433,
+  "word": "construction",
+  "meaning": "建設、工事"
+},
+{
+  "id": 434,
+  "word": "award",
+  "meaning": "賞 / 授与する"
+},
+{
+  "id": 435,
+  "word": "production",
+  "meaning": "生産、(映画や劇の)制作・作品"
+},
+{
+  "id": 436,
+  "word": "recommend",
+  "meaning": "薦める"
+},
+{
+  "id": 437,
+  "word": "survey",
+  "meaning": "アンケート調査 / アンケート調査をする"
+},
+{
+  "id": 438,
+  "word": "appointment",
+  "meaning": "アポ、予約、指名"
+},
+{
+  "id": 439,
+  "word": "quality",
+  "meaning": "質｜質が高い"
+},
+{
+  "id": 440,
+  "word": "supply",
+  "meaning": "必需品、用品 / 供給する"
+},
+{
+  "id": 441,
+  "word": "advertisement",
+  "meaning": "広告、宣伝"
+},
+{
+  "id": 442,
+  "word": "submit",
+  "meaning": "提出する"
+},
+{
+  "id": 443,
+  "word": "additional",
+  "meaning": "追加の"
+},
+{
+  "id": 444,
+  "word": "application",
+  "meaning": "応募、申請、応用"
+},
+{
+  "id": 445,
+  "word": "display",
+  "meaning": "展示 / 展示する"
+},
+{
+  "id": 446,
+  "word": "located",
+  "meaning": "位置している、〜の場所にある"
+},
+{
+  "id": 447,
+  "word": "confirm",
+  "meaning": "確認する"
+},
+{
+  "id": 448,
+  "word": "session",
+  "meaning": "時間、集まり"
+},
+{
+  "id": 449,
+  "word": "budget",
+  "meaning": "予算"
+},
+{
+  "id": 450,
+  "word": "fee",
+  "meaning": "料金"
+},
+{
+  "id": 451,
+  "word": "annual",
+  "meaning": "年に一度の、毎年恒例の、年間の"
+},
+{
+  "id": 452,
+  "word": "payment",
+  "meaning": "支払い"
+},
+{
+  "id": 453,
+  "word": "firm",
+  "meaning": "会社、事務所"
+},
+{
+  "id": 454,
+  "word": "issue",
+  "meaning": "課題、(雑誌の)号 / (正式に)出す、発効する"
+},
+{
+  "id": 455,
+  "word": "due",
+  "meaning": "期限の"
+},
+{
+  "id": 456,
+  "word": "exhibit",
+  "meaning": "展示物、展示会 / 展示する"
+},
+{
+  "id": 457,
+  "word": "financial",
+  "meaning": "お金の、財務の、金融の"
+},
+{
+  "id": 458,
+  "word": "contract",
+  "meaning": "契約(書)"
+},
+{
+  "id": 459,
+  "word": "performance",
+  "meaning": "公演、成績"
+},
+{
+  "id": 460,
+  "word": "development",
+  "meaning": "開発、成長"
+},
+{
+  "id": 461,
+  "word": "promote",
+  "meaning": "宣伝する、昇進させる、推進する"
+},
+{
+  "id": 462,
+  "word": "replace",
+  "meaning": "交換する、後任となる"
+},
+{
+  "id": 463,
+  "word": "benefit",
+  "meaning": "特典、福利厚生 / 〜のためになる"
+},
+{
+  "id": 464,
+  "word": "document",
+  "meaning": "書類 / (文章や映像等で)記録する"
+},
+{
+  "id": 465,
+  "word": "management",
+  "meaning": "経営、管理、経営陣"
+},
+{
+  "id": 466,
+  "word": "opportunity",
+  "meaning": "機会、チャンス"
+},
+{
+  "id": 467,
+  "word": "consider",
+  "meaning": "考える、検討する"
+},
+{
+  "id": 468,
+  "word": "clothing",
+  "meaning": "衣類、衣服類"
+},
+{
+  "id": 469,
+  "word": "select",
+  "meaning": "選ぶ / 選び抜かれた"
+},
+{
+  "id": 470,
+  "word": "delay",
+  "meaning": "遅らせる / 遅れ"
+},
+{
+  "id": 471,
+  "word": "option",
+  "meaning": "選択肢"
+},
+{
+  "id": 472,
+  "word": "reduce",
+  "meaning": "(値段を)下げる、減らす"
+},
+{
+  "id": 473,
+  "word": "instruction",
+  "meaning": "説明書、指示書、指示"
+},
+{
+  "id": 474,
+  "word": "resume",
+  "meaning": "履歴書"
+},
+{
+  "id": 475,
+  "word": "rent",
+  "meaning": "賃貸借、家賃 / 賃貸借する"
+},
+{
+  "id": 476,
+  "word": "extra",
+  "meaning": "余分な、追加の"
+},
+{
+  "id": 477,
+  "word": "membership",
+  "meaning": "会員資格"
+},
+{
+  "id": 478,
+  "word": "upcoming",
+  "meaning": "今度の"
+},
+{
+  "id": 479,
+  "word": "transportation",
+  "meaning": "輸送手段、輸送機関、輸送"
+},
+{
+  "id": 480,
+  "word": "cancel",
+  "meaning": "中止する、キャンセルする"
+},
+{
+  "id": 481,
+  "word": "conduct",
+  "meaning": "実行する、実施する"
+},
+{
+  "id": 482,
+  "word": "per",
+  "meaning": "〜につき、〜あたり"
+},
+{
+  "id": 483,
+  "word": "representative",
+  "meaning": "担当者、代表者"
+},
+{
+  "id": 484,
+  "word": "proposal",
+  "meaning": "提案"
+},
+{
+  "id": 485,
+  "word": "corporate",
+  "meaning": "企業の、法人の"
+},
+{
+  "id": 486,
+  "word": "gallery",
+  "meaning": "美術館、画廊"
+},
+{
+  "id": 487,
+  "word": "encourage",
+  "meaning": "奨励する、促す"
+},
+{
+  "id": 488,
+  "word": "author",
+  "meaning": "著者、作者 / (本を)書く"
+},
+{
+  "id": 489,
+  "word": "committee",
+  "meaning": "委員会"
+},
+{
+  "id": 490,
+  "word": "latest",
+  "meaning": "最新の"
+},
+{
+  "id": 491,
+  "word": "enclose",
+  "meaning": "同封する、囲む"
+},
+{
+  "id": 492,
+  "word": "expand",
+  "meaning": "拡大する、拡張する、進出する"
+},
+{
+  "id": 493,
+  "word": "editor",
+  "meaning": "編集者"
+},
+{
+  "id": 494,
+  "word": "fund",
+  "meaning": "資金、基金 / 資金を提供する"
+},
+{
+  "id": 495,
+  "word": "vehicle",
+  "meaning": "乗り物、車両"
+},
+{
+  "id": 496,
+  "word": "focus",
+  "meaning": "(注意・意識等を)〜に集中させる、重点を置く / 焦点"
+},
+{
+  "id": 497,
+  "word": "approve",
+  "meaning": "承認する、賛成する"
+},
+{
+  "id": 498,
+  "word": "sponsor",
+  "meaning": "スポンサーになる、後援する / スポンサー"
+},
+{
+  "id": 499,
+  "word": "previous",
+  "meaning": "前の、以前の"
+},
+{
+  "id": 500,
+  "word": "reception",
+  "meaning": "パーティー、受付"
+},
+{
+  "id": 501,
+  "word": "property",
+  "meaning": "不動産、資産"
+},
+{
+  "id": 502,
+  "word": "campaign",
+  "meaning": "キャンペーン"
+},
+{
+  "id": 503,
+  "word": "replacement",
+  "meaning": "後任、交換、交換品"
+},
+{
+  "id": 504,
+  "word": "organize",
+  "meaning": "(イベントなどを)とりまとめる、組織化する、整理する"
+},
+{
+  "id": 505,
+  "word": "competition",
+  "meaning": "大会、競争、競争相手"
+},
+{
+  "id": 506,
+  "word": "employment",
+  "meaning": "雇用"
+},
+{
+  "id": 507,
+  "word": "appreciate",
+  "meaning": "感謝する、ありがたく思う"
+},
+{
+  "id": 508,
+  "word": "indicate",
+  "meaning": "示す、示唆する"
+},
+{
+  "id": 509,
+  "word": "reference",
+  "meaning": "照会先、照会状、参照"
+},
+{
+  "id": 510,
+  "word": "resident",
+  "meaning": "住民、住人"
+},
+{
+  "id": 511,
+  "word": "individual",
+  "meaning": "個人の、個別の / 個人"
+},
+{
+  "id": 512,
+  "word": "advance",
+  "meaning": "先行した、事前の / 進歩、前進"
+},
+{
+  "id": 513,
+  "word": "organization",
+  "meaning": "団体、会社、組織(化)"
+},
+{
+  "id": 514,
+  "word": "remind",
+  "meaning": "再確認する、念押しする"
+},
+{
+  "id": 515,
+  "word": "section",
+  "meaning": "一部、コーナー、欄、章"
+},
+{
+  "id": 516,
+  "word": "senior",
+  "meaning": "(役職などが)上位の、上位の"
+},
+{
+  "id": 517,
+  "word": "technical",
+  "meaning": "技術的な"
+},
+{
+  "id": 518,
+  "word": "estimate",
+  "meaning": "見積もり / 見積もる"
+},
+{
+  "id": 519,
+  "word": "publication",
+  "meaning": "出版物、出版"
+},
+{
+  "id": 520,
+  "word": "unfortunately",
+  "meaning": "残念なことに、残念ながら"
+},
+{
+  "id": 521,
+  "word": "expense",
+  "meaning": "費用、経費"
+},
+{
+  "id": 522,
+  "word": "operation",
+  "meaning": "業務、運営、操業、作動"
+},
+{
+  "id": 523,
+  "word": "exhibition",
+  "meaning": "展示会、展示物、展示"
+},
+{
+  "id": 524,
+  "word": "operate",
+  "meaning": "操作する、運営する"
+},
+{
+  "id": 525,
+  "word": "original",
+  "meaning": "元の、最初の / オリジナル、原本"
+},
+{
+  "id": 526,
+  "word": "receipt",
+  "meaning": "領収書、受取"
+},
+{
+  "id": 527,
+  "word": "division",
+  "meaning": "部門、配分、分担"
+},
+{
+  "id": 528,
+  "word": "photography",
+  "meaning": "写真撮影"
+},
+{
+  "id": 529,
+  "word": "reschedule",
+  "meaning": "スケジュール変更をする"
+},
+{
+  "id": 530,
+  "word": "stock",
+  "meaning": "在庫、株"
+},
+{
+  "id": 531,
+  "word": "association",
+  "meaning": "協会、組合"
+},
+{
+  "id": 532,
+  "word": "concern",
+  "meaning": "心配、懸念、関心事"
+},
+{
+  "id": 533,
+  "word": "luggage",
+  "meaning": "旅行かばん、手荷物"
+},
+{
+  "id": 534,
+  "word": "suggestion",
+  "meaning": "提案、示唆"
+},
+{
+  "id": 535,
+  "word": "launch",
+  "meaning": "開始、発売 / 開始する、発売する"
+},
+{
+  "id": 536,
+  "word": "procedure",
+  "meaning": "手続き、手順"
+},
+{
+  "id": 537,
+  "word": "description",
+  "meaning": "説明、記述、描写"
+},
+{
+  "id": 538,
+  "word": "variety",
+  "meaning": "種類"
+},
+{
+  "id": 539,
+  "word": "term",
+  "meaning": "条件、期間、観点"
+},
+{
+  "id": 540,
+  "word": "distribute",
+  "meaning": "配布する、流通させる"
+},
+{
+  "id": 541,
+  "word": "leading",
+  "meaning": "首位の、トップの"
+},
+{
+  "id": 542,
+  "word": "mainly",
+  "meaning": "主に"
+},
+{
+  "id": 543,
+  "word": "release",
+  "meaning": "発売する、公表する / 発売"
+},
+{
+  "id": 544,
+  "word": "response",
+  "meaning": "返答、返事"
+},
+{
+  "id": 545,
+  "word": "retire",
+  "meaning": "退職する"
+},
+{
+  "id": 546,
+  "word": "determine",
+  "meaning": "決定する、判断する、決心する"
+},
+{
+  "id": 547,
+  "word": "expert",
+  "meaning": "専門家 / 専門的な"
+},
+{
+  "id": 548,
+  "word": "journal",
+  "meaning": "専門誌"
+},
+{
+  "id": 549,
+  "word": "series",
+  "meaning": "一連のモノ、シリーズ(モノ)"
+},
+{
+  "id": 550,
+  "word": "requirement",
+  "meaning": "要求、必要条件"
+},
+{
+  "id": 551,
+  "word": "assistance",
+  "meaning": "支援、援助"
+},
+{
+  "id": 552,
+  "word": "council",
+  "meaning": "議会"
+},
+{
+  "id": 553,
+  "word": "electronic",
+  "meaning": "電子の、電子版の、オンラインの"
+},
+{
+  "id": 554,
+  "word": "recommendation",
+  "meaning": "推薦"
+},
+{
+  "id": 555,
+  "word": "attract",
+  "meaning": "引きつける、呼び込む、誘致する"
+},
+{
+  "id": 556,
+  "word": "quarter",
+  "meaning": "四半期"
+},
+{
+  "id": 557,
+  "word": "promotion",
+  "meaning": "昇進、販売促進、促進"
+},
+{
+  "id": 558,
+  "word": "concerned",
+  "meaning": "心配して"
+},
+{
+  "id": 559,
+  "word": "extend",
+  "meaning": "延長する、(感謝、おわび、招待、歓迎等の気持ちを)表す"
+},
+{
+  "id": 560,
+  "word": "trail",
+  "meaning": "(田舎の)小道、田舎道"
+},
+{
+  "id": 561,
+  "word": "avoid",
+  "meaning": "避ける"
+},
+{
+  "id": 562,
+  "word": "celebration",
+  "meaning": "お祝い、祝典"
+},
+{
+  "id": 563,
+  "word": "impress",
+  "meaning": "感心させる、好印象を与える"
+},
+{
+  "id": 564,
+  "word": "seek",
+  "meaning": "探し求める"
+},
+{
+  "id": 565,
+  "word": "coworker",
+  "meaning": "同僚"
+},
+{
+  "id": 566,
+  "word": "extension",
+  "meaning": "内線、延長"
+},
+{
+  "id": 567,
+  "word": "postpone",
+  "meaning": "延長する"
+},
+{
+  "id": 568,
+  "word": "region",
+  "meaning": "地域"
+},
+{
+  "id": 569,
+  "word": "range",
+  "meaning": "範囲 / 範囲に渡る"
+},
+{
+  "id": 570,
+  "word": "convention",
+  "meaning": "会議"
+},
+{
+  "id": 571,
+  "word": "solution",
+  "meaning": "解決策、溶液"
+},
+{
+  "id": 572,
+  "word": "according to",
+  "meaning": "〜によると、〜に従って"
+},
+{
+  "id": 573,
+  "word": "affect",
+  "meaning": "影響する"
+},
+{
+  "id": 574,
+  "word": "commercial",
+  "meaning": "商業(用)の、商業的な / CM"
+},
+{
+  "id": 575,
+  "word": "convenient",
+  "meaning": "便利な、都合の良い"
+},
+{
+  "id": 576,
+  "word": "exchange",
+  "meaning": "交換する / 交換"
+},
+{
+  "id": 577,
+  "word": "artwork",
+  "meaning": "芸術作品、(本や雑誌の中の)イラストや写真"
+},
+{
+  "id": 578,
+  "word": "agreement",
+  "meaning": "契約(書)、同意(書)、合意"
+},
+{
+  "id": 579,
+  "word": "government",
+  "meaning": "政府"
+},
+{
+  "id": 580,
+  "word": "major",
+  "meaning": "主要な、大きな、重大な"
+},
+{
+  "id": 581,
+  "word": "potential",
+  "meaning": "見込みがある、潜在的な / 可能性"
+},
+{
+  "id": 582,
+  "word": "maintain",
+  "meaning": "維持管理する、維持する"
+},
+{
+  "id": 583,
+  "word": "responsibility",
+  "meaning": "責任、職務、職責"
+},
+{
+  "id": 584,
+  "word": "admission",
+  "meaning": "入場(料)、入会(費)、入場許可"
+},
+{
+  "id": 585,
+  "word": "missing",
+  "meaning": "見つからない、欠けている"
+},
+{
+  "id": 586,
+  "word": "apologize",
+  "meaning": "おわびする"
+},
+{
+  "id": 587,
+  "word": "nearby",
+  "meaning": "近くに / 近くの"
+},
+{
+  "id": 588,
+  "word": "paperwork",
+  "meaning": "書類、書類作業"
+},
+{
+  "id": 589,
+  "word": "attach",
+  "meaning": "添付する"
+},
+{
+  "id": 590,
+  "word": "honor",
+  "meaning": "称える、(契約等を)守る / 名誉"
+},
+{
+  "id": 591,
+  "word": "search",
+  "meaning": "探すこと / 探す、サーチする"
+},
+{
+  "id": 592,
+  "word": "effective",
+  "meaning": "効果的な、有効な"
+},
+{
+  "id": 593,
+  "word": "temporary",
+  "meaning": "一時的な、臨時の"
+},
+{
+  "id": 594,
+  "word": "destination",
+  "meaning": "目的地、行き先"
+},
+{
+  "id": 595,
+  "word": "investment",
+  "meaning": "投資"
+},
+{
+  "id": 596,
+  "word": "obtain",
+  "meaning": "得る、取得する"
+},
+{
+  "id": 597,
+  "word": "real estate",
+  "meaning": "不動産"
+},
+{
+  "id": 598,
+  "word": "cafeteria",
+  "meaning": "社員食堂"
+},
+{
+  "id": 599,
+  "word": "statement",
+  "meaning": "明細書、声明"
+},
+{
+  "id": 600,
+  "word": "crew",
+  "meaning": "グループ、班、乗員"
+},
+{
+  "id": 601,
+  "word": "regulation",
+  "meaning": "規制、規則"
+},
+{
+  "id": 602,
+  "word": "compete",
+  "meaning": "競う"
+},
+{
+  "id": 603,
+  "word": "satisfied",
+  "meaning": "満足した"
+},
+{
+  "id": 604,
+  "word": "guarantee",
+  "meaning": "保証する / 保証"
+},
+{
+  "id": 605,
+  "word": "entire",
+  "meaning": "全体の、全部の"
+},
+{
+  "id": 606,
+  "word": "delighted",
+  "meaning": "とても喜んでいる"
+},
+{
+  "id": 607,
+  "word": "properly",
+  "meaning": "ちゃんと、適切に"
+},
+{
+  "id": 608,
+  "word": "recognize",
+  "meaning": "(人を)称える、(業績等を)認める"
+},
+{
+  "id": 609,
+  "word": "brief",
+  "meaning": "短時間の、手短な"
+},
+{
+  "id": 610,
+  "word": "definitely",
+  "meaning": "間違いなく、絶対に"
+},
+{
+  "id": 611,
+  "word": "concerning",
+  "meaning": "〜に関する"
+},
+{
+  "id": 612,
+  "word": "venue",
+  "meaning": "会場"
+},
+{
+  "id": 613,
+  "word": "confident",
+  "meaning": "確信している、自信がある"
+},
+{
+  "id": 614,
+  "word": "demonstrate",
+  "meaning": "実演する、明示する"
+},
+{
+  "id": 615,
+  "word": "efficient",
+  "meaning": "効率的な"
+},
+{
+  "id": 616,
+  "word": "overseas",
+  "meaning": "海外の / 海外で"
+},
+{
+  "id": 617,
+  "word": "status",
+  "meaning": "状況、地位"
+},
+{
+  "id": 618,
+  "word": "establish",
+  "meaning": "設立する、創立する、確立する"
+},
+{
+  "id": 619,
+  "word": "traditional",
+  "meaning": "伝統的な、昔のままの"
+},
+{
+  "id": 620,
+  "word": "deposit",
+  "meaning": "頭金、敷金、保証金 / 預け入れる"
+},
+{
+  "id": 621,
+  "word": "newly",
+  "meaning": "新しく"
+},
+{
+  "id": 622,
+  "word": "legal",
+  "meaning": "法律に関する、合法の"
+},
+{
+  "id": 623,
+  "word": "mayor",
+  "meaning": "町長、市長"
+},
+{
+  "id": 624,
+  "word": "quantity",
+  "meaning": "量、数量"
+},
+{
+  "id": 625,
+  "word": "departure",
+  "meaning": "出発"
+},
+{
+  "id": 626,
+  "word": "wildlife",
+  "meaning": "野生動物"
+},
+{
+  "id": 627,
+  "word": "accompany",
+  "meaning": "同行する、付いてくる、伴奏する"
+},
+{
+  "id": 628,
+  "word": "average",
+  "meaning": "平均 / 平均的な"
+},
+{
+  "id": 629,
+  "word": "chart",
+  "meaning": "図表、一覧表"
+},
+{
+  "id": 630,
+  "word": "complaint",
+  "meaning": "苦情、クレーム"
+},
+{
+  "id": 631,
+  "word": "insurance",
+  "meaning": "保険"
+},
+{
+  "id": 632,
+  "word": "lecture",
+  "meaning": "講義"
+},
+{
+  "id": 633,
+  "word": "unique",
+  "meaning": "他にはない、独自の、特別な、特有の"
+},
+{
+  "id": 634,
+  "word": "device",
+  "meaning": "機器、装置"
+},
+{
+  "id": 635,
+  "word": "exciting",
+  "meaning": "(人を)わくわくさせる、興奮させる"
+},
+{
+  "id": 636,
+  "word": "ideal",
+  "meaning": "理想的な"
+},
+{
+  "id": 637,
+  "word": "industrial",
+  "meaning": "産業の"
+},
+{
+  "id": 638,
+  "word": "transfer",
+  "meaning": "転勤させる(する)、移動させる(する) / 転勤、移動"
+},
+{
+  "id": 639,
+  "word": "agricultural",
+  "meaning": "農業の"
+},
+{
+  "id": 640,
+  "word": "edition",
+  "meaning": "(本、雑誌、新聞等の)版"
+},
+{
+  "id": 641,
+  "word": "historical",
+  "meaning": "歴史(上)の"
+},
+{
+  "id": 642,
+  "word": "preparation",
+  "meaning": "準備、用意"
+},
+{
+  "id": 643,
+  "word": "environment",
+  "meaning": "環境"
+},
+{
+  "id": 644,
+  "word": "growth",
+  "meaning": "成長"
+},
+{
+  "id": 645,
+  "word": "related",
+  "meaning": "関連した"
+},
+{
+  "id": 646,
+  "word": "temperature",
+  "meaning": "温度、気温"
+},
+{
+  "id": 647,
+  "word": "decade",
+  "meaning": "10年間、10年"
+},
+{
+  "id": 648,
+  "word": "frequent",
+  "meaning": "頻繁な、常連の"
+},
+{
+  "id": 649,
+  "word": "landscaping",
+  "meaning": "造園"
+},
+{
+  "id": 650,
+  "word": "significant",
+  "meaning": "かなりの、大幅な、重要な"
+},
+{
+  "id": 651,
+  "word": "task",
+  "meaning": "任務、業務、仕事"
+},
+{
+  "id": 652,
+  "word": "complex",
+  "meaning": "複合施設、集合住宅 / 複雑な"
+},
+{
+  "id": 653,
+  "word": "guided",
+  "meaning": "ガイド付きの"
+},
+{
+  "id": 654,
+  "word": "scale",
+  "meaning": "規模、尺度、ハカリ"
+},
+{
+  "id": 655,
+  "word": "signature",
+  "meaning": "署名 / 特徴的な"
+},
+{
+  "id": 656,
+  "word": "entry",
+  "meaning": "エントリー(作品)、入場、入力"
+},
+{
+  "id": 657,
+  "word": "initial",
+  "meaning": "初めの、当初の / 頭文字"
+},
+{
+  "id": 658,
+  "word": "inn",
+  "meaning": "宿、ホテル"
+},
+{
+  "id": 659,
+  "word": "renovate",
+  "meaning": "改装する"
+},
+{
+  "id": 660,
+  "word": "advanced",
+  "meaning": "進んだ、上級の、高度な"
+},
+{
+  "id": 661,
+  "word": "background",
+  "meaning": "経歴、背景"
+},
+{
+  "id": 662,
+  "word": "full-time",
+  "meaning": "常勤の、正社員の"
+},
+{
+  "id": 663,
+  "word": "graduate",
+  "meaning": "卒業する / 卒業生"
+},
+{
+  "id": 664,
+  "word": "loan",
+  "meaning": "融資、貸付(金) / 貸し付ける"
+},
+{
+  "id": 665,
+  "word": "specific",
+  "meaning": "具体的な、特定の"
+},
+{
+  "id": 666,
+  "word": "alternative",
+  "meaning": "代わりの / 代わりのもの"
+},
+{
+  "id": 667,
+  "word": "emphasize",
+  "meaning": "強調する"
+},
+{
+  "id": 668,
+  "word": "fold",
+  "meaning": "折りたたむ"
+},
+{
+  "id": 669,
+  "word": "jewelry",
+  "meaning": "宝飾品、宝石類"
+},
+{
+  "id": 670,
+  "word": "appeal",
+  "meaning": "魅力がある、アピールする / 魅力、アピール"
+},
+{
+  "id": 671,
+  "word": "chemical",
+  "meaning": "化学物質、化学品 / 化学の"
+},
+{
+  "id": 672,
+  "word": "decrease",
+  "meaning": "減る、減らす / 減少、低下"
+},
+{
+  "id": 673,
+  "word": "sometime",
+  "meaning": "いつか"
+},
+{
+  "id": 674,
+  "word": "various",
+  "meaning": "さまざまな"
+},
+{
+  "id": 675,
+  "word": "anniversary",
+  "meaning": "〜周年、記念日"
+},
+{
+  "id": 676,
+  "word": "associate",
+  "meaning": "仲間、アシスタント / 準、副 / 関連付ける"
+},
+{
+  "id": 677,
+  "word": "automatically",
+  "meaning": "自動的に"
+},
+{
+  "id": 678,
+  "word": "outstanding",
+  "meaning": "抜きん出た、未払いの"
+},
+{
+  "id": 679,
+  "word": "overall",
+  "meaning": "全体の / 全体として"
+},
+{
+  "id": 680,
+  "word": "reputation",
+  "meaning": "評判"
+},
+{
+  "id": 681,
+  "word": "achieve",
+  "meaning": "達成する"
+},
+{
+  "id": 682,
+  "word": "diet",
+  "meaning": "食事、食べ物、ダイエット"
+},
+{
+  "id": 683,
+  "word": "explore",
+  "meaning": "調査する、探索する、散策する"
+},
+{
+  "id": 684,
+  "word": "grant",
+  "meaning": "補助金、助成金 / 与える、許可する"
+},
+{
+  "id": 685,
+  "word": "particularly",
+  "meaning": "特に"
+},
+{
+  "id": 686,
+  "word": "suitable",
+  "meaning": "ふさわしい、適切な"
+},
+{
+  "id": 687,
+  "word": "appropriate",
+  "meaning": "適切な、適した"
+},
+{
+  "id": 688,
+  "word": "assure",
+  "meaning": "保証する、請け合う"
+},
+{
+  "id": 689,
+  "word": "decline",
+  "meaning": "(丁寧に)断る、下降する / 下降"
+},
+{
+  "id": 690,
+  "word": "decorate",
+  "meaning": "飾る"
+},
+{
+  "id": 691,
+  "word": "minimum",
+  "meaning": "最低限、最小限 / 最低限の、最小限の"
+},
+{
+  "id": 692,
+  "word": "source",
+  "meaning": "源"
+},
+{
+  "id": 693,
+  "word": "basis",
+  "meaning": "ベース、基準、根拠"
+},
+{
+  "id": 694,
+  "word": "challenge",
+  "meaning": "(やりがいのある)困難、試練 / 異議を唱える"
+},
+{
+  "id": 695,
+  "word": "observe",
+  "meaning": "気付く、順守する、観察する"
+},
+{
+  "id": 696,
+  "word": "occur",
+  "meaning": "起こる、発生する、行われる"
+},
+{
+  "id": 697,
+  "word": "overnight",
+  "meaning": "一晩の、翌日配送の / 一晩"
+},
+{
+  "id": 698,
+  "word": "simply",
+  "meaning": "単純に、単に"
+},
+{
+  "id": 699,
+  "word": "aspect",
+  "meaning": "面、局面"
+},
+{
+  "id": 700,
+  "word": "athletic",
+  "meaning": "運動の、運動が得意な、アスリートの"
+},
+{
+  "id": 701,
+  "word": "involved",
+  "meaning": "関わった"
+},
+{
+  "id": 702,
+  "word": "accurate",
+  "meaning": "正確な"
+},
+{
+  "id": 703,
+  "word": "hesitate",
+  "meaning": "ためらう"
+},
+{
+  "id": 704,
+  "word": "recognition",
+  "meaning": "認知、認識、称賛"
+},
+{
+  "id": 705,
+  "word": "institution",
+  "meaning": "機関、団体、しきたり"
+},
+{
+  "id": 706,
+  "word": "neighborhood",
+  "meaning": "(市や町の特定の)地域"
+},
+{
+  "id": 707,
+  "word": "represent",
+  "meaning": "代表を務める、相当する、表す"
+},
+{
+  "id": 708,
+  "word": "proceed",
+  "meaning": "進む、進める"
+},
+{
+  "id": 709,
+  "word": "deserve",
+  "meaning": "値する"
+},
+{
+  "id": 710,
+  "word": "permanent",
+  "meaning": "常設の、常雇用の、永久の"
+},
+{
+  "id": 711,
+  "word": "acquire",
+  "meaning": "買収する、得る、獲得する"
+},
+{
+  "id": 712,
+  "word": "recall",
+  "meaning": "回収する、思い出す / 回収"
+},
+{
+  "id": 713,
+  "word": "appoint",
+  "meaning": "指名する、任命する"
+},
+{
+  "id": 714,
+  "word": "labor",
+  "meaning": "労働、労働者"
+},
+{
+  "id": 715,
+  "word": "sufficient",
+  "meaning": "十分な"
+},
+{
+  "id": 716,
+  "word": "committed",
+  "meaning": "熱心に取り組む、献身的な"
+},
+{
+  "id": 717,
+  "word": "relatively",
+  "meaning": "比較的、他と比べて"
+},
+{
+  "id": 718,
+  "word": "attempt",
+  "meaning": "試みる / 試み"
+},
+{
+  "id": 719,
+  "word": "steady",
+  "meaning": "着実な、安定した"
+},
+{
+  "id": 720,
+  "word": "enthusiastic",
+  "meaning": "熱心な、関心が高い、乗り気である"
+},
+{
+  "id": 721,
+  "word": "occasionally",
+  "meaning": "時々、たまに"
+},
+{
+  "id": 722,
+  "word": "preserve",
+  "meaning": "保護する、保存する / 保護区"
+},
+{
+  "id": 723,
+  "word": "retain",
+  "meaning": "保持する、維持する、保管する"
+},
+{
+  "id": 724,
+  "word": "relief",
+  "meaning": "安心感、(苦痛・悩み等の)緩和"
+},
+{
+  "id": 725,
+  "word": "slightly",
+  "meaning": "わずかに、少し"
+},
+{
+  "id": 726,
+  "word": "conflict",
+  "meaning": "衝突、対立"
+},
+{
+  "id": 727,
+  "word": "forecast",
+  "meaning": "予想、予測 / 予想する、予測する"
+},
+{
+  "id": 728,
+  "word": "generous",
+  "meaning": "寛大な、気前のよい"
+},
+{
+  "id": 729,
+  "word": "shortly",
+  "meaning": "じきに、まもなく"
+},
+{
+  "id": 730,
+  "word": "economic",
+  "meaning": "経済の、経済上の"
+},
+{
+  "id": 731,
+  "word": "novel",
+  "meaning": "小説"
+},
+{
+  "id": 732,
+  "word": "combine",
+  "meaning": "一つにまとめる、組み合わせる、併用する"
+},
+{
+  "id": 733,
+  "word": "finding",
+  "meaning": "(研究・調査の)結果、わかったこと"
+},
+{
+  "id": 734,
+  "word": "situation",
+  "meaning": "状況"
+},
+{
+  "id": 735,
+  "word": "diner",
+  "meaning": "食事客"
+},
+{
+  "id": 736,
+  "word": "saving",
+  "meaning": "値引き、貯蓄、節約"
+},
+{
+  "id": 737,
+  "word": "monitor",
+  "meaning": "監視する / (コンピュータの)モニター"
+},
+{
+  "id": 738,
+  "word": "locate",
+  "meaning": "見つける"
+},
+{
+  "id": 739,
+  "word": "regularly",
+  "meaning": "定期的に、頻繁に"
+},
+{
+  "id": 740,
+  "word": "secure",
+  "meaning": "しっかり固定する、(努力で)確保する、得る / 安全な"
+},
+{
+  "id": 741,
+  "word": "via",
+  "meaning": "〜経由で、(〜という手段)によって"
+},
+{
+  "id": 742,
+  "word": "crop",
+  "meaning": "作物、収穫量"
+},
+{
+  "id": 743,
+  "word": "identify",
+  "meaning": "特定する"
+},
+{
+  "id": 744,
+  "word": "impact",
+  "meaning": "影響"
+},
+{
+  "id": 745,
+  "word": "loss",
+  "meaning": "損失、喪失、紛失"
+},
+{
+  "id": 746,
+  "word": "regret",
+  "meaning": "残念に思う、後悔する / 後悔"
+},
+{
+  "id": 747,
+  "word": "social",
+  "meaning": "社交の、交流の、社会の"
+},
+{
+  "id": 748,
+  "word": "treat",
+  "meaning": "扱う、対応する、治療する"
+},
+{
+  "id": 749,
+  "word": "amazing",
+  "meaning": "驚くべき、驚くほど素晴らしい、すごい"
+},
+{
+  "id": 750,
+  "word": "capacity",
+  "meaning": "収容能力、能力、役割"
+},
+{
+  "id": 751,
+  "word": "draft",
+  "meaning": "原稿、ドラフト、たたき台"
+},
+{
+  "id": 752,
+  "word": "household",
+  "meaning": "家庭用の / 家庭"
+},
+{
+  "id": 753,
+  "word": "outline",
+  "meaning": "概要を説明する / 概要"
+},
+{
+  "id": 754,
+  "word": "academic",
+  "meaning": "学問の、(大学)教育の"
+},
+{
+  "id": 755,
+  "word": "afford",
+  "meaning": "〜する(お金や時間の)余裕がある"
+},
+{
+  "id": 756,
+  "word": "aircraft",
+  "meaning": "航空機"
+},
+{
+  "id": 757,
+  "word": "extremely",
+  "meaning": "極めて、非常に"
+},
+{
+  "id": 758,
+  "word": "mostly",
+  "meaning": "主に、ほとんど、たいてい"
+},
+{
+  "id": 759,
+  "word": "reflect",
+  "meaning": "反映する、(像が)映る"
+},
+{
+  "id": 760,
+  "word": "structure",
+  "meaning": "構造、建造物"
+},
+{
+  "id": 761,
+  "word": "surface",
+  "meaning": "表面"
+},
+{
+  "id": 762,
+  "word": "cooperation",
+  "meaning": "協力"
+},
+{
+  "id": 763,
+  "word": "enable",
+  "meaning": "可能にする"
+},
+{
+  "id": 764,
+  "word": "factor",
+  "meaning": "要因、要素"
+},
+{
+  "id": 765,
+  "word": "priority",
+  "meaning": "優先順位、優先事項"
+},
+{
+  "id": 766,
+  "word": "remark",
+  "meaning": "(スピーチでの)言葉、コメント、意見 / コメントする"
+},
+{
+  "id": 767,
+  "word": "failure",
+  "meaning": "失敗、不具合"
+},
+{
+  "id": 768,
+  "word": "income",
+  "meaning": "収入"
+},
+{
+  "id": 769,
+  "word": "loyal",
+  "meaning": "忠実な"
+},
+{
+  "id": 770,
+  "word": "setting",
+  "meaning": "環境、設定"
+},
+{
+  "id": 771,
+  "word": "analyze",
+  "meaning": "分析する"
+},
+{
+  "id": 772,
+  "word": "ancient",
+  "meaning": "古代の"
+},
+{
+  "id": 773,
+  "word": "calculate",
+  "meaning": "計算する"
+},
+{
+  "id": 774,
+  "word": "mechanical",
+  "meaning": "機械の"
+},
+{
+  "id": 775,
+  "word": "popularity",
+  "meaning": "人気"
+},
+{
+  "id": 776,
+  "word": "promising",
+  "meaning": "有望な"
+},
+{
+  "id": 777,
+  "word": "restore",
+  "meaning": "復旧させる、取り戻す、修復する"
+},
+{
+  "id": 778,
+  "word": "connection",
+  "meaning": "接続、繋がり、関連、乗り継ぎ"
+},
+{
+  "id": 779,
+  "word": "relationship",
+  "meaning": "関係"
+},
+{
+  "id": 780,
+  "word": "surround",
+  "meaning": "取り囲む、取り巻く"
+},
+{
+  "id": 781,
+  "word": "weekday",
+  "meaning": "平日"
+},
+{
+  "id": 782,
+  "word": "commission",
+  "meaning": "委員会、歩合 / 委託する、委任する"
+},
+{
+  "id": 783,
+  "word": "enjoyable",
+  "meaning": "楽しい"
+},
+{
+  "id": 784,
+  "word": "resource",
+  "meaning": "資源"
+},
+{
+  "id": 785,
+  "word": "alike",
+  "meaning": "同様に / よく似た"
+},
+{
+  "id": 786,
+  "word": "function",
+  "meaning": "機能 / 機能する"
+},
+{
+  "id": 787,
+  "word": "reward",
+  "meaning": "報いる、ほうびを与える / 報酬、ほうび"
+},
+{
+  "id": 788,
+  "word": "absolutely",
+  "meaning": "完全に、間違いなく、もちろん"
+},
+{
+  "id": 789,
+  "word": "atmosphere",
+  "meaning": "雰囲気"
+},
+{
+  "id": 790,
+  "word": "comparison",
+  "meaning": "比較"
+},
+{
+  "id": 791,
+  "word": "component",
+  "meaning": "部品"
+},
+{
+  "id": 792,
+  "word": "contrast",
+  "meaning": "対照、はっきりした違い / 対照的である"
+},
+{
+  "id": 793,
+  "word": "laundry",
+  "meaning": "洗濯(物)"
+},
+{
+  "id": 794,
+  "word": "scholarship",
+  "meaning": "奨学金"
+},
+{
+  "id": 795,
+  "word": "ease",
+  "meaning": "容易さ、たやすさ / やわらげる、容易にする"
+},
+{
+  "id": 796,
+  "word": "elect",
+  "meaning": "選出する"
+},
+{
+  "id": 797,
+  "word": "import",
+  "meaning": "輸入する / 輸入、輸入品"
+},
+{
+  "id": 798,
+  "word": "informal",
+  "meaning": "非公式の、カジュアルな"
+},
+{
+  "id": 799,
+  "word": "population",
+  "meaning": "人口"
+},
+{
+  "id": 800,
+  "word": "profession",
+  "meaning": "専門的職業"
+},
+{
+  "id": 801,
+  "word": "thorough",
+  "meaning": "徹底的な"
+},
+{
+  "id": 802,
+  "word": "candidate",
+  "meaning": "候補者"
+},
+{
+  "id": 803,
+  "word": "executive",
+  "meaning": "重役 / 重役(用)の、高級な"
+},
+{
+  "id": 804,
+  "word": "ensure",
+  "meaning": "保証する、請け負う"
+},
+{
+  "id": 805,
+  "word": "inquire",
+  "meaning": "尋ねる、問い合わせる"
+},
+{
+  "id": 806,
+  "word": "sculpture",
+  "meaning": "彫刻"
+},
+{
+  "id": 807,
+  "word": "assembly",
+  "meaning": "組立、集会"
+},
+{
+  "id": 808,
+  "word": "patron",
+  "meaning": "愛用者、利用者"
+},
+{
+  "id": 809,
+  "word": "contribute",
+  "meaning": "貢献する、寄付する"
+},
+{
+  "id": 810,
+  "word": "grocery",
+  "meaning": "食品雑貨"
+},
+{
+  "id": 811,
+  "word": "inspect",
+  "meaning": "検査する"
+},
+{
+  "id": 812,
+  "word": "exceed",
+  "meaning": "超える"
+},
+{
+  "id": 813,
+  "word": "productivity",
+  "meaning": "生産性"
+},
+{
+  "id": 814,
+  "word": "anticipate",
+  "meaning": "予期する、待ち望む"
+},
+{
+  "id": 815,
+  "word": "competitive",
+  "meaning": "他に負けない、競争の激しい"
+},
+{
+  "id": 816,
+  "word": "evaluate",
+  "meaning": "評価する"
+},
+{
+  "id": 817,
+  "word": "approximately",
+  "meaning": "おおよそ、約"
+},
+{
+  "id": 818,
+  "word": "substantial",
+  "meaning": "かなりの、頑丈な"
+},
+{
+  "id": 819,
+  "word": "predict",
+  "meaning": "予想する、予測する、予言する"
+},
+{
+  "id": 820,
+  "word": "undergo",
+  "meaning": "(検査、修理等を)経験する、受ける"
+},
+{
+  "id": 821,
+  "word": "belongings",
+  "meaning": "所持品、所有物"
+},
+{
+  "id": 822,
+  "word": "critic",
+  "meaning": "評論家、批評家"
+},
+{
+  "id": 823,
+  "word": "disappointed",
+  "meaning": "がっかりした、失望した"
+},
+{
+  "id": 824,
+  "word": "found",
+  "meaning": "設立する、創立する"
+},
+{
+  "id": 825,
+  "word": "prescription",
+  "meaning": "処方せん"
+},
+{
+  "id": 826,
+  "word": "resign",
+  "meaning": "辞職する、辞任する"
+},
+{
+  "id": 827,
+  "word": "workload",
+  "meaning": "仕事量"
+},
+{
+  "id": 828,
+  "word": "prohibit",
+  "meaning": "禁止する"
+},
+{
+  "id": 829,
+  "word": "promptly",
+  "meaning": "ただちに、迅速に、(時刻)きっかりに"
+},
+{
+  "id": 830,
+  "word": "accomplished",
+  "meaning": "熟達した、熟練した、スキルの高い"
+},
+{
+  "id": 831,
+  "word": "suspend",
+  "meaning": "一時停止する、吊るす"
+},
+{
+  "id": 832,
+  "word": "revise",
+  "meaning": "修正する、見直す"
+},
+{
+  "id": 833,
+  "word": "donation",
+  "meaning": "寄付"
+},
+{
+  "id": 834,
+  "word": "newsletter",
+  "meaning": "会報、社内報"
+},
+{
+  "id": 835,
+  "word": "emergency",
+  "meaning": "緊急事態"
+},
+{
+  "id": 836,
+  "word": "inspire",
+  "meaning": "触発する、鼓舞する"
+},
+{
+  "id": 837,
+  "word": "measurement",
+  "meaning": "測定、サイズ"
+},
+{
+  "id": 838,
+  "word": "domestic",
+  "meaning": "国内の"
+},
+{
+  "id": 839,
+  "word": "fairly",
+  "meaning": "かなり"
+},
+{
+  "id": 840,
+  "word": "rapidly",
+  "meaning": "急速に"
+},
+{
+  "id": 841,
+  "word": "typical",
+  "meaning": "典型的な、通常の"
+},
+{
+  "id": 842,
+  "word": "favorable",
+  "meaning": "好意的な、有利な"
+},
+{
+  "id": 843,
+  "word": "timely",
+  "meaning": "タイミングの良い、タイムリーな"
+},
+{
+  "id": 844,
+  "word": "closely",
+  "meaning": "密に、注意深く"
+},
+{
+  "id": 845,
+  "word": "eager",
+  "meaning": "〜したがる、熱望する"
+},
+{
+  "id": 846,
+  "word": "equally",
+  "meaning": "同じように、均等に"
+},
+{
+  "id": 847,
+  "word": "stress",
+  "meaning": "強調する / ストレス、強調"
+},
+{
+  "id": 848,
+  "word": "shipping",
+  "meaning": "配送、出荷"
+},
+{
+  "id": 849,
+  "word": "reservation",
+  "meaning": "予約、懸念"
+},
+{
+  "id": 850,
+  "word": "facility",
+  "meaning": "施設"
+},
+{
+  "id": 851,
+  "word": "advertising",
+  "meaning": "広告(業)、宣伝(活動)"
+},
+{
+  "id": 852,
+  "word": "workshop",
+  "meaning": "研修会、講習会、作業場"
+},
+{
+  "id": 853,
+  "word": "currently",
+  "meaning": "現在"
+},
+{
+  "id": 854,
+  "word": "install",
+  "meaning": "設置する、導入する、(プログラムやソフトを)インストールする"
+},
+{
+  "id": 855,
+  "word": "register",
+  "meaning": "登録する / レジ"
+},
+{
+  "id": 856,
+  "word": "deadline",
+  "meaning": "締め切り、期限"
+},
+{
+  "id": 857,
+  "word": "rental",
+  "meaning": "賃貸の、レンタルの / 賃貸借(料)"
+},
+{
+  "id": 858,
+  "word": "colleague",
+  "meaning": "同僚"
+},
+{
+  "id": 859,
+  "word": "manufacture",
+  "meaning": "メーカー、製造業者"
+},
+{
+  "id": 860,
+  "word": "participate",
+  "meaning": "参加する"
+},
+{
+  "id": 861,
+  "word": "laboratory",
+  "meaning": "研究所、実験室"
+},
+{
+  "id": 862,
+  "word": "memo",
+  "meaning": "社内文書"
+},
+{
+  "id": 863,
+  "word": "specialize",
+  "meaning": "専門とする"
+},
+{
+  "id": 864,
+  "word": "consumer",
+  "meaning": "消費者"
+},
+{
+  "id": 865,
+  "word": "headquarters",
+  "meaning": "本社"
+},
+{
+  "id": 866,
+  "word": "strategy",
+  "meaning": "戦略"
+},
+{
+  "id": 867,
+  "word": "architect",
+  "meaning": "建築家"
+},
+{
+  "id": 868,
+  "word": "promotional",
+  "meaning": "販売促進用の、催促の"
+},
+{
+  "id": 869,
+  "word": "assign",
+  "meaning": "割り当てる、任せる"
+},
+{
+  "id": 870,
+  "word": "relocate",
+  "meaning": "移転させる、引っ越す"
+},
+{
+  "id": 871,
+  "word": "renew",
+  "meaning": "更新する"
+},
+{
+  "id": 872,
+  "word": "guideline",
+  "meaning": "指針、ガイドライン"
+},
+{
+  "id": 873,
+  "word": "recruit",
+  "meaning": "採用する、募集する / 新人"
+},
+{
+  "id": 874,
+  "word": "extensive",
+  "meaning": "詳細な、幅広い、大規模な"
+},
+{
+  "id": 875,
+  "word": "remodel",
+  "meaning": "改築する、リフォームする"
+},
+{
+  "id": 876,
+  "word": "on-site",
+  "meaning": "社内の、その場の / その場で"
+},
+{
+  "id": 877,
+  "word": "protective",
+  "meaning": "防護用の"
+},
+{
+  "id": 878,
+  "word": "worldwide",
+  "meaning": "世界中で / 世界中の"
+},
+{
+  "id": 879,
+  "word": "contemporary",
+  "meaning": "現代の"
+},
+{
+  "id": 880,
+  "word": "finalize",
+  "meaning": "取りまとめる、仕上げる、最終決定する"
+},
+{
+  "id": 881,
+  "word": "multiple",
+  "meaning": "複数の"
+},
+{
+  "id": 882,
+  "word": "negotiate",
+  "meaning": "交渉する"
+},
+{
+  "id": 883,
+  "word": "numerous",
+  "meaning": "数多くの"
+},
+{
+  "id": 884,
+  "word": "sightseeing",
+  "meaning": "観光"
+},
+{
+  "id": 885,
+  "word": "consult",
+  "meaning": "(医者、弁護士等の専門家に)相談する"
+},
+{
+  "id": 886,
+  "word": "highlight",
+  "meaning": "強調する / 見どころ"
+},
+{
+  "id": 887,
+  "word": "profile",
+  "meaning": "プロフィールを紹介する / プロフィール"
+},
+{
+  "id": 888,
+  "word": "shuttle",
+  "meaning": "定期往復便"
+},
+{
+  "id": 889,
+  "word": "preference",
+  "meaning": "好み、希望"
+},
+{
+  "id": 890,
+  "word": "talented",
+  "meaning": "才能のある"
+},
+{
+  "id": 891,
+  "word": "flyer",
+  "meaning": "チラシ、(飛行機の)乗客"
+},
+{
+  "id": 892,
+  "word": "phase",
+  "meaning": "段階"
+},
+{
+  "id": 893,
+  "word": "encounter",
+  "meaning": "(問題や困難に)直面する、遭う、出くわす"
+},
+{
+  "id": 894,
+  "word": "flexible",
+  "meaning": "柔軟な、フレキシブルな"
+},
+{
+  "id": 895,
+  "word": "implement",
+  "meaning": "実行する、実施する"
+},
+{
+  "id": 896,
+  "word": "urban",
+  "meaning": "都会の、都市の、都会での"
+},
+{
+  "id": 897,
+  "word": "convert",
+  "meaning": "換金する、改造する"
+},
+{
+  "id": 898,
+  "word": "participant",
+  "meaning": "参加者"
+},
+{
+  "id": 899,
+  "word": "registration",
+  "meaning": "登録"
+},
+{
+  "id": 900,
+  "word": "personnel",
+  "meaning": "社会、人事部"
+},
+{
+  "id": 901,
+  "word": "affordable",
+  "meaning": "手頃な価格の"
+},
+{
+  "id": 902,
+  "word": "complicated",
+  "meaning": "複雑な"
+},
+{
+  "id": 903,
+  "word": "dedicated",
+  "meaning": "献身的な、熱心な、専用の"
+},
+{
+  "id": 904,
+  "word": "coverage",
+  "meaning": "報道、(保険の)補償"
+},
+{
+  "id": 905,
+  "word": "reliable",
+  "meaning": "信頼できる、頼りになる"
+},
+{
+  "id": 906,
+  "word": "exclusive",
+  "meaning": "限定の、独占の、高級な"
+},
+{
+  "id": 907,
+  "word": "appliance",
+  "meaning": "電化製品"
+},
+{
+  "id": 908,
+  "word": "brochure",
+  "meaning": "パンフレット"
+},
+{
+  "id": 909,
+  "word": "merchandise",
+  "meaning": "商品"
+},
+{
+  "id": 910,
+  "word": "qualified",
+  "meaning": "資格のある、適任の"
+},
+{
+  "id": 911,
+  "word": "comprehensive",
+  "meaning": "総合的な、包括的な"
+},
+{
+  "id": 912,
+  "word": "plumbing",
+  "meaning": "配管(工事)"
+},
+{
+  "id": 913,
+  "word": "supervisor",
+  "meaning": "上司、責任者"
+},
+{
+  "id": 914,
+  "word": "warehouse",
+  "meaning": "倉庫"
+},
+{
+  "id": 915,
+  "word": "directory",
+  "meaning": "名簿、(建物の)案内板"
+},
+{
+  "id": 916,
+  "word": "expire",
+  "meaning": "期限が切れる"
+},
+{
+  "id": 917,
+  "word": "merger",
+  "meaning": "合併、統合"
+},
+{
+  "id": 918,
+  "word": "questionnaire",
+  "meaning": "アンケート用紙"
+},
+{
+  "id": 919,
+  "word": "defective",
+  "meaning": "欠陥のある、不良の"
+},
+{
+  "id": 920,
+  "word": "enroll",
+  "meaning": "登録する、入会する、入学する"
+},
+{
+  "id": 921,
+  "word": "pharmacy",
+  "meaning": "薬局"
+},
+{
+  "id": 922,
+  "word": "spacious",
+  "meaning": "広々とした、ゆったりした"
+},
+{
+  "id": 923,
+  "word": "discontinued",
+  "meaning": "(製造・販売が)終了した"
+},
+{
+  "id": 924,
+  "word": "warranty",
+  "meaning": "保証、保証書"
+},
+{
+  "id": 925,
+  "word": "refund",
+  "meaning": "返金 / 返金する"
+},
+{
+  "id": 926,
+  "word": "inventory",
+  "meaning": "在庫(表)､棚卸"
+},
+{
+  "id": 927,
+  "word": "renowned",
+  "meaning": "名高い、著名な"
+},
+{
+  "id": 928,
+  "word": "publicize",
+  "meaning": "宣伝する"
+},
+{
+  "id": 929,
+  "word": "tuition",
+  "meaning": "授業料"
+},
+{
+  "id": 930,
+  "word": "complimentary",
+  "meaning": "無料の"
+},
+{
+  "id": 931,
+  "word": "eligible",
+  "meaning": "資格がある"
+},
+{
+  "id": 932,
+  "word": "fund-raising",
+  "meaning": "資金調達のための、慈善の"
+},
+{
+  "id": 933,
+  "word": "reimbursement",
+  "meaning": "払い戻し"
+},
+{
+  "id": 934,
+  "word": "itinerary",
+  "meaning": "旅程表"
+},
+{
+  "id": 935,
+  "word": "certificate",
+  "meaning": "認定証、修了証"
+},
+{
+  "id": 936,
+  "word": "storage",
+  "meaning": "保管、収納、貯蔵"
+},
+{
+  "id": 937,
+  "word": "administrative",
+  "meaning": "事務管理の"
+},
+{
+  "id": 938,
+  "word": "banquet",
+  "meaning": "夕食会"
+},
+{
+  "id": 939,
+  "word": "retail",
+  "meaning": "小売り"
+},
+{
+  "id": 940,
+  "word": "ingredient",
+  "meaning": "(料理の)材料、食材"
+},
+{
+  "id": 941,
+  "word": "inquiry",
+  "meaning": "問い合わせ"
+},
+{
+  "id": 942,
+  "word": "accommodate",
+  "meaning": "(要求等を)満たす、収容する"
+},
+{
+  "id": 943,
+  "word": "generate",
+  "meaning": "(利益や仕事等を)生み出す、(関心や興味等を)生む"
+},
+{
+  "id": 944,
+  "word": "authorize",
+  "meaning": "公認する、(正式に)許可する"
+},
+{
+  "id": 945,
+  "word": "summary",
+  "meaning": "要約"
+},
+{
+  "id": 946,
+  "word": "valid",
+  "meaning": "有効な"
+},
+{
+  "id": 947,
+  "word": "tourism",
+  "meaning": "観光事業"
+},
+{
+  "id": 948,
+  "word": "equip",
+  "meaning": "備え付ける、装備する"
+},
+{
+  "id": 949,
+  "word": "revenue",
+  "meaning": "収入"
+},
+{
+  "id": 950,
+  "word": "inexpensive",
+  "meaning": "安価な"
+},
+{
+  "id": 951,
+  "word": "exceptional",
+  "meaning": "並外れた、非常に素晴らしい"
+},
+{
+  "id": 952,
+  "word": "hallway",
+  "meaning": "廊下"
+},
+{
+  "id": 953,
+  "word": "circulation",
+  "meaning": "流通、(図書館の)貸出・返却、発刊部数"
+},
+{
+  "id": 954,
+  "word": "mentoring",
+  "meaning": "メンター制度"
+},
+{
+  "id": 955,
+  "word": "nutrition",
+  "meaning": "栄養、栄養学"
+},
+{
+  "id": 956,
+  "word": "accessible",
+  "meaning": "到達できる、利用できる"
+},
+{
+  "id": 957,
+  "word": "motivation",
+  "meaning": "やる気にさせる"
+},
+{
+  "id": 958,
+  "word": "refreshment",
+  "meaning": "軽い飲食物"
+},
+{
+  "id": 959,
+  "word": "cashier",
+  "meaning": "レジ係"
+},
+{
+  "id": 960,
+  "word": "transaction",
+  "meaning": "取引"
+},
+{
+  "id": 961,
+  "word": "acknowledge",
+  "meaning": "認める、(受取を)知らせる"
+},
+{
+  "id": 962,
+  "word": "nomination",
+  "meaning": "推薦、候補者、候補作品"
+},
+{
+  "id": 963,
+  "word": "overtime",
+  "meaning": "時間外に / 残業"
+},
+{
+  "id": 964,
+  "word": "premises",
+  "meaning": "敷地"
+},
+{
+  "id": 965,
+  "word": "utility",
+  "meaning": "公共サービス"
+},
+{
+  "id": 966,
+  "word": "blueprint",
+  "meaning": "設計図、青写真、詳細な計画"
+},
+{
+  "id": 967,
+  "word": "compensation",
+  "meaning": "(仕事の)報酬、対価、補償(金)"
+},
+{
+  "id": 968,
+  "word": "consistently",
+  "meaning": "安定して、変わらず、着実に"
+},
+{
+  "id": 969,
+  "word": "update",
+  "meaning": "更新する / 最新情報"
+},
+{
+  "id": 970,
+  "word": "submission",
+  "meaning": "提出物、提出"
+},
+{
+  "id": 971,
+  "word": "subscription",
+  "meaning": "購読、加入、会費"
+},
+{
+  "id": 972,
+  "word": "feedback",
+  "meaning": "感想、意見"
+},
+{
+  "id": 973,
+  "word": "supplier",
+  "meaning": "納入業者、供給業者"
+},
+{
+  "id": 974,
+  "word": "catering",
+  "meaning": "仕出し、出前、ケータリング"
+},
+{
+  "id": 975,
+  "word": "agenda",
+  "meaning": "議題、協議事項"
+},
+{
+  "id": 976,
+  "word": "fabric",
+  "meaning": "生地、織物"
+},
+{
+  "id": 977,
+  "word": "lease",
+  "meaning": "賃貸借契約 / 賃貸借する"
+},
+{
+  "id": 978,
+  "word": "beverage",
+  "meaning": "飲料"
+},
+{
+  "id": 979,
+  "word": "prior",
+  "meaning": "前の、事前の"
+},
+{
+  "id": 980,
+  "word": "inconvenience",
+  "meaning": "不便"
+},
+{
+  "id": 981,
+  "word": "innovate",
+  "meaning": "革新的な"
+},
+{
+  "id": 982,
+  "word": "luncheon",
+  "meaning": "昼食会"
+},
+{
+  "id": 983,
+  "word": "auditorium",
+  "meaning": "講堂、観客席"
+},
+{
+  "id": 984,
+  "word": "souvenir",
+  "meaning": "土産物"
+},
+{
+  "id": 985,
+  "word": "enhance",
+  "meaning": "向上させる、強化する"
+},
+{
+  "id": 986,
+  "word": "intersection",
+  "meaning": "交差点"
+},
+{
+  "id": 987,
+  "word": "shipment",
+  "meaning": "配送、配達品、積み荷"
+},
+{
+  "id": 988,
+  "word": "invoice",
+  "meaning": "請求書、送り状"
+},
+{
+  "id": 989,
+  "word": "notify",
+  "meaning": "知らせる"
+},
+{
+  "id": 990,
+  "word": "upgrade",
+  "meaning": "改良する、アップグレードする / 改良、アップグレード"
+},
+{
+  "id": 991,
+  "word": "orientation",
+  "meaning": "(新人向けの)説明会"
+},
+{
+  "id": 992,
+  "word": "quarterly",
+  "meaning": "年に4回 / 年に4回の、四半期ごとの"
+},
+{
+  "id": 993,
+  "word": "workplace",
+  "meaning": "職場"
+},
+{
+  "id": 994,
+  "word": "landmark",
+  "meaning": "名所、(場所の)目印、重要な出来事"
+},
+{
+  "id": 995,
+  "word": "commute",
+  "meaning": "通勤(通学)する"
+},
+{
+  "id": 996,
+  "word": "medication",
+  "meaning": "薬"
+},
+{
+  "id": 997,
+  "word": "portfolio",
+  "meaning": "作品集、有価証券一覧"
+},
+{
+  "id": 998,
+  "word": "vendor",
+  "meaning": "業者、露天商"
+},
+{
+  "id": 999,
+  "word": "payroll",
+  "meaning": "給与管理、給与総額、給与台帳"
+},
+{
+  "id": 1000,
+  "word": "endeavor",
+  "meaning": "努力、試み / 努力する"
+}
 ]

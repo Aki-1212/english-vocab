@@ -15,6 +15,10 @@ const $ = id => document.getElementById(id);
 async function init() {
   const res = await fetch("words.json");
   words = await res.json();
+  renderRangeButtons();
+  const maxId = Math.max(...words.map(word => word.id));
+  document.title = `English Vocabulary 1–${maxId}`;
+  $("subtitle").textContent = `1–${maxId} Vocabulary Trainer`;
   updateHistory();
 }
 init().catch(err => {
@@ -28,13 +32,28 @@ function showScreen(id) {
   window.scrollTo({top: 0, behavior: "smooth"});
 }
 
-document.querySelectorAll("[data-range]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    selectedRange = btn.dataset.range.split("-").map(Number);
-    $("selectedRangeTitle").textContent = `${selectedRange[0]}–${selectedRange[1]}`;
-    showScreen("mode");
-  });
-});
+function renderRangeButtons() {
+  const maxId = Math.max(...words.map(word => word.id));
+  const rangeGrid = $("rangeGrid");
+  rangeGrid.innerHTML = "";
+
+  for (let start = 1; start <= maxId; start += 50) {
+    const end = Math.min(start + 49, maxId);
+    const count = words.filter(word => word.id >= start && word.id <= end).length;
+    if (count === 0) continue;
+
+    const button = document.createElement("button");
+    button.className = "choice-btn";
+    button.dataset.range = `${start}-${end}`;
+    button.innerHTML = `<strong>${start}–${end}</strong><span>${count} words</span>`;
+    button.addEventListener("click", () => {
+      selectedRange = [start, end];
+      $("selectedRangeTitle").textContent = `${start}–${end}`;
+      showScreen("mode");
+    });
+    rangeGrid.appendChild(button);
+  }
+}
 
 $("modeBack").addEventListener("click", () => showScreen("home"));
 $("quizBack").addEventListener("click", () => {

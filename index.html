@@ -3,23 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>English Vocabulary 1–100</title>
+<title>English Vocabulary</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="app">
   <header>
     <h1>English Vocabulary</h1>
-    <p class="subtitle">1–100 Vocabulary Trainer</p>
+    <p class="subtitle" id="subtitle">Vocabulary Trainer</p>
   </header>
 
   <section id="home" class="screen active">
     <div class="panel">
       <h2>範囲を選ぶ</h2>
-      <div class="range-grid">
-        <button class="choice-btn" data-range="1-50"><strong>1–50</strong><span>50 words</span></button>
-        <button class="choice-btn" data-range="51-100"><strong>51–100</strong><span>50 words</span></button>
-      </div>
+      <div class="range-grid" id="rangeGrid"></div>
     </div>
     <div class="panel history-panel">
       <h2>学習履歴</h2>
