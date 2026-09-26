@@ -6,6 +6,7 @@ let currentIndex = 0;
 let score = 0;
 let wrongWords = [];
 let cardAnswers = [];
+let cardHistoryAnswers = [];
 let isAnswered = false;
 let retryMode = false;
 
@@ -52,6 +53,7 @@ function startQuiz(list, isRetry = false) {
   score = 0;
   wrongWords = [];
   cardAnswers = Array(quizWords.length).fill(null);
+  cardHistoryAnswers = Array(quizWords.length).fill(null);
   retryMode = isRetry;
   updateProgressCounts();
   showScreen("quiz");
@@ -154,14 +156,17 @@ function answerCard(known) {
   cardAnswers[currentIndex] = known;
   score = cardAnswers.filter(answer => answer === true).length;
   wrongWords = quizWords.filter((_, index) => cardAnswers[index] === false);
-  if (!wasAnswered) saveAttempt(item.id, known);
+  if (!wasAnswered || cardHistoryAnswers[currentIndex] === null) {
+    saveAttempt(item.id, known);
+  } else if (cardHistoryAnswers[currentIndex] !== known) {
+    removeAttempt(item.id, cardHistoryAnswers[currentIndex]);
+    saveAttempt(item.id, known);
+  }
+  cardHistoryAnswers[currentIndex] = known;
   updateProgressCounts();
   $("markUnknown").classList.toggle("selected", !known);
   $("markKnown").classList.toggle("selected", known);
-  setFeedback(
-    known ? "✓ 覚えているに登録しました" : "✓ 覚えていないに登録しました",
-    known
-  );
+  setFeedback("登録しました", known);
   setTimeout(nextQuestion, 650);
 }
 
@@ -169,6 +174,18 @@ $("markUnknown").addEventListener("click", () => answerCard(false));
 $("markKnown").addEventListener("click", () => answerCard(true));
 $("previousCard").addEventListener("click", () => {
   if (currentIndex === 0 || isAnswered) return;
+  const previousIndex = currentIndex - 1;
+  const previousItem = quizWords[previousIndex];
+  if (cardAnswers[previousIndex] !== null) {
+    if (cardHistoryAnswers[previousIndex] !== null) {
+      removeAttempt(previousItem.id, cardHistoryAnswers[previousIndex]);
+    }
+    cardAnswers[previousIndex] = null;
+    cardHistoryAnswers[previousIndex] = null;
+    score = cardAnswers.filter(answer => answer === true).length;
+    wrongWords = quizWords.filter((_, index) => cardAnswers[index] === false);
+    updateProgressCounts();
+  }
   currentIndex--;
   renderQuestion();
 });
@@ -271,6 +288,20 @@ function saveAttempt(id, correct) {
   if (!data.words[id]) data.words[id] = {attempts:0, correct:0, wrong:0};
   data.words[id].attempts++;
   if (correct) data.words[id].correct++; else data.words[id].wrong++;
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+function removeAttempt(id, correct) {
+  const key = "english-vocab-history";
+  const data = JSON.parse(localStorage.getItem(key) || "null");
+  const wordData = data?.words?.[id];
+  if (!data || !wordData || wordData.attempts === 0) return;
+
+  data.attempts = Math.max(0, data.attempts - 1);
+  data[correct ? "correct" : "wrong"] = Math.max(0, data[correct ? "correct" : "wrong"] - 1);
+  wordData.attempts--;
+  wordData[correct ? "correct" : "wrong"]--;
+  if (wordData.attempts === 0) delete data.words[id];
   localStorage.setItem(key, JSON.stringify(data));
 }
 

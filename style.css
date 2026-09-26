@@ -36,6 +36,10 @@ h2 { margin-top: 0; }
 .progress-bar { width: 0; height: 100%; border-radius: inherit; background: #4b8067; transition: width .25s ease; }
 .progress-counts { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; color: #6b7280; font-size: 11px; }
 .progress-counts strong { color: #374151; font-size: 12px; }
+.progress-counts span:first-child { color: #28623b; }
+.progress-counts span:first-child strong { color: #28623b; }
+.progress-counts span:last-child { color: #934b0b; }
+.progress-counts span:last-child strong { color: #934b0b; }
 .word-panel { position: relative; text-align: center; padding-top: 48px; }
 .word-number { color: #6b7280; font-size: 14px; }
 .word { font-size: clamp(40px, 10vw, 64px); font-weight: 800; margin: 18px 0; word-break: break-word; }
@@ -46,7 +50,7 @@ h2 { margin-top: 0; }
 .word-panel > .speak-btn { position: absolute; top: 16px; right: 16px; }
 .meaning { margin: 20px auto 0; padding: 14px; border-radius: 12px; background: #f3f4f6; font-size: 18px; }
 #quiz.card-mode .word { margin: 10px 0 4px; }
-#quiz.card-mode .feedback { min-height: 0; margin-top: 0; }
+#quiz.card-mode .feedback { min-height: 24px; margin-top: 0; font-size: 13px; line-height: 24px; }
 #quiz.card-mode .meaning { margin-top: 8px; }
 .hidden { display: none !important; }
 .choices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
