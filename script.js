@@ -71,9 +71,8 @@ function renderQuestion() {
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
   $("cardActions").classList.toggle("hidden", selectedMode !== "card");
-  $("showAnswer").classList.remove("hidden");
-  $("markUnknown").classList.add("hidden");
-  $("markKnown").classList.add("hidden");
+  $("markUnknown").disabled = false;
+  $("markKnown").disabled = false;
 
   if (selectedMode === "choice") {
     $("choices").classList.remove("hidden");
@@ -121,16 +120,11 @@ function answerChoice(correct, clicked, item) {
 }
 
 function revealAnswer() {
-  if (selectedMode !== "card" || !$("meaning").classList.contains("hidden")) return;
+  if (selectedMode !== "card" || isAnswered || !$("meaning").classList.contains("hidden")) return;
   const item = quizWords[currentIndex];
   $("meaning").classList.remove("hidden");
-  $("showAnswer").classList.add("hidden");
-  $("markUnknown").classList.remove("hidden");
-  $("markKnown").classList.remove("hidden");
   speak(item.word);
 }
-
-$("showAnswer").addEventListener("click", revealAnswer);
 
 $("wordPanel").addEventListener("click", event => {
   if (event.target.closest("button")) return;
@@ -138,8 +132,10 @@ $("wordPanel").addEventListener("click", event => {
 });
 
 function answerCard(known) {
-  if (isAnswered || $("meaning").classList.contains("hidden")) return;
+  if (isAnswered) return;
   isAnswered = true;
+  $("markUnknown").disabled = true;
+  $("markKnown").disabled = true;
   const item = quizWords[currentIndex];
   if (known) {
     score++;
@@ -148,7 +144,11 @@ function answerCard(known) {
     wrongWords.push(item);
     saveAttempt(item.id, false);
   }
-  nextQuestion();
+  setFeedback(
+    known ? "✓ 覚えているに登録しました" : "✓ 覚えていないに登録しました",
+    known
+  );
+  setTimeout(nextQuestion, 650);
 }
 
 $("markUnknown").addEventListener("click", () => answerCard(false));
@@ -160,8 +160,10 @@ document.addEventListener("keydown", event => {
     if (event.target.closest("button, input, textarea, select, a")) return;
     event.preventDefault();
     revealAnswer();
+  } else if (event.key === "ArrowDown") {
+    event.preventDefault();
+    revealAnswer();
   } else if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-    if ($("meaning").classList.contains("hidden")) return;
     event.preventDefault();
     answerCard(event.key === "ArrowRight");
   }
