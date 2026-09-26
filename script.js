@@ -59,6 +59,11 @@ function renderQuestion() {
   isAnswered = false;
   const item = quizWords[currentIndex];
   $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
+  const progressTrack = document.querySelector(".progress-track");
+  const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
+  $("progressBar").style.width = `${progressPercent}%`;
+  progressTrack.setAttribute("aria-valuemax", quizWords.length);
+  progressTrack.setAttribute("aria-valuenow", currentIndex + 1);
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = item.word;
   $("meaning").textContent = item.meaning;

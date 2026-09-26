@@ -29,7 +29,11 @@ h2 { margin-top: 0; }
   padding: 8px 0; margin-bottom: 12px;
 }
 .text-btn { font-size: 13px; text-decoration: underline; margin-top: 12px; }
-.quiz-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.quiz-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 10px; }
+.quiz-progress { width: min(220px, 55%); }
+.quiz-progress-label { display: flex; justify-content: space-between; color: #6b7280; font-size: 13px; margin-bottom: 6px; }
+.progress-track { height: 7px; overflow: hidden; border-radius: 999px; background: #e5e7eb; }
+.progress-bar { width: 0; height: 100%; border-radius: inherit; background: #4b8067; transition: width .25s ease; }
 .word-panel { position: relative; text-align: center; padding-top: 48px; }
 .word-number { color: #6b7280; font-size: 14px; }
 .word { font-size: clamp(40px, 10vw, 64px); font-weight: 800; margin: 18px 0; word-break: break-word; }
