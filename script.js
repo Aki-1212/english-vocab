@@ -189,6 +189,35 @@ $("wordPanel").addEventListener("click", event => {
   revealAnswer();
 });
 
+let swipeStart = null;
+$("wordPanel").addEventListener("touchstart", event => {
+  if (selectedMode !== "card" || !$("quiz").classList.contains("active") ||
+      event.touches.length !== 1 || event.target.closest("button")) {
+    swipeStart = null;
+    return;
+  }
+  swipeStart = {
+    x: event.touches[0].clientX,
+    y: event.touches[0].clientY
+  };
+}, {passive: true});
+
+$("wordPanel").addEventListener("touchend", event => {
+  if (!swipeStart || selectedMode !== "card" || isAnswered) {
+    swipeStart = null;
+    return;
+  }
+  const deltaX = event.changedTouches[0].clientX - swipeStart.x;
+  const deltaY = event.changedTouches[0].clientY - swipeStart.y;
+  swipeStart = null;
+  if (Math.abs(deltaX) < 55 || Math.abs(deltaX) < Math.abs(deltaY) * 1.25) return;
+  answerCard(deltaX > 0);
+}, {passive: true});
+
+$("wordPanel").addEventListener("touchcancel", () => {
+  swipeStart = null;
+}, {passive: true});
+
 function answerCard(known) {
   if (isAnswered) return;
   const wasAnswered = cardAnswers[currentIndex] !== null;
@@ -298,10 +327,25 @@ function speak(text) {
   if (!("speechSynthesis" in window)) return;
   speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
+  const voices = speechSynthesis.getVoices();
+  const englishVoices = voices.filter(voice => /^en([_-]|$)/i.test(voice.lang));
+  const usVoices = englishVoices.filter(voice => /^en[-_]us([_-]|$)/i.test(voice.lang));
+  const candidates = usVoices.length ? usVoices : englishVoices;
+  const preferredVoice = candidates.sort((a, b) => voiceQuality(b) - voiceQuality(a))[0];
+  if (preferredVoice) utterance.voice = preferredVoice;
   utterance.lang = "en-US";
   utterance.rate = 0.9;
   utterance.pitch = 1;
   speechSynthesis.speak(utterance);
+}
+
+function voiceQuality(voice) {
+  const name = voice.name.toLowerCase();
+  let score = 0;
+  if (/natural|enhanced|premium|neural/.test(name)) score += 3;
+  if (/google us english/.test(name)) score += 2;
+  if (/^en[-_]us$/i.test(voice.lang)) score += 1;
+  return score;
 }
 
 $("speakBtn").addEventListener("click", () => speak($("word").textContent));
