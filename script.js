@@ -35,6 +35,7 @@ function showScreen(id) {
 function renderRangeButtons() {
   const maxId = Math.max(...words.map(word => word.id));
   const rangeGrid = $("rangeGrid");
+  const lastRange = getLastStartedRange();
   rangeGrid.innerHTML = "";
 
   for (let start = 1; start <= maxId; start += 50) {
@@ -45,7 +46,20 @@ function renderRangeButtons() {
     const button = document.createElement("button");
     button.className = "choice-btn";
     button.dataset.range = `${start}-${end}`;
-    button.innerHTML = `<strong>${start}–${end}</strong><span>${count} words</span>`;
+    if (lastRange?.[0] === start && lastRange?.[1] === end) {
+      button.classList.add("last-range");
+    }
+    const rangeLabel = document.createElement("strong");
+    rangeLabel.textContent = `${start}–${end}`;
+    const wordCount = document.createElement("span");
+    wordCount.textContent = `${count} words`;
+    button.append(rangeLabel, wordCount);
+    if (lastRange?.[0] === start && lastRange?.[1] === end) {
+      const lastStarted = document.createElement("span");
+      lastStarted.className = "last-range-label";
+      lastStarted.textContent = "前回";
+      button.appendChild(lastStarted);
+    }
     button.addEventListener("click", () => {
       selectedRange = [start, end];
       $("selectedRangeTitle").textContent = `${start}–${end}`;
@@ -62,9 +76,20 @@ $("quizBack").addEventListener("click", () => {
 document.querySelectorAll("[data-mode]").forEach(btn => {
   btn.addEventListener("click", () => {
     selectedMode = btn.dataset.mode;
+    localStorage.setItem("english-vocab-last-range", JSON.stringify(selectedRange));
+    renderRangeButtons();
     startQuiz(words.filter(w => w.id >= selectedRange[0] && w.id <= selectedRange[1]));
   });
 });
+
+function getLastStartedRange() {
+  try {
+    const range = JSON.parse(localStorage.getItem("english-vocab-last-range") || "null");
+    return Array.isArray(range) && range.length === 2 && range.every(Number.isInteger) ? range : null;
+  } catch {
+    return null;
+  }
+}
 
 function startQuiz(list, isRetry = false) {
   quizWords = shuffle([...list]);
