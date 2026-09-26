@@ -70,9 +70,7 @@ function renderRangeButtons() {
 }
 
 $("modeBack").addEventListener("click", () => showScreen("home"));
-$("quizBack").addEventListener("click", () => {
-  if (confirm("この学習を終了しますか？")) showScreen("mode");
-});
+$("quizBack").addEventListener("click", () => showScreen("mode"));
 document.querySelectorAll("[data-mode]").forEach(btn => {
   btn.addEventListener("click", () => {
     selectedMode = btn.dataset.mode;
