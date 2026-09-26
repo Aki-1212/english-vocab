@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "word": "begin",
+    "meaning": "始まる、始める"
+  },
+  {
+    "id": 2,
+    "word": "work",
+    "meaning": "働く、作業する、うまくいく"
+  },
+  {
+    "id": 3,
+    "word": "company",
+    "meaning": "会社"
+  },
+  {
+    "id": 4,
+    "word": "order",
+    "meaning": "注文、順番"
+  },
+  {
+    "id": 5,
+    "word": "employee",
+    "meaning": "社員、従業員"
+  },
+  {
+    "id": 6,
+    "word": "informatiom",
+    "meaning": "情報"
+  },
+  {
+    "id": 7,
+    "word": "receive",
+    "meaning": "受け取る"
+  },
+  {
+    "id": 8,
+    "word": "last",
+    "meaning": "続く"
+  },
+  {
+    "id": 9,
+    "word": "need",
+    "meaning": "〜を必要とする、〜する必要がある"
+  },
+  {
+    "id": 10,
+    "word": "travel",
+    "meaning": "旅、出張"
+  },
+  {
+    "id": 11,
+    "word": "job",
+    "meaning": "仕事"
+  },
+  {
+    "id": 12,
+    "word": "find",
+    "meaning": "見つける、思う"
+  },
+  {
+    "id": 13,
+    "word": "department",
+    "meaning": "部、部署、売り場"
+  },
+  {
+    "id": 14,
+    "word": "let",
+    "meaning": "〜させる"
+  },
+  {
+    "id": 15,
+    "word": "visit",
+    "meaning": "訪れる"
+  },
+  {
+    "id": 16,
+    "word": "also",
+    "meaning": "〜もまた"
+  },
+  {
+    "id": 17,
+    "word": "sure",
+    "meaning": "確かな、もちろん、必ず"
+  },
+  {
+    "id": 18,
+    "word": "leave",
+    "meaning": "出発する、残す、辞める、〜のままにする"
+  },
+  {
+    "id": 19,
+    "word": "sales",
+    "meaning": "営業、売り上げ"
+  },
+  {
+    "id": 20,
+    "word": "move",
+    "meaning": "動かす、動く、引っ越す"
+  },
+  {
+    "id": 21,
+    "word": "arrive",
+    "meaning": "到着する、届く"
+  },
+  {
+    "id": 22,
+    "word": "hold",
+    "meaning": "(イベントを)行う、手に持つ"
+  },
+  {
+    "id": 23,
+    "word": "return",
+    "meaning": "戻る、戻す"
+  },
+  {
+    "id": 24,
+    "word": "opening",
+    "meaning": "(店などの)オープン、仕事の空き"
+  },
+  {
+    "id": 25,
+    "word": "soon",
+    "meaning": "もうすぐ"
+  },
+  {
+    "id": 26,
+    "word": "sign",
+    "meaning": "署名する"
+  },
+  {
+    "id": 27,
+    "word": "able",
+    "meaning": "できる"
+  },
+  {
+    "id": 28,
+    "word": "few",
+    "meaning": "少数の、少しの"
+  },
+  {
+    "id": 29,
+    "word": "pay",
+    "meaning": "支払う"
+  },
+  {
+    "id": 30,
+    "word": "trip",
+    "meaning": "出張、旅行"
+  },
+  {
+    "id": 31,
+    "word": "sell",
+    "meaning": "売る、売れる"
+  },
+  {
+    "id": 32,
+    "word": "several",
+    "meaning": "いくつかの、数名の"
+  },
+  {
+    "id": 33,
+    "word": "hear",
+    "meaning": "聞く"
+  },
+  {
+    "id": 34,
+    "word": "still",
+    "meaning": "まだ、依然として、それでもなお"
+  },
+  {
+    "id": 35,
+    "word": "later",
+    "meaning": "あとで"
+  },
+  {
+    "id": 36,
+    "word": "different",
+    "meaning": "異なる、違う"
+  },
+  {
+    "id": 37,
+    "word": "close",
+    "meaning": "近い"
+  },
+  {
+    "id": 38,
+    "word": "stay",
+    "meaning": "滞在する、とどまる、〜のままでいる"
+  },
+  {
+    "id": 39,
+    "word": "already",
+    "meaning": "すでに"
+  },
+  {
+    "id": 40,
+    "word": "present",
+    "meaning": "与える、示す"
+  },
+  {
+    "id": 41,
+    "word": "factory",
+    "meaning": "工場"
+  },
+  {
+    "id": 42,
+    "word": "interested",
+    "meaning": "興味がある"
+  },
+  {
+    "id": 43,
+    "word": "cover",
+    "meaning": "覆う、報道する、含む、扱う"
+  },
+  {
+    "id": 44,
+    "word": "choose",
+    "meaning": "選ぶ"
+  },
+  {
+    "id": 45,
+    "word": "apartment",
+    "meaning": "アパート、マンション"
+  },
+  {
+    "id": 46,
+    "word": "paper",
+    "meaning": "書類、紙"
+  },
+  {
+    "id": 47,
+    "word": "note",
+    "meaning": "注意する、述べる"
+  },
+  {
+    "id": 48,
+    "word": "both",
+    "meaning": "両方とも"
+  },
+  {
+    "id": 49,
+    "word": "either",
+    "meaning": "どちらか"
+  },
+  {
+    "id": 50,
+    "word": "neither",
+    "meaning": "どちらも〜ない"
+  },
+  {
+    "id": 51,
+    "word": "ago",
+    "meaning": "前に"
+  },
+  {
+    "id": 52,
+    "word": "finish",
+    "meaning": "終える、終わる"
+  },
+  {
+    "id": 53,
+    "word": "hope",
+    "meaning": "願う、望む、期待する"
+  },
+  {
+    "id": 54,
+    "word": "part",
+    "meaning": "一部、部分、部品"
+  },
+  {
+    "id": 55,
+    "word": "important",
+    "meaning": "重要な"
+  },
+  {
+    "id": 56,
+    "word": "mail",
+    "meaning": "郵送する"
+  },
+  {
+    "id": 57,
+    "word": "once",
+    "meaning": "一度、かつて"
+  },
+  {
+    "id": 58,
+    "word": "run",
+    "meaning": "続く、運営する、作動させる、走る"
+  },
+  {
+    "id": 59,
+    "word": "bring",
+    "meaning": "持ってくる、連れてくる、連れて行く"
+  },
+  {
+    "id": 60,
+    "word": "place",
+    "meaning": "(注文や広告などを)出す、置く"
+  },
+  {
+    "id": 61,
+    "word": "become",
+    "meaning": "〜になる"
+  },
+  {
+    "id": 62,
+    "word": "ready",
+    "meaning": "準備ができて"
+  },
+  {
+    "id": 63,
+    "word": "closed",
+    "meaning": "閉まっている"
+  },
+  {
+    "id": 64,
+    "word": "enter",
+    "meaning": "入る、入力する、エントリーする"
+  },
+  {
+    "id": 65,
+    "word": "happen",
+    "meaning": "起こる"
+  },
+  {
+    "id": 66,
+    "word": "customer",
+    "meaning": "顧客"
+  },
+  {
+    "id": 67,
+    "word": "past",
+    "meaning": "過去の"
+  },
+  {
+    "id": 68,
+    "word": "same",
+    "meaning": "同じ"
+  },
+  {
+    "id": 69,
+    "word": "early",
+    "meaning": "早く"
+  },
+  {
+    "id": 70,
+    "word": "join",
+    "meaning": "加わる、参加する"
+  },
+  {
+    "id": 71,
+    "word": "decide",
+    "meaning": "決める"
+  },
+  {
+    "id": 72,
+    "word": "plant",
+    "meaning": "植物、工場、植える"
+  },
+  {
+    "id": 73,
+    "word": "pleased",
+    "meaning": "喜んで、満足して"
+  },
+  {
+    "id": 74,
+    "word": "enough",
+    "meaning": "十分に、十分な、十分"
+  },
+  {
+    "id": 75,
+    "word": "film",
+    "meaning": "映画、映画を撮影する"
+  },
+  {
+    "id": 76,
+    "word": "case",
+    "meaning": "場合、ケース"
+  },
+  {
+    "id": 77,
+    "word": "meal",
+    "meaning": "食事"
+  },
+  {
+    "id": 78,
+    "word": "someone",
+    "meaning": "誰か"
+  },
+  {
+    "id": 79,
+    "word": "always",
+    "meaning": "いつも"
+  },
+  {
+    "id": 80,
+    "word": "piece",
+    "meaning": "1個、1つ、作品、記事"
+  },
+  {
+    "id": 81,
+    "word": "carry",
+    "meaning": "持ち運ぶ、携行する、(商品を)扱う"
+  },
+  {
+    "id": 82,
+    "word": "ship",
+    "meaning": "出荷する、船"
+  },
+  {
+    "id": 83,
+    "word": "reach",
+    "meaning": "連絡を取る、情報を伝える、達する"
+  },
+  {
+    "id": 84,
+    "word": "remember",
+    "meaning": "覚えている、思い出す、忘れずに〜する"
+  },
+  {
+    "id": 85,
+    "word": "field",
+    "meaning": "分野、野原"
+  },
+  {
+    "id": 86,
+    "word": "dish",
+    "meaning": "料理、皿"
+  },
+  {
+    "id": 87,
+    "word": "post",
+    "meaning": "掲示する、投稿する"
+  },
+  {
+    "id": 88,
+    "word": "sound",
+    "meaning": "(見聞きして)〜のように思える、音"
+  },
+  {
+    "id": 89,
+    "word": "break",
+    "meaning": "休憩、壊す、壊れる"
+  },
+  {
+    "id": 90,
+    "word": "seem",
+    "meaning": "〜のように思える"
+  },
+  {
+    "id": 91,
+    "word": "build",
+    "meaning": "建てる、築く"
+  },
+  {
+    "id": 92,
+    "word": "necessary",
+    "meaning": "必要な"
+  },
+  {
+    "id": 93,
+    "word": "believe",
+    "meaning": "信じる、きっと〜だと思う"
+  },
+  {
+    "id": 94,
+    "word": "grow",
+    "meaning": "成長する、伸びる、育てる"
+  },
+  {
+    "id": 95,
+    "word": "though",
+    "meaning": "だけど、〜にもかかわらず"
+  },
+  {
+    "id": 96,
+    "word": "kind",
+    "meaning": "種類、親切な"
+  },
+  {
+    "id": 97,
+    "word": "miss",
+    "meaning": "逃す、いなくてさびしく思う"
+  },
+  {
+    "id": 98,
+    "word": "spend",
+    "meaning": "(お金や時間を)使う、費やす、(時間を)過ごす"
+  },
+  {
+    "id": 99,
+    "word": "busy",
+    "meaning": "忙しい、混んでる"
+  },
+  {
+    "id": 100,
+    "word": "save",
+    "meaning": "節約する、保存する、取っておく"
+  }
+]
