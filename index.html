@@ -49,7 +49,7 @@
         </div>
       </div>
     </div>
-    <div class="panel word-panel">
+    <div id="wordPanel" class="panel word-panel">
       <button id="speakBtn" class="speak-btn" aria-label="発音を聞く">🔊 発音</button>
       <div class="word-number" id="wordNumber">No. 1</div>
       <div class="word" id="word">begin</div>
@@ -59,7 +59,8 @@
     <div id="choices" class="choices"></div>
     <div id="cardActions" class="card-actions hidden">
       <button id="showAnswer" class="primary-btn">答えを見る</button>
-      <button id="nextCard" class="primary-btn hidden">次へ</button>
+      <button id="markUnknown" class="secondary-btn hidden">← 覚えていない</button>
+      <button id="markKnown" class="primary-btn hidden">覚えている →</button>
     </div>
   </section>
 
@@ -71,13 +72,13 @@
       <p id="scoreMessage"></p>
     </div>
     <div class="panel">
-      <h2>間違えた単語</h2>
+      <h2>覚えていない単語</h2>
       <div id="wrongList" class="wrong-list"></div>
-      <p id="noWrong" class="empty hidden">間違えた単語はありません。</p>
+      <p id="noWrong" class="empty hidden">覚えていない単語はありません。</p>
     </div>
     <div class="result-actions">
-      <button id="retryWrong" class="primary-btn">間違いだけもう一度</button>
-      <button id="resultBack" class="secondary-btn">範囲選択へ戻る</button>
+      <button id="retryWrong" class="primary-btn">覚えていない単語を復習</button>
+      <button id="resultBack" class="secondary-btn">戻る</button>
     </div>
   </section>
 </main>
