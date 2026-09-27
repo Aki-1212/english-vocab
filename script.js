@@ -9,6 +9,13 @@ let cardAnswers = [];
 let cardHistoryAnswers = [];
 let isAnswered = false;
 let retryMode = false;
+let learningRemaining = [];
+let learningChoicePool = [];
+let learningErrors = new Set();
+let learningReview = new Set();
+let learningPhase = "choice";
+let learningCompleted = 0;
+let learningTotal = 0;
 
 const $ = id => document.getElementById(id);
 
@@ -90,6 +97,16 @@ function getLastStartedRange() {
 }
 
 function startQuiz(list, isRetry = false) {
+  if (selectedMode === "learning") {
+    learningRemaining = shuffle([...list]);
+    learningChoicePool = [...list];
+    learningCompleted = 0;
+    learningTotal = list.length;
+    learningReview = new Set();
+    retryMode = isRetry;
+    startLearningBatch([]);
+    return;
+  }
   quizWords = shuffle([...list]);
   currentIndex = 0;
   score = 0;
@@ -102,46 +119,79 @@ function startQuiz(list, isRetry = false) {
   renderQuestion();
 }
 
+function startLearningBatch(retryWords) {
+  const batch = [...retryWords];
+  while (batch.length < 10 && learningRemaining.length > 0) {
+    batch.push(learningRemaining.shift());
+  }
+  if (batch.length === 0) {
+    finishLearning();
+    return;
+  }
+  quizWords = batch;
+  currentIndex = 0;
+  score = 0;
+  wrongWords = [];
+  learningErrors = new Set();
+  learningPhase = "choice";
+  cardAnswers = Array(quizWords.length).fill(null);
+  cardHistoryAnswers = Array(quizWords.length).fill(null);
+  updateProgressCounts();
+  showScreen("quiz");
+  renderQuestion();
+}
+
 function renderQuestion() {
   isAnswered = false;
   const item = quizWords[currentIndex];
   const previousAnswer = cardAnswers[currentIndex];
+  const isLearning = selectedMode === "learning";
+  const isLearningInput = isLearning && learningPhase === "input";
   $("quiz").classList.toggle("card-mode", selectedMode === "card");
+  $("quiz").classList.toggle("learning-input-mode", isLearningInput);
   $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
   $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
-  $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
+  $("progress").textContent = isLearning
+    ? `${learningPhase === "choice" ? "4択" : "入力"} ${currentIndex + 1} / ${quizWords.length}`
+    : `${currentIndex + 1} / ${quizWords.length}`;
   const progressTrack = document.querySelector(".progress-track");
   const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
   $("progressBar").style.width = `${progressPercent}%`;
   progressTrack.setAttribute("aria-valuemax", quizWords.length);
   progressTrack.setAttribute("aria-valuenow", currentIndex + 1);
   $("wordNumber").textContent = `No. ${item.id}`;
-  $("word").textContent = item.word;
+  $("word").textContent = isLearningInput ? item.meaning : item.word;
   $("meaning").textContent = item.meaning;
-  $("meaning").classList.toggle("hidden", previousAnswer === null);
+  $("meaning").classList.toggle("hidden", previousAnswer === null || isLearning);
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
+  $("speakBtn").classList.toggle("hidden", isLearningInput);
   $("cardActions").classList.toggle("hidden", selectedMode !== "card");
+  $("learningInput").classList.toggle("hidden", !isLearningInput);
   $("previousCard").disabled = currentIndex === 0;
   $("markUnknown").disabled = false;
   $("markKnown").disabled = false;
   $("markUnknown").classList.toggle("selected", previousAnswer === false);
   $("markKnown").classList.toggle("selected", previousAnswer === true);
+  $("englishAnswer").value = "";
+  $("submitEnglish").disabled = false;
+  $("dontKnow").disabled = false;
+  $("choiceDontKnow").disabled = false;
   if (selectedMode === "card" && previousAnswer !== null) {
     setFeedback(previousAnswer ? "覚えている" : "覚えていない", previousAnswer);
   }
 
-  if (selectedMode === "choice") {
-    $("choices").classList.remove("hidden");
-    renderChoices(item);
-  } else {
-    $("choices").classList.add("hidden");
-  }
-  speak(item.word);
+  const showChoices = selectedMode === "choice" || (isLearning && learningPhase === "choice");
+  $("choices").classList.toggle("hidden", !showChoices);
+  $("choiceDontKnow").classList.toggle("hidden", !isLearning || learningPhase !== "choice");
+  if (showChoices) renderChoices(item);
+  if (!isLearningInput) speak(item.word);
+  else $("englishAnswer").focus();
 }
 
 function renderChoices(correct) {
-  const pool = quizWords.filter(w => w.id !== correct.id);
+  const sourceWords = selectedMode === "learning" ? learningChoicePool : quizWords;
+  const pool = sourceWords.filter(w => w.id !== correct.id);
   const distractors = shuffle(pool).slice(0, 3);
   const choices = shuffle([correct, ...distractors]);
   $("choices").innerHTML = "";
@@ -149,7 +199,10 @@ function renderChoices(correct) {
     const btn = document.createElement("button");
     btn.className = "answer-btn";
     btn.textContent = choice.meaning;
-    btn.addEventListener("click", () => answerChoice(choice.id === correct.id, btn, correct));
+    btn.addEventListener("click", () => {
+      if (selectedMode === "learning") answerLearningChoice(choice.id === correct.id, btn, correct);
+      else answerChoice(choice.id === correct.id, btn, correct);
+    });
     $("choices").appendChild(btn);
   });
 }
@@ -176,6 +229,89 @@ function answerChoice(correct, clicked, item) {
   updateProgressCounts();
   setTimeout(nextQuestion, 900);
 }
+
+function answerLearningChoice(correct, clicked, item) {
+  if (isAnswered) return;
+  isAnswered = true;
+  document.querySelectorAll(".answer-btn").forEach(button => button.disabled = true);
+  $("choiceDontKnow").disabled = true;
+  if (correct) {
+    clicked.classList.add("correct");
+    setFeedback("正解！", true);
+  } else {
+    learningErrors.add(item.id);
+    learningReview.add(item.id);
+    if (clicked) clicked.classList.add("wrong");
+    document.querySelectorAll(".answer-btn").forEach(button => {
+      if (button.textContent === item.meaning) button.classList.add("correct");
+    });
+    setFeedback(item.meaning, null);
+  }
+  updateProgressCounts();
+  setTimeout(() => {
+    currentIndex++;
+    if (currentIndex < quizWords.length) {
+      renderQuestion();
+    } else {
+      learningPhase = "input";
+      currentIndex = 0;
+      renderQuestion();
+    }
+  }, 700);
+}
+
+function answerLearningInput(dontKnow = false) {
+  if (isAnswered) return;
+  const item = quizWords[currentIndex];
+  const answer = $("englishAnswer").value.trim().toLowerCase();
+  const correct = !dontKnow && answer === item.word.toLowerCase();
+  isAnswered = true;
+  $("submitEnglish").disabled = true;
+  $("dontKnow").disabled = true;
+  if (!correct) {
+    learningErrors.add(item.id);
+    learningReview.add(item.id);
+  }
+  setFeedback(correct ? "正解！" : `答え: ${item.word}`, correct);
+  saveAttempt(item.id, !learningErrors.has(item.id));
+  updateProgressCounts();
+  setTimeout(() => {
+    currentIndex++;
+    if (currentIndex < quizWords.length) renderQuestion();
+    else finishLearningBatch();
+  }, 800);
+}
+
+function finishLearningBatch() {
+  wrongWords = quizWords.filter(item => learningErrors.has(item.id));
+  learningCompleted += quizWords.length - wrongWords.length;
+  quizWords.filter(item => !learningErrors.has(item.id)).forEach(item => learningReview.delete(item.id));
+  updateProgressCounts();
+  startLearningBatch(wrongWords);
+}
+
+function finishLearning() {
+  wrongWords = [];
+  score = learningCompleted;
+  $("score").textContent = `${learningCompleted} / ${learningTotal}`;
+  $("scoreMessage").textContent = "すべての単語を覚えました！";
+  renderWrongList();
+  $("retryWrong").classList.add("hidden");
+  showScreen("result");
+  updateHistory();
+}
+
+$("submitEnglish").addEventListener("click", () => answerLearningInput());
+$("dontKnow").addEventListener("click", () => answerLearningInput(true));
+$("choiceDontKnow").addEventListener("click", () => {
+  answerLearningChoice(false, null, quizWords[currentIndex]);
+});
+$("englishAnswer").addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    answerLearningInput();
+  }
+});
 
 function revealAnswer() {
   if (selectedMode !== "card" || isAnswered || !$("meaning").classList.contains("hidden")) return;
@@ -359,6 +495,11 @@ function setFeedback(text, correct) {
 }
 
 function updateProgressCounts() {
+  if (selectedMode === "learning") {
+    $("knownCount").textContent = learningCompleted;
+    $("unknownCount").textContent = learningReview.size;
+    return;
+  }
   $("knownCount").textContent = score;
   $("unknownCount").textContent = wrongWords.length;
 }
