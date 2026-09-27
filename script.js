@@ -16,6 +16,7 @@ let learningReview = new Set();
 let learningPhase = "choice";
 let learningMastered = new Set();
 let learningTotal = 0;
+let learningHintCount = 0;
 
 const $ = id => document.getElementById(id);
 
@@ -172,6 +173,10 @@ function renderQuestion() {
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
   $("speakBtn").classList.toggle("hidden", isLearningInput);
+  learningHintCount = 0;
+  $("hintBtn").classList.toggle("hidden", !isLearningInput);
+  $("hintBtn").disabled = !isLearningInput;
+  $("hintBtn").textContent = "ヒント";
   $("cardActions").classList.toggle("hidden", selectedMode !== "card");
   $("learningInput").classList.toggle("hidden", !isLearningInput);
   $("previousCard").disabled = currentIndex === 0;
@@ -192,7 +197,10 @@ function renderQuestion() {
   $("choiceDontKnow").classList.toggle("hidden", !isLearning || learningPhase !== "choice");
   if (showChoices) renderChoices(item);
   if (!isLearningInput) speak(item.word);
-  else $("englishAnswer").focus();
+  else {
+    speakJapanese(item.meaning);
+    $("englishAnswer").focus();
+  }
 }
 
 function renderChoices(correct) {
@@ -318,6 +326,17 @@ $("englishAnswer").addEventListener("keydown", event => {
     event.preventDefault();
     answerLearningInput();
   }
+});
+
+$("hintBtn").addEventListener("click", () => {
+  if (selectedMode !== "learning" || learningPhase !== "input" || isAnswered) return;
+  const answer = quizWords[currentIndex].word;
+  learningHintCount = Math.min(learningHintCount + 1, answer.length);
+  $("word").textContent = [...answer].map((character, index) =>
+    index < learningHintCount ? character : "・"
+  ).join("");
+  $("hintBtn").textContent = learningHintCount === answer.length ? "すべて表示" : `ヒント ${learningHintCount}/${answer.length}`;
+  $("hintBtn").disabled = learningHintCount === answer.length;
 });
 
 function revealAnswer() {
@@ -480,6 +499,16 @@ function speak(text) {
   if (preferredVoice) utterance.voice = preferredVoice;
   utterance.lang = "en-US";
   utterance.rate = 0.9;
+  utterance.pitch = 1;
+  speechSynthesis.speak(utterance);
+}
+
+function speakJapanese(text) {
+  if (!("speechSynthesis" in window)) return;
+  speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "ja-JP";
+  utterance.rate = 0.95;
   utterance.pitch = 1;
   speechSynthesis.speak(utterance);
 }
