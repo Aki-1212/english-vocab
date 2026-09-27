@@ -14,7 +14,7 @@ let learningChoicePool = [];
 let learningErrors = new Set();
 let learningReview = new Set();
 let learningPhase = "choice";
-let learningCompleted = 0;
+let learningMastered = new Set();
 let learningTotal = 0;
 
 const $ = id => document.getElementById(id);
@@ -100,7 +100,7 @@ function startQuiz(list, isRetry = false) {
   if (selectedMode === "learning") {
     learningRemaining = shuffle([...list]);
     learningChoicePool = [...list];
-    learningCompleted = 0;
+    learningMastered = new Set();
     learningTotal = list.length;
     learningReview = new Set();
     retryMode = isRetry;
@@ -151,14 +151,20 @@ function renderQuestion() {
   $("quiz").classList.toggle("learning-input-mode", isLearningInput);
   $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
   $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
-  $("progress").textContent = isLearning
-    ? `${learningPhase === "choice" ? "4択" : "入力"} ${currentIndex + 1} / ${quizWords.length}`
-    : `${currentIndex + 1} / ${quizWords.length}`;
-  const progressTrack = document.querySelector(".progress-track");
-  const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
-  $("progressBar").style.width = `${progressPercent}%`;
-  progressTrack.setAttribute("aria-valuemax", quizWords.length);
-  progressTrack.setAttribute("aria-valuenow", currentIndex + 1);
+  $("progressTitle").textContent = isLearning ? "全体進捗" : "進捗";
+  $("learningStageProgress").classList.toggle("hidden", !isLearning);
+  if (isLearning) {
+    $("learningStageProgress").textContent = `${learningPhase === "choice" ? "4択" : "入力"} ${currentIndex + 1} / ${quizWords.length}`;
+    updateLearningProgress();
+  } else {
+    $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
+    const progressTrack = document.querySelector(".progress-track");
+    const progressPercent = ((currentIndex + 1) / quizWords.length) * 100;
+    $("progressBar").style.width = `${progressPercent}%`;
+    progressTrack.setAttribute("aria-label", "問題の進捗");
+    progressTrack.setAttribute("aria-valuemax", quizWords.length);
+    progressTrack.setAttribute("aria-valuenow", currentIndex + 1);
+  }
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = isLearningInput ? item.meaning : item.word;
   $("meaning").textContent = item.meaning;
@@ -271,6 +277,9 @@ function answerLearningInput(dontKnow = false) {
   if (!correct) {
     learningErrors.add(item.id);
     learningReview.add(item.id);
+  } else if (!learningErrors.has(item.id)) {
+    learningMastered.add(item.id);
+    learningReview.delete(item.id);
   }
   setFeedback(correct ? "正解！" : `答え: ${item.word}`, correct);
   saveAttempt(item.id, !learningErrors.has(item.id));
@@ -284,16 +293,14 @@ function answerLearningInput(dontKnow = false) {
 
 function finishLearningBatch() {
   wrongWords = quizWords.filter(item => learningErrors.has(item.id));
-  learningCompleted += quizWords.length - wrongWords.length;
-  quizWords.filter(item => !learningErrors.has(item.id)).forEach(item => learningReview.delete(item.id));
   updateProgressCounts();
   startLearningBatch(wrongWords);
 }
 
 function finishLearning() {
   wrongWords = [];
-  score = learningCompleted;
-  $("score").textContent = `${learningCompleted} / ${learningTotal}`;
+  score = learningMastered.size;
+  $("score").textContent = `${learningMastered.size} / ${learningTotal}`;
   $("scoreMessage").textContent = "すべての単語を覚えました！";
   renderWrongList();
   $("retryWrong").classList.add("hidden");
@@ -496,12 +503,23 @@ function setFeedback(text, correct) {
 
 function updateProgressCounts() {
   if (selectedMode === "learning") {
-    $("knownCount").textContent = learningCompleted;
+    $("knownCount").textContent = learningMastered.size;
     $("unknownCount").textContent = learningReview.size;
+    updateLearningProgress();
     return;
   }
   $("knownCount").textContent = score;
   $("unknownCount").textContent = wrongWords.length;
+}
+
+function updateLearningProgress() {
+  $("progress").textContent = `${learningMastered.size} / ${learningTotal}`;
+  const progressTrack = document.querySelector(".progress-track");
+  const progressPercent = (learningMastered.size / learningTotal) * 100;
+  $("progressBar").style.width = `${progressPercent}%`;
+  progressTrack.setAttribute("aria-label", "選択範囲全体の習得進捗");
+  progressTrack.setAttribute("aria-valuemax", learningTotal);
+  progressTrack.setAttribute("aria-valuenow", learningMastered.size);
 }
 
 function shuffle(arr) {
