@@ -332,9 +332,11 @@ $("hintBtn").addEventListener("click", () => {
   if (selectedMode !== "learning" || learningPhase !== "input" || isAnswered) return;
   const answer = quizWords[currentIndex].word;
   learningHintCount = Math.min(learningHintCount + 1, answer.length);
-  $("word").textContent = [...answer].map((character, index) =>
+  const hint = [...answer].map((character, index) =>
     index < learningHintCount ? character : "・"
   ).join("");
+  $("feedback").textContent = `ヒント: ${hint}`;
+  $("feedback").className = "feedback hint";
   $("hintBtn").textContent = learningHintCount === answer.length ? "すべて表示" : `ヒント ${learningHintCount}/${answer.length}`;
   $("hintBtn").disabled = learningHintCount === answer.length;
 });
