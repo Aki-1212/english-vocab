@@ -131,6 +131,8 @@ h2 { margin-top: 0; }
 .typing-result.incorrect { background: #fef2f2; color: #b91c1c; }
 .learning-input { display: grid; gap: 10px; max-width: 440px; margin: 0 auto; }
 .learning-input label { font-weight: 700; }
+.voice-recognition-status { min-height: 24px; color: #6b7280; text-align: center; }
+.voice-input > button { min-height: 50px; }
 .learning-input input {
   width: 100%; min-height: 54px; padding: 10px 14px; border: 2px solid #d1d5db;
   border-radius: 12px; font: inherit; font-size: 20px; text-align: center;

@@ -33,6 +33,7 @@
         <button class="choice-btn" data-mode="choice"><strong>4択モード</strong><span>4つの選択肢から答える</span></button>
         <button class="choice-btn" data-mode="card"><strong>カードモード</strong><span>答えを確認して進む</span></button>
         <button class="choice-btn" data-mode="learning"><strong>学習モード</strong><span>4択のあと、英語を入力する</span></button>
+        <button class="choice-btn" data-mode="voice" id="voiceModeButton"><strong>音声モード</strong><span id="voiceModeDescription">4択のあと、英語を音声で答える</span></button>
         <button class="choice-btn" data-mode="sentence" id="sentenceModeButton"><strong>文章学習モード</strong><span id="sentenceModeDescription">英文の空欄に単語を入力する</span></button>
       </div>
     </div>
@@ -72,6 +73,12 @@
         <button id="submitEnglish" class="primary-btn">回答する</button>
         <button id="dontKnow" class="secondary-btn">わからない</button>
       </div>
+    </div>
+    <div id="voiceInput" class="learning-input voice-input hidden">
+      <label>日本語の意味を見て、英単語を声に出してください</label>
+      <div id="voiceRecognitionStatus" class="voice-recognition-status" aria-live="polite">マイクを押して回答</div>
+      <button id="startVoiceAnswer" class="primary-btn" type="button">🎙 音声で回答</button>
+      <button id="voiceDontKnow" class="secondary-btn" type="button">わからない</button>
     </div>
     <div id="sentenceInput" class="learning-input sentence-input hidden">
       <label for="sentenceAnswer">空欄に入る英単語を入力</label>
