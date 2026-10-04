@@ -1,0 +1,252 @@
+[
+  {
+    "id": 1,
+    "sentence": "The meeting will begin at nine.",
+    "translation": "会議は9時に始まります。"
+  },
+  {
+    "id": 2,
+    "sentence": "This machine does not work well.",
+    "translation": "この機械はうまく動きません。"
+  },
+  {
+    "id": 3,
+    "sentence": "She works for a small company.",
+    "translation": "彼女は小さな会社で働いています。"
+  },
+  {
+    "id": 4,
+    "sentence": "I'd like to order a cup of coffee.",
+    "translation": "コーヒーを一杯注文したいです。"
+  },
+  {
+    "id": 5,
+    "sentence": "Every employee must wear an ID card.",
+    "translation": "すべての従業員は社員証を着用しなければなりません。"
+  },
+  {
+    "id": 6,
+    "sentence": "Please send me the information by email.",
+    "translation": "情報をメールで送ってください。"
+  },
+  {
+    "id": 7,
+    "sentence": "We will receive the package tomorrow.",
+    "translation": "明日その荷物を受け取ります。"
+  },
+  {
+    "id": 8,
+    "sentence": "The meeting may last two hours.",
+    "translation": "会議は2時間続くかもしれません。"
+  },
+  {
+    "id": 9,
+    "sentence": "I need more time to finish this report.",
+    "translation": "この報告書を終えるのにもっと時間が必要です。"
+  },
+  {
+    "id": 10,
+    "sentence": "My parents travel abroad every summer.",
+    "translation": "両親は毎年夏に海外旅行をします。"
+  },
+  {
+    "id": 11,
+    "sentence": "He found a new job in the city.",
+    "translation": "彼はその街で新しい仕事を見つけました。"
+  },
+  {
+    "id": 12,
+    "sentence": "Can you find the right address?",
+    "translation": "正しい住所を見つけられますか。"
+  },
+  {
+    "id": 13,
+    "sentence": "She works in the sales department.",
+    "translation": "彼女は営業部で働いています。"
+  },
+  {
+    "id": 14,
+    "sentence": "Please let me know your decision.",
+    "translation": "決定を知らせてください。"
+  },
+  {
+    "id": 15,
+    "sentence": "We plan to visit the museum on Sunday.",
+    "translation": "私たちは日曜日に博物館を訪れる予定です。"
+  },
+  {
+    "id": 16,
+    "sentence": "The hotel also offers free breakfast.",
+    "translation": "そのホテルでは無料の朝食も提供しています。"
+  },
+  {
+    "id": 17,
+    "sentence": "Are you sure this is the correct train?",
+    "translation": "これが正しい電車だと確かですか。"
+  },
+  {
+    "id": 18,
+    "sentence": "We leave the office at six every day.",
+    "translation": "私たちは毎日6時に会社を出ます。"
+  },
+  {
+    "id": 19,
+    "sentence": "Sales increased by ten percent this year.",
+    "translation": "今年、売り上げは10パーセント増加しました。"
+  },
+  {
+    "id": 20,
+    "sentence": "Please move the table closer to the window.",
+    "translation": "テーブルを窓の近くに動かしてください。"
+  },
+  {
+    "id": 21,
+    "sentence": "The train will arrive in ten minutes.",
+    "translation": "電車は10分後に到着します。"
+  },
+  {
+    "id": 22,
+    "sentence": "They will hold a meeting on Friday.",
+    "translation": "彼らは金曜日に会議を開きます。"
+  },
+  {
+    "id": 23,
+    "sentence": "Please return the keys before you leave.",
+    "translation": "出発する前に鍵を返してください。"
+  },
+  {
+    "id": 24,
+    "sentence": "There is an opening for a sales assistant.",
+    "translation": "販売アシスタントの求人があります。"
+  },
+  {
+    "id": 25,
+    "sentence": "Dinner will be ready soon.",
+    "translation": "夕食はもうすぐできあがります。"
+  },
+  {
+    "id": 26,
+    "sentence": "Please sign your name at the bottom of the form.",
+    "translation": "用紙の一番下に署名してください。"
+  },
+  {
+    "id": 27,
+    "sentence": "She is able to speak three languages.",
+    "translation": "彼女は3か国語を話すことができます。"
+  },
+  {
+    "id": 28,
+    "sentence": "Only a few people came to the event.",
+    "translation": "そのイベントに来た人はほんの少数でした。"
+  },
+  {
+    "id": 29,
+    "sentence": "I will pay for lunch today.",
+    "translation": "今日は私が昼食代を払います。"
+  },
+  {
+    "id": 30,
+    "sentence": "Our trip to Kyoto begins tomorrow.",
+    "translation": "京都への旅行は明日始まります。"
+  },
+  {
+    "id": 31,
+    "sentence": "They sell fresh bread every morning.",
+    "translation": "彼らは毎朝焼きたてのパンを売っています。"
+  },
+  {
+    "id": 32,
+    "sentence": "Several guests arrived early.",
+    "translation": "数名の客が早く到着しました。"
+  },
+  {
+    "id": 33,
+    "sentence": "Did you hear the news this morning?",
+    "translation": "今朝、その知らせを聞きましたか。"
+  },
+  {
+    "id": 34,
+    "sentence": "He is still waiting for the bus.",
+    "translation": "彼はまだバスを待っています。"
+  },
+  {
+    "id": 35,
+    "sentence": "I will call you later this afternoon.",
+    "translation": "今日の午後遅くに電話します。"
+  },
+  {
+    "id": 36,
+    "sentence": "These two plans are very different.",
+    "translation": "この2つの計画は大きく異なります。"
+  },
+  {
+    "id": 37,
+    "sentence": "The station is close to my house.",
+    "translation": "駅は私の家の近くにあります。"
+  },
+  {
+    "id": 38,
+    "sentence": "We will stay at a hotel near the beach.",
+    "translation": "私たちはビーチの近くのホテルに滞在します。"
+  },
+  {
+    "id": 39,
+    "sentence": "She has already finished her homework.",
+    "translation": "彼女はもう宿題を終えています。"
+  },
+  {
+    "id": 40,
+    "sentence": "He will present the new plan to the team.",
+    "translation": "彼はチームに新しい計画を発表します。"
+  },
+  {
+    "id": 41,
+    "sentence": "The factory makes parts for cars.",
+    "translation": "その工場は自動車部品を製造しています。"
+  },
+  {
+    "id": 42,
+    "sentence": "I'm interested in learning Spanish.",
+    "translation": "私はスペイン語を学ぶことに興味があります。"
+  },
+  {
+    "id": 43,
+    "sentence": "The report will cover local business news.",
+    "translation": "その報告書は地元企業のニュースを扱います。"
+  },
+  {
+    "id": 44,
+    "sentence": "You can choose any seat you like.",
+    "translation": "好きな席をどれでも選べます。"
+  },
+  {
+    "id": 45,
+    "sentence": "They rented a small apartment downtown.",
+    "translation": "彼らは街の中心部に小さなアパートを借りました。"
+  },
+  {
+    "id": 46,
+    "sentence": "Please put this paper on my desk.",
+    "translation": "この書類を私の机に置いてください。"
+  },
+  {
+    "id": 47,
+    "sentence": "Please note the changes to the schedule.",
+    "translation": "予定の変更に注意してください。"
+  },
+  {
+    "id": 48,
+    "sentence": "Both roads lead to the station.",
+    "translation": "どちらの道も駅に通じています。"
+  },
+  {
+    "id": 49,
+    "sentence": "You can take either bus to the airport.",
+    "translation": "空港へはどちらかのバスに乗れます。"
+  },
+  {
+    "id": 50,
+    "sentence": "Neither answer is correct.",
+    "translation": "どちらの答えも正しくありません。"
+  }
+]

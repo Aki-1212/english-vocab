@@ -2,6 +2,7 @@ let words = [];
 let selectedRange = [1, 50];
 let selectedMode = "choice";
 let quizWords = [];
+let sentenceRemaining = [];
 let currentIndex = 0;
 let score = 0;
 let wrongWords = [];
@@ -12,6 +13,7 @@ let retryMode = false;
 let learningRemaining = [];
 let learningChoicePool = [];
 let learningErrors = new Set();
+let sentenceErrors = new Set();
 let learningReview = new Set();
 let learningPhase = "choice";
 let learningMastered = new Set();
@@ -23,9 +25,27 @@ let typingPopupMoved = false;
 const $ = id => document.getElementById(id);
 
 async function init() {
-  const res = await fetch("words.json");
-  words = await res.json();
+  const [wordsResponse, sentencesResponse] = await Promise.all([
+    fetch("words.json"),
+    fetch("sentences.json")
+  ]);
+  if (!wordsResponse.ok || !sentencesResponse.ok) {
+    throw new Error("単語または例文データを読み込めませんでした。");
+  }
+  words = await wordsResponse.json();
+  const sentences = await sentencesResponse.json();
+  const wordsById = new Map(words.map(item => [item.id, item]));
+  for (const sentence of sentences) {
+    const item = wordsById.get(sentence.id);
+    if (!item) throw new Error(`例文に対応する単語がありません: ${sentence.id}`);
+    if (countSentenceTarget(sentence.sentence, item.word) !== 1) {
+      throw new Error(`例文に対象単語が1回だけ含まれていません: ${item.word}`);
+    }
+    item.sentence = sentence.sentence;
+    item.sentenceTranslation = sentence.translation;
+  }
   renderRangeButtons();
+  updateSentenceModeAvailability();
   const maxId = Math.max(...words.map(word => word.id));
   document.title = `English Vocabulary 1–${maxId}`;
   $("subtitle").textContent = `1–${maxId} Vocabulary Trainer`;
@@ -33,7 +53,7 @@ async function init() {
 }
 init().catch(err => {
   console.error(err);
-  alert("単語データを読み込めませんでした。words.json が同じフォルダにあるか確認してください。");
+  alert("単語・例文データを読み込めませんでした。words.json と sentences.json が同じフォルダにあるか確認してください。");
 });
 
 function showScreen(id) {
@@ -74,10 +94,22 @@ function renderRangeButtons() {
     button.addEventListener("click", () => {
       selectedRange = [start, end];
       $("selectedRangeTitle").textContent = `${start}–${end}`;
+      updateSentenceModeAvailability();
       showScreen("mode");
     });
     rangeGrid.appendChild(button);
   }
+}
+
+function updateSentenceModeAvailability() {
+  const button = $("sentenceModeButton");
+  if (!button) return;
+  const selectedWords = words.filter(word => word.id >= selectedRange[0] && word.id <= selectedRange[1]);
+  const available = selectedWords.length > 0 && selectedWords.every(word => word.sentence && word.sentenceTranslation);
+  button.disabled = !available;
+  $("sentenceModeDescription").textContent = available
+    ? "英文の空欄に単語を入力する"
+    : "例文は1〜50語に対応しています";
 }
 
 $("modeBack").addEventListener("click", () => showScreen("home"));
@@ -101,6 +133,15 @@ function getLastStartedRange() {
 }
 
 function startQuiz(list, isRetry = false) {
+  if (selectedMode === "sentence") {
+    sentenceRemaining = shuffle([...list]);
+    learningMastered = new Set();
+    learningTotal = list.length;
+    learningReview = new Set();
+    retryMode = isRetry;
+    startSentenceBatch([]);
+    return;
+  }
   if (selectedMode === "learning") {
     $("typingHistory").replaceChildren();
     typingPopupMoved = false;
@@ -120,6 +161,27 @@ function startQuiz(list, isRetry = false) {
   cardAnswers = Array(quizWords.length).fill(null);
   cardHistoryAnswers = Array(quizWords.length).fill(null);
   retryMode = isRetry;
+  updateProgressCounts();
+  showScreen("quiz");
+  renderQuestion();
+}
+
+function startSentenceBatch(retryWords) {
+  const batch = [...retryWords];
+  while (batch.length < 10 && sentenceRemaining.length > 0) {
+    batch.push(sentenceRemaining.shift());
+  }
+  if (batch.length === 0) {
+    finishSentenceLearning();
+    return;
+  }
+  quizWords = batch;
+  currentIndex = 0;
+  score = 0;
+  wrongWords = [];
+  sentenceErrors = new Set();
+  cardAnswers = Array(quizWords.length).fill(null);
+  cardHistoryAnswers = Array(quizWords.length).fill(null);
   updateProgressCounts();
   showScreen("quiz");
   renderQuestion();
@@ -147,21 +209,45 @@ function startLearningBatch(retryWords) {
   renderQuestion();
 }
 
+function countSentenceTarget(sentence, word) {
+  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return (sentence.match(new RegExp(`\\b${escapedWord}\\b`, "gi")) || []).length;
+}
+
+function renderSentencePrompt(sentence, word) {
+  const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = new RegExp(`\\b${escapedWord}\\b`, "i").exec(sentence);
+  if (!match) throw new Error(`例文に対象単語がありません: ${word}`);
+  const blank = document.createElement("span");
+  blank.className = "sentence-blank";
+  blank.textContent = "　　　　";
+  blank.setAttribute("aria-label", "空欄");
+  $("sentencePrompt").replaceChildren(
+    document.createTextNode(sentence.slice(0, match.index)),
+    blank,
+    document.createTextNode(sentence.slice(match.index + match[0].length))
+  );
+}
+
 function renderQuestion() {
   isAnswered = false;
   const item = quizWords[currentIndex];
   const previousAnswer = cardAnswers[currentIndex];
   const isLearning = selectedMode === "learning";
   const isLearningInput = isLearning && learningPhase === "input";
+  const isSentence = selectedMode === "sentence";
   $("quiz").classList.toggle("card-mode", selectedMode === "card");
   $("quiz").classList.toggle("learning-input-mode", isLearningInput);
   $("quiz").classList.toggle("learning-choice-mode", isLearning && learningPhase === "choice");
+  $("quiz").classList.toggle("sentence-mode", isSentence);
   $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
   $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
-  $("progressTitle").textContent = isLearning ? "全体進捗" : "進捗";
-  $("learningStageProgress").classList.toggle("hidden", !isLearning);
-  if (isLearning) {
-    $("learningStageProgress").textContent = `${learningPhase === "choice" ? "4択" : "入力"} ${currentIndex + 1} / ${quizWords.length}`;
+  $("progressTitle").textContent = isLearning || isSentence ? "全体進捗" : "進捗";
+  $("learningStageProgress").classList.toggle("hidden", !isLearning && !isSentence);
+  if (isLearning || isSentence) {
+    $("learningStageProgress").textContent = isSentence
+      ? `文章 ${currentIndex + 1} / ${quizWords.length}`
+      : `${learningPhase === "choice" ? "4択" : "入力"} ${currentIndex + 1} / ${quizWords.length}`;
     updateLearningProgress();
   } else {
     $("progress").textContent = `${currentIndex + 1} / ${quizWords.length}`;
@@ -174,18 +260,31 @@ function renderQuestion() {
   }
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = isLearningInput ? item.meaning : item.word;
+  $("word").classList.toggle("hidden", isSentence);
+  $("sentencePrompt").classList.toggle("hidden", !isSentence);
+  $("sentenceTranslation").classList.toggle("hidden", !isSentence);
+  if (isSentence) {
+    renderSentencePrompt(item.sentence, item.word);
+    $("sentenceTranslation").textContent = item.sentenceTranslation;
+  }
   resetTypingPractice(item.word);
   $("meaning").textContent = item.meaning;
-  $("meaning").classList.toggle("hidden", previousAnswer === null || isLearning);
+  $("meaning").classList.toggle("hidden", previousAnswer === null || isLearning || isSentence);
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
-  $("speakBtn").classList.toggle("hidden", isLearningInput);
+  $("speakBtn").classList.toggle("hidden", isLearningInput || isSentence);
   learningHintCount = 0;
   $("hintBtn").classList.toggle("hidden", !isLearningInput);
   $("hintBtn").disabled = !isLearningInput;
   $("hintBtn").textContent = "ヒント";
   $("cardActions").classList.toggle("hidden", selectedMode !== "card");
   $("learningInput").classList.toggle("hidden", !isLearningInput);
+  $("sentenceInput").classList.toggle("hidden", !isSentence);
+  $("sentenceAnswer").value = "";
+  $("sentenceAnswer").disabled = false;
+  $("submitSentenceAnswer").disabled = false;
+  $("sentenceNext").classList.add("hidden");
+  $("sentenceNext").disabled = false;
   $("previousCard").disabled = currentIndex === 0;
   $("markUnknown").disabled = false;
   $("markKnown").disabled = false;
@@ -203,10 +302,14 @@ function renderQuestion() {
   $("choices").classList.toggle("hidden", !showChoices);
   $("choiceDontKnow").classList.toggle("hidden", !isLearning || learningPhase !== "choice");
   if (showChoices) renderChoices(item);
-  if (!isLearningInput) speak(item.word);
+  if (!isLearningInput && !isSentence) speak(item.word);
   else {
-    speakJapanese(item.meaning);
-    $("englishAnswer").focus();
+    if (isLearningInput) {
+      speakJapanese(item.meaning);
+      $("englishAnswer").focus();
+    } else if (isSentence) {
+      $("sentenceAnswer").focus();
+    }
   }
   updateTypingPracticeVisibility();
 }
@@ -423,6 +526,62 @@ function answerLearningInput(dontKnow = false) {
   }, 800);
 }
 
+function answerSentenceInput() {
+  if (isAnswered) return;
+  const item = quizWords[currentIndex];
+  const answer = $("sentenceAnswer").value.trim().toLowerCase();
+  if (!answer) {
+    setFeedback("英単語を入力してください。", null);
+    return;
+  }
+  const correct = answer === item.word.toLowerCase();
+  isAnswered = true;
+  $("sentenceAnswer").disabled = true;
+  $("submitSentenceAnswer").disabled = true;
+  $("sentenceNext").classList.remove("hidden");
+  if (correct) {
+    learningMastered.add(item.id);
+    learningReview.delete(item.id);
+    saveAttempt(item.id, true);
+    setFeedback("正解！「覚えている」に入りました。", true);
+    $("sentenceNext").textContent = "次へ";
+  } else {
+    setFeedback(`不正解。答え: ${item.word}`, false);
+    $("sentenceNext").textContent = "覚えていない → 次に繰り越す";
+  }
+  updateProgressCounts();
+}
+
+function advanceSentenceQuestion() {
+  if (!isAnswered) return;
+  const item = quizWords[currentIndex];
+  if (!learningMastered.has(item.id)) {
+    sentenceErrors.add(item.id);
+    learningReview.add(item.id);
+    saveAttempt(item.id, false);
+    updateProgressCounts();
+  }
+  currentIndex++;
+  if (currentIndex < quizWords.length) renderQuestion();
+  else finishSentenceBatch();
+}
+
+function finishSentenceBatch() {
+  wrongWords = quizWords.filter(item => sentenceErrors.has(item.id));
+  startSentenceBatch(wrongWords);
+}
+
+function finishSentenceLearning() {
+  wrongWords = [];
+  score = learningMastered.size;
+  $("score").textContent = `${learningMastered.size} / ${learningTotal}`;
+  $("scoreMessage").textContent = "すべての単語を覚えました！";
+  renderWrongList();
+  $("retryWrong").classList.add("hidden");
+  showScreen("result");
+  updateHistory();
+}
+
 function finishLearningBatch() {
   wrongWords = quizWords.filter(item => learningErrors.has(item.id));
   updateProgressCounts();
@@ -442,6 +601,8 @@ function finishLearning() {
 
 $("submitEnglish").addEventListener("click", () => answerLearningInput());
 $("dontKnow").addEventListener("click", () => answerLearningInput(true));
+$("submitSentenceAnswer").addEventListener("click", answerSentenceInput);
+$("sentenceNext").addEventListener("click", advanceSentenceQuestion);
 $("typingPracticeInput").addEventListener("input", updateTypingPractice);
 $("typingSubmit").addEventListener("click", submitTypingPractice);
 $("typingPracticeInput").addEventListener("keydown", event => {
@@ -457,6 +618,12 @@ $("englishAnswer").addEventListener("keydown", event => {
   if (event.key === "Enter") {
     event.preventDefault();
     answerLearningInput();
+  }
+});
+$("sentenceAnswer").addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    answerSentenceInput();
   }
 });
 
@@ -665,7 +832,7 @@ function setFeedback(text, correct) {
 }
 
 function updateProgressCounts() {
-  if (selectedMode === "learning") {
+  if (selectedMode === "learning" || selectedMode === "sentence") {
     $("knownCount").textContent = learningMastered.size;
     $("unknownCount").textContent = learningReview.size;
     updateLearningProgress();

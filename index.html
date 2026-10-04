@@ -33,6 +33,7 @@
         <button class="choice-btn" data-mode="choice"><strong>4択モード</strong><span>4つの選択肢から答える</span></button>
         <button class="choice-btn" data-mode="card"><strong>カードモード</strong><span>答えを確認して進む</span></button>
         <button class="choice-btn" data-mode="learning"><strong>学習モード</strong><span>4択のあと、英語を入力する</span></button>
+        <button class="choice-btn" data-mode="sentence" id="sentenceModeButton"><strong>文章学習モード</strong><span id="sentenceModeDescription">英文の空欄に単語を入力する</span></button>
       </div>
     </div>
   </section>
@@ -57,6 +58,8 @@
       <button id="hintBtn" class="hint-btn hidden" aria-label="英単語のヒントを表示">ヒント</button>
       <div class="word-number" id="wordNumber">No. 1</div>
       <div class="word" id="word">begin</div>
+      <div id="sentencePrompt" class="sentence-prompt hidden"></div>
+      <div id="sentenceTranslation" class="sentence-translation hidden"></div>
       <div id="feedback" class="feedback"></div>
       <div id="meaning" class="meaning hidden"></div>
     </div>
@@ -68,6 +71,14 @@
       <div class="learning-actions">
         <button id="submitEnglish" class="primary-btn">回答する</button>
         <button id="dontKnow" class="secondary-btn">わからない</button>
+      </div>
+    </div>
+    <div id="sentenceInput" class="learning-input sentence-input hidden">
+      <label for="sentenceAnswer">空欄に入る英単語を入力</label>
+      <input id="sentenceAnswer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <div class="learning-actions">
+        <button id="submitSentenceAnswer" class="primary-btn">回答する</button>
+        <button id="sentenceNext" class="secondary-btn hidden"></button>
       </div>
     </div>
     <div id="cardActions" class="card-actions hidden">

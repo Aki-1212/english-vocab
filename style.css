@@ -23,6 +23,7 @@ h2 { margin-top: 0; }
   transition: .15s;
 }
 .choice-btn:hover { border-color: #9ca3af; transform: translateY(-1px); }
+.choice-btn:disabled { cursor: not-allowed; opacity: .55; transform: none; }
 .choice-btn strong { font-size: 24px; }
 .choice-btn span { color: #6b7280; font-size: 14px; }
 .back-link, .text-btn {
@@ -64,6 +65,21 @@ h2 { margin-top: 0; }
 .hint-btn:hover:not(:disabled) { background: #e3efe6; }
 .hint-btn:disabled { cursor: default; opacity: .7; }
 .meaning { margin: 20px auto 0; padding: 14px; border-radius: 12px; background: #f3f4f6; font-size: 18px; }
+.sentence-prompt {
+  margin: 20px auto 12px; font-size: clamp(23px, 5.5vw, 34px); font-weight: 700;
+  line-height: 1.6; overflow-wrap: anywhere;
+}
+.sentence-blank { color: #4b8067; letter-spacing: .08em; white-space: nowrap; }
+.sentence-translation {
+  margin: 0 auto 14px; padding: 12px; border-radius: 12px;
+  background: #f3f4f6; font-size: 18px; line-height: 1.6;
+}
+.sentence-input { max-width: 520px; }
+.sentence-input .learning-actions { grid-template-columns: 1fr; }
+.sentence-input #sentenceNext { white-space: normal; }
+.sentence-mode .word-panel { padding-top: 36px; }
+.sentence-mode .word-number { margin-bottom: 8px; }
+.sentence-mode .feedback { margin-top: 8px; }
 #quiz.card-mode .word { margin: 10px 0 4px; }
 #quiz.card-mode .feedback { min-height: 24px; margin-top: 0; font-size: 13px; line-height: 24px; }
 #quiz.card-mode .meaning { margin-top: 8px; }
