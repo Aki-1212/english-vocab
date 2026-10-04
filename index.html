@@ -92,19 +92,23 @@
     </div>
   </section>
 
-  <aside id="typingPractice" class="typing-practice hidden" aria-label="タイピング練習">
+  <aside id="typingPractice" class="typing-practice hidden" aria-label="単語練習">
     <div id="typingPracticeHandle" class="typing-practice-header">
-      <strong>タイピング練習</strong>
+      <strong id="typingPracticeTitle">タイピング練習</strong>
     </div>
     <div class="typing-practice-body">
-      <div class="typing-practice-entry">
+      <div id="typingPracticeEntry" class="typing-practice-entry">
         <div class="typing-input-field">
           <div id="typingPrompt" class="typing-prompt" aria-hidden="true"></div>
           <input id="typingPracticeInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="表示された英単語を入力">
         </div>
         <button id="typingSubmit" class="typing-submit" type="button" aria-label="入力を判定">✓</button>
       </div>
+      <div id="voicePracticeEntry" class="voice-practice-entry hidden">
+        <button id="voicePracticeButton" class="voice-practice-button" type="button">🎙 音声で練習</button>
+      </div>
       <div id="typingStatus" class="typing-status" aria-live="polite"></div>
+      <div id="voicePracticeStatus" class="typing-status hidden" aria-live="polite">マイクを押して単語を発音</div>
       <div id="typingHistory" class="typing-history" role="log" aria-label="練習結果"></div>
     </div>
   </aside>

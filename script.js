@@ -22,6 +22,7 @@ let learningHintCount = 0;
 let typingDrag = null;
 let typingPopupMoved = false;
 let activeRecognition = null;
+let activePracticeRecognition = null;
 
 const $ = id => document.getElementById(id);
 
@@ -63,7 +64,10 @@ init().catch(err => {
 });
 
 function showScreen(id) {
-  if (id !== "quiz") stopVoiceRecognition();
+  if (id !== "quiz") {
+    stopVoiceRecognition();
+    stopVoicePracticeRecognition();
+  }
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   $(id).classList.add("active");
   if (id !== "quiz") $("typingPractice").classList.add("hidden");
@@ -265,6 +269,7 @@ function renderSentenceTranslation(translation, highlight) {
 
 function renderQuestion() {
   stopVoiceRecognition();
+  stopVoicePracticeRecognition();
   isAnswered = false;
   const item = quizWords[currentIndex];
   const previousAnswer = cardAnswers[currentIndex];
@@ -359,6 +364,10 @@ function resetTypingPractice(word) {
   const input = $("typingPracticeInput");
   input.value = "";
   input.dataset.targetWord = word;
+  $("voicePracticeButton").disabled = false;
+  $("voicePracticeButton").textContent = "🎙 音声で練習";
+  $("voicePracticeStatus").textContent = "マイクを押して単語を発音";
+  $("voicePracticeStatus").className = "typing-status hidden";
   updateTypingPractice();
 }
 
@@ -396,10 +405,17 @@ function canUseDesktopTyping() {
 }
 
 function updateTypingPracticeVisibility() {
-  const shouldShow = selectedMode === "learning" && learningPhase === "choice" &&
-    $("quiz").classList.contains("active") && canUseDesktopTyping();
+  const isVoiceMode = selectedMode === "voice";
+  const inPracticePhase = learningPhase === "choice" && $("quiz").classList.contains("active");
+  const shouldShow = inPracticePhase && (isVoiceMode || (selectedMode === "learning" && canUseDesktopTyping()));
+  $("typingPractice").classList.toggle("voice-practice", isVoiceMode);
   $("typingPractice").classList.toggle("hidden", !shouldShow);
-  if (shouldShow && !typingPopupMoved) positionTypingPractice();
+  $("typingPracticeTitle").textContent = isVoiceMode ? "音声練習" : "タイピング練習";
+  $("typingPracticeEntry").classList.toggle("hidden", isVoiceMode);
+  $("typingStatus").classList.toggle("hidden", isVoiceMode);
+  $("voicePracticeEntry").classList.toggle("hidden", !isVoiceMode);
+  $("voicePracticeStatus").classList.toggle("hidden", !isVoiceMode);
+  if (shouldShow && canUseDesktopTyping() && !typingPopupMoved) positionTypingPractice();
 }
 
 function positionTypingPractice() {
@@ -431,22 +447,100 @@ function submitTypingPractice() {
   const input = $("typingPracticeInput");
   if (!input.value) return;
   const correct = input.value.toLowerCase() === (input.dataset.targetWord || "").toLowerCase();
-  const row = document.createElement("div");
-  row.className = `typing-result${correct ? " correct" : " incorrect"}`;
-  const typedWord = document.createElement("span");
-  typedWord.textContent = input.value;
-  const result = document.createElement("strong");
-  result.textContent = correct ? "✓" : "×";
-  row.append(typedWord, result);
-  $("typingHistory").appendChild(row);
-  $("typingHistory").scrollTop = $("typingHistory").scrollHeight;
+  addTypingPracticeResult(input.value, correct);
   input.value = "";
   updateTypingPractice();
   input.focus();
 }
 
+function addTypingPracticeResult(answer, correct) {
+  const row = document.createElement("div");
+  row.className = `typing-result${correct ? " correct" : " incorrect"}`;
+  const typedWord = document.createElement("span");
+  typedWord.textContent = answer;
+  const result = document.createElement("strong");
+  result.textContent = correct ? "✓" : "×";
+  row.append(typedWord, result);
+  $("typingHistory").appendChild(row);
+  $("typingHistory").scrollTop = $("typingHistory").scrollHeight;
+}
+
+function stopVoicePracticeRecognition() {
+  if (!activePracticeRecognition) return;
+  const recognition = activePracticeRecognition;
+  activePracticeRecognition = null;
+  recognition.abort();
+}
+
+function startVoicePracticeRecognition() {
+  if (selectedMode !== "voice" || learningPhase !== "choice" || isAnswered || activePracticeRecognition) return;
+  const Recognition = speechRecognitionConstructor();
+  if (!Recognition) {
+    $("voicePracticeStatus").textContent = "このブラウザーは音声認識に対応していません";
+    return;
+  }
+
+  const recognition = new Recognition();
+  recognition.lang = "en-US";
+  recognition.interimResults = true;
+  recognition.maxAlternatives = 1;
+  activePracticeRecognition = recognition;
+  $("voicePracticeButton").disabled = true;
+  $("voicePracticeButton").textContent = "聞き取り中...";
+  $("voicePracticeStatus").textContent = "表示された英単語を発音してください";
+  $("voicePracticeStatus").className = "typing-status";
+
+  recognition.onresult = event => {
+    if (activePracticeRecognition !== recognition) return;
+    let transcript = "";
+    for (let index = event.resultIndex; index < event.results.length; index++) {
+      const result = event.results[index];
+      if (result.isFinal) transcript += result[0].transcript;
+      else $("voicePracticeStatus").textContent = `聞き取り中: ${result[0].transcript}`;
+    }
+    if (!transcript.trim()) return;
+    recognition.stop();
+    activePracticeRecognition = null;
+    const spokenAnswer = transcript.trim();
+    const target = $("typingPracticeInput").dataset.targetWord || "";
+    const correct = normalizeVoiceAnswer(spokenAnswer) === normalizeVoiceAnswer(target);
+    addTypingPracticeResult(spokenAnswer, correct);
+    $("voicePracticeButton").disabled = false;
+    $("voicePracticeButton").textContent = "🎙 もう一度練習";
+    $("voicePracticeStatus").textContent = correct
+      ? `正解: ${spokenAnswer}`
+      : `認識: ${spokenAnswer}。もう一度どうぞ`;
+    $("voicePracticeStatus").className = `typing-status${correct ? " complete" : " incorrect"}`;
+  };
+  recognition.onerror = event => {
+    if (activePracticeRecognition !== recognition) return;
+    activePracticeRecognition = null;
+    $("voicePracticeButton").disabled = false;
+    $("voicePracticeButton").textContent = "🎙 もう一度練習";
+    $("voicePracticeStatus").textContent = event.error === "not-allowed" || event.error === "service-not-allowed"
+      ? "マイクの使用が許可されていません"
+      : "認識できませんでした。もう一度お試しください";
+  };
+  recognition.onend = () => {
+    if (activePracticeRecognition !== recognition) return;
+    activePracticeRecognition = null;
+    $("voicePracticeButton").disabled = false;
+    $("voicePracticeButton").textContent = "🎙 もう一度練習";
+    $("voicePracticeStatus").textContent = "認識できませんでした。もう一度お試しください";
+  };
+  try {
+    recognition.start();
+  } catch {
+    activePracticeRecognition = null;
+    $("voicePracticeButton").disabled = false;
+    $("voicePracticeButton").textContent = "🎙 もう一度練習";
+    $("voicePracticeStatus").textContent = "マイクを開始できませんでした。もう一度お試しください";
+  }
+}
+
 $("typingPracticeHandle").addEventListener("pointerdown", event => {
   if (event.button !== 0) return;
+  if ($("typingPractice").classList.contains("voice-practice") && !canUseDesktopTyping()) return;
   const rect = $("typingPractice").getBoundingClientRect();
   typingDrag = {pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, left: rect.left, top: rect.top};
   event.currentTarget.setPointerCapture(event.pointerId);
@@ -465,10 +559,10 @@ $("typingPracticeHandle").addEventListener("pointerup", () => { typingDrag = nul
 $("typingPracticeHandle").addEventListener("pointercancel", () => { typingDrag = null; });
 window.addEventListener("resize", () => {
   updateTypingPracticeVisibility();
-  if (typingPopupMoved && !$("typingPractice").classList.contains("hidden")) clampTypingPracticePosition();
+  if (typingPopupMoved && canUseDesktopTyping() && !$("typingPractice").classList.contains("hidden")) clampTypingPracticePosition();
 });
 window.addEventListener("scroll", () => {
-  if (!typingPopupMoved && !$("typingPractice").classList.contains("hidden")) positionTypingPractice();
+  if (canUseDesktopTyping() && !typingPopupMoved && !$("typingPractice").classList.contains("hidden")) positionTypingPractice();
 }, {passive: true});
 
 function renderChoices(correct) {
@@ -515,6 +609,7 @@ function answerChoice(correct, clicked, item) {
 function answerLearningChoice(correct, clicked, item) {
   if (isAnswered) return;
   isAnswered = true;
+  stopVoicePracticeRecognition();
   document.querySelectorAll(".answer-btn").forEach(button => button.disabled = true);
   $("choiceDontKnow").disabled = true;
   if (correct) {
@@ -542,11 +637,23 @@ function answerLearningChoice(correct, clicked, item) {
   }, 700);
 }
 
+$("voicePracticeButton").addEventListener("click", startVoicePracticeRecognition);
+
 function answerLearningInput(dontKnow = false, answerOverride = null) {
   if (isAnswered) return;
   const item = quizWords[currentIndex];
   const answer = (answerOverride ?? $("englishAnswer").value).trim().toLowerCase();
-  const correct = !dontKnow && answer === item.word.toLowerCase();
+  const isVoiceAttempt = selectedMode === "voice" && answerOverride !== null;
+  const correct = !dontKnow && (isVoiceAttempt
+    ? normalizeVoiceAnswer(answer) === normalizeVoiceAnswer(item.word)
+    : answer === item.word.toLowerCase());
+  if (isVoiceAttempt && !correct) {
+    $("startVoiceAnswer").disabled = false;
+    $("startVoiceAnswer").textContent = "🎙 もう一度話す";
+    $("voiceRecognitionStatus").textContent = "もう一度、英単語を話してください";
+    setFeedback(`聞き取り: ${answerOverride}。もう一度話してください`, false);
+    return;
+  }
   isAnswered = true;
   $("submitEnglish").disabled = true;
   $("dontKnow").disabled = true;
@@ -768,8 +875,18 @@ document.addEventListener("keydown", event => {
   if (!$("quiz").classList.contains("active")) return;
   if (isLearningMode() && learningPhase === "choice" && event.code === "Space") {
     if (event.target.closest("input, textarea, select, [contenteditable='true']")) return;
+    if (selectedMode === "voice" && event.target.closest("button")) return;
     event.preventDefault();
-    if (!event.repeat) speak(quizWords[currentIndex].word);
+    if (!event.repeat) {
+      if (selectedMode === "voice") startVoicePracticeRecognition();
+      else speak(quizWords[currentIndex].word);
+    }
+    return;
+  }
+  if (selectedMode === "voice" && learningPhase === "input" && event.code === "Space") {
+    if (event.target.closest("button, input, textarea, select, a")) return;
+    event.preventDefault();
+    if (!event.repeat) startVoiceRecognition();
     return;
   }
   if (selectedMode !== "card") return;
@@ -889,6 +1006,10 @@ function isLearningMode() {
   return selectedMode === "learning" || selectedMode === "voice";
 }
 
+function normalizeVoiceAnswer(value) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().replace(/\s+/g, " ");
+}
+
 function stopVoiceRecognition() {
   if (!activeRecognition) return;
   const recognition = activeRecognition;
@@ -897,7 +1018,7 @@ function stopVoiceRecognition() {
 }
 
 function startVoiceRecognition() {
-  if (selectedMode !== "voice" || learningPhase !== "input" || isAnswered) return;
+  if (selectedMode !== "voice" || learningPhase !== "input" || isAnswered || activeRecognition) return;
   const Recognition = speechRecognitionConstructor();
   if (!Recognition) {
     $("voiceRecognitionStatus").textContent = "このブラウザーは音声認識に対応していません";
