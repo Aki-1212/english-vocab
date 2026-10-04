@@ -734,7 +734,14 @@ $("previousCard").addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", event => {
-  if (selectedMode !== "card" || !$("quiz").classList.contains("active")) return;
+  if (!$("quiz").classList.contains("active")) return;
+  if (selectedMode === "learning" && learningPhase === "choice" && event.code === "Space") {
+    if (event.target.closest("input, textarea, select, [contenteditable='true']")) return;
+    event.preventDefault();
+    if (!event.repeat) speak(quizWords[currentIndex].word);
+    return;
+  }
+  if (selectedMode !== "card") return;
   if (event.code === "Space") {
     if (event.target.closest("button, input, textarea, select, a")) return;
     event.preventDefault();
