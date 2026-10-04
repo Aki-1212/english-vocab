@@ -17,6 +17,8 @@ let learningPhase = "choice";
 let learningMastered = new Set();
 let learningTotal = 0;
 let learningHintCount = 0;
+let typingDrag = null;
+let typingPopupMoved = false;
 
 const $ = id => document.getElementById(id);
 
@@ -37,6 +39,7 @@ init().catch(err => {
 function showScreen(id) {
   document.querySelectorAll(".screen").forEach(s => s.classList.remove("active"));
   $(id).classList.add("active");
+  if (id !== "quiz") $("typingPractice").classList.add("hidden");
   window.scrollTo({top: 0, behavior: "smooth"});
 }
 
@@ -99,6 +102,8 @@ function getLastStartedRange() {
 
 function startQuiz(list, isRetry = false) {
   if (selectedMode === "learning") {
+    $("typingHistory").replaceChildren();
+    typingPopupMoved = false;
     learningRemaining = shuffle([...list]);
     learningChoicePool = [...list];
     learningMastered = new Set();
@@ -203,6 +208,7 @@ function renderQuestion() {
     speakJapanese(item.meaning);
     $("englishAnswer").focus();
   }
+  updateTypingPracticeVisibility();
 }
 
 function resetTypingPractice(word) {
@@ -240,6 +246,86 @@ function updateTypingPractice() {
   status.textContent = isCorrect ? "正解" : isComplete ? "もう一度" : "";
   status.className = `typing-status${isCorrect ? " complete" : isComplete ? " incorrect" : ""}`;
 }
+
+function canUseDesktopTyping() {
+  return window.matchMedia("(min-width: 768px) and (hover: hover) and (pointer: fine)").matches;
+}
+
+function updateTypingPracticeVisibility() {
+  const shouldShow = selectedMode === "learning" && learningPhase === "choice" &&
+    $("quiz").classList.contains("active") && canUseDesktopTyping();
+  $("typingPractice").classList.toggle("hidden", !shouldShow);
+  if (shouldShow && !typingPopupMoved) positionTypingPractice();
+}
+
+function positionTypingPractice() {
+  const popup = $("typingPractice");
+  const wordRect = $("word").getBoundingClientRect();
+  popup.style.left = "0px";
+  popup.style.top = "0px";
+  const popupRect = popup.getBoundingClientRect();
+  let left = wordRect.right + 14;
+  if (left + popupRect.width > window.innerWidth - 12) {
+    left = wordRect.left - popupRect.width - 14;
+  }
+  left = Math.min(Math.max(12, left), window.innerWidth - popupRect.width - 12);
+  const top = Math.min(Math.max(12, wordRect.top), window.innerHeight - popupRect.height - 12);
+  popup.style.left = `${left}px`;
+  popup.style.top = `${top}px`;
+}
+
+function clampTypingPracticePosition() {
+  const popup = $("typingPractice");
+  const rect = popup.getBoundingClientRect();
+  const left = Math.min(Math.max(12, rect.left), window.innerWidth - rect.width - 12);
+  const top = Math.min(Math.max(12, rect.top), window.innerHeight - rect.height - 12);
+  popup.style.left = `${left}px`;
+  popup.style.top = `${top}px`;
+}
+
+function submitTypingPractice() {
+  const input = $("typingPracticeInput");
+  if (!input.value) return;
+  const correct = input.value.toLowerCase() === (input.dataset.targetWord || "").toLowerCase();
+  const row = document.createElement("div");
+  row.className = `typing-result${correct ? " correct" : " incorrect"}`;
+  const typedWord = document.createElement("span");
+  typedWord.textContent = input.value;
+  const result = document.createElement("strong");
+  result.textContent = correct ? "✓" : "×";
+  row.append(typedWord, result);
+  $("typingHistory").appendChild(row);
+  $("typingHistory").scrollTop = $("typingHistory").scrollHeight;
+  input.value = "";
+  updateTypingPractice();
+  input.focus();
+}
+
+$("typingPracticeHandle").addEventListener("pointerdown", event => {
+  if (event.button !== 0) return;
+  const rect = $("typingPractice").getBoundingClientRect();
+  typingDrag = {pointerId: event.pointerId, startX: event.clientX, startY: event.clientY, left: rect.left, top: rect.top};
+  event.currentTarget.setPointerCapture(event.pointerId);
+  event.preventDefault();
+});
+$("typingPracticeHandle").addEventListener("pointermove", event => {
+  if (!typingDrag || event.pointerId !== typingDrag.pointerId) return;
+  const moved = Math.abs(event.clientX - typingDrag.startX) + Math.abs(event.clientY - typingDrag.startY) > 3;
+  if (moved) typingPopupMoved = true;
+  const popup = $("typingPractice");
+  popup.style.left = `${typingDrag.left + event.clientX - typingDrag.startX}px`;
+  popup.style.top = `${typingDrag.top + event.clientY - typingDrag.startY}px`;
+  clampTypingPracticePosition();
+});
+$("typingPracticeHandle").addEventListener("pointerup", () => { typingDrag = null; });
+$("typingPracticeHandle").addEventListener("pointercancel", () => { typingDrag = null; });
+window.addEventListener("resize", () => {
+  updateTypingPracticeVisibility();
+  if (typingPopupMoved && !$("typingPractice").classList.contains("hidden")) clampTypingPracticePosition();
+});
+window.addEventListener("scroll", () => {
+  if (!typingPopupMoved && !$("typingPractice").classList.contains("hidden")) positionTypingPractice();
+}, {passive: true});
 
 function renderChoices(correct) {
   const sourceWords = selectedMode === "learning" ? learningChoicePool : quizWords;
@@ -357,6 +443,13 @@ function finishLearning() {
 $("submitEnglish").addEventListener("click", () => answerLearningInput());
 $("dontKnow").addEventListener("click", () => answerLearningInput(true));
 $("typingPracticeInput").addEventListener("input", updateTypingPractice);
+$("typingSubmit").addEventListener("click", submitTypingPractice);
+$("typingPracticeInput").addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    submitTypingPractice();
+  }
+});
 $("choiceDontKnow").addEventListener("click", () => {
   answerLearningChoice(false, null, quizWords[currentIndex]);
 });
