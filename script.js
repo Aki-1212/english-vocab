@@ -884,7 +884,7 @@ document.addEventListener("keydown", event => {
     return;
   }
   if (selectedMode === "voice" && learningPhase === "input" && event.code === "Space") {
-    if (event.target.closest("button, input, textarea, select, a")) return;
+    if (event.target.closest("button")) return;
     event.preventDefault();
     if (!event.repeat) startVoiceRecognition();
     return;
