@@ -56,16 +56,22 @@
       <button id="speakBtn" class="speak-btn" aria-label="発音を聞く">🔊 発音</button>
       <button id="hintBtn" class="hint-btn hidden" aria-label="英単語のヒントを表示">ヒント</button>
       <div class="word-number" id="wordNumber">No. 1</div>
-      <div class="word" id="word">begin</div>
+      <div class="word-display-row">
+        <div class="word" id="word">begin</div>
+        <aside class="typing-practice" aria-label="タイピング練習">
+          <label for="typingPracticeInput">タイピング練習</label>
+          <div class="typing-practice-entry">
+            <div id="typingPrompt" class="typing-prompt" aria-hidden="true"></div>
+            <input id="typingPracticeInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="表示された英単語を入力">
+          </div>
+          <div id="typingStatus" class="typing-status" aria-live="polite"></div>
+        </aside>
+      </div>
       <div id="feedback" class="feedback"></div>
       <div id="meaning" class="meaning hidden"></div>
     </div>
     <div id="choices" class="choices"></div>
     <button id="choiceDontKnow" class="secondary-btn choice-dont-know hidden">わからない</button>
-    <div class="typing-practice">
-      <label for="typingPracticeInput">タイピング練習スペース</label>
-      <textarea id="typingPracticeInput" rows="2" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="自由に入力"></textarea>
-    </div>
     <div id="learningInput" class="learning-input hidden">
       <label for="englishAnswer">英単語を入力</label>
       <input id="englishAnswer" type="text" autocomplete="off" autocapitalize="off" spellcheck="false">

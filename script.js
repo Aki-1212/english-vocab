@@ -169,6 +169,7 @@ function renderQuestion() {
   }
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = isLearningInput ? item.meaning : item.word;
+  resetTypingPractice(item.word);
   $("meaning").textContent = item.meaning;
   $("meaning").classList.toggle("hidden", previousAnswer === null || isLearning);
   $("feedback").textContent = "";
@@ -202,6 +203,42 @@ function renderQuestion() {
     speakJapanese(item.meaning);
     $("englishAnswer").focus();
   }
+}
+
+function resetTypingPractice(word) {
+  const input = $("typingPracticeInput");
+  input.value = "";
+  input.dataset.targetWord = word;
+  updateTypingPractice();
+}
+
+function updateTypingPractice() {
+  const input = $("typingPracticeInput");
+  const target = input.dataset.targetWord || "";
+  const typed = input.value;
+  const normalizedTarget = target.toLowerCase();
+  const normalizedTyped = typed.toLowerCase();
+  const isCorrect = normalizedTyped === normalizedTarget;
+  const isComplete = typed.length >= target.length;
+  const prompt = $("typingPrompt");
+  prompt.replaceChildren();
+
+  for (let index = 0; index < Math.max(target.length, typed.length); index++) {
+    const character = document.createElement("span");
+    const typedCharacter = typed[index];
+    character.textContent = typedCharacter ?? target[index];
+    character.className = "typing-character";
+    if (typedCharacter !== undefined) {
+      if (isCorrect) character.classList.add("complete");
+      else if (normalizedTyped[index] === normalizedTarget[index]) character.classList.add("typed");
+      else character.classList.add("incorrect");
+    }
+    prompt.appendChild(character);
+  }
+
+  const status = $("typingStatus");
+  status.textContent = isCorrect ? "正解" : isComplete ? "もう一度" : "";
+  status.className = `typing-status${isCorrect ? " complete" : isComplete ? " incorrect" : ""}`;
 }
 
 function renderChoices(correct) {
@@ -319,6 +356,7 @@ function finishLearning() {
 
 $("submitEnglish").addEventListener("click", () => answerLearningInput());
 $("dontKnow").addEventListener("click", () => answerLearningInput(true));
+$("typingPracticeInput").addEventListener("input", updateTypingPractice);
 $("choiceDontKnow").addEventListener("click", () => {
   answerLearningChoice(false, null, quizWords[currentIndex]);
 });
