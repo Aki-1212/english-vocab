@@ -79,6 +79,13 @@ h2 { margin-top: 0; }
 .answer-btn.wrong { border-color: #dc2626; background: #fef2f2; }
 .answer-btn:disabled { cursor: default; }
 .choice-dont-know { display: block; margin: 12px auto 0; }
+.typing-practice { display: none; margin-top: 18px; }
+.typing-practice label { display: block; margin-bottom: 7px; color: #6b7280; font-size: 13px; }
+.typing-practice textarea {
+  display: block; width: 100%; min-height: 64px; resize: vertical; padding: 10px 12px;
+  border: 1px solid #d1d5db; border-radius: 8px; font: inherit;
+}
+.typing-practice textarea:focus { outline: 3px solid #c9ded0; border-color: #4b8067; }
 .learning-input { display: grid; gap: 10px; max-width: 440px; margin: 0 auto; }
 .learning-input label { font-weight: 700; }
 .learning-input input {
@@ -131,6 +138,9 @@ h2 { margin-top: 0; }
 .history-stat { display: flex; justify-content: space-around; gap: 8px; }
 .stat strong { display: block; font-size: 24px; }
 .stat span { color: #6b7280; font-size: 13px; }
+@media (min-width: 768px) and (hover: hover) and (pointer: fine) {
+  #quiz.learning-choice-mode .typing-practice { display: block; }
+}
 @media (max-width: 520px) {
   .app { padding: 16px 12px 36px; }
   .panel { padding: 18px; border-radius: 16px; }

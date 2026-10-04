@@ -150,6 +150,7 @@ function renderQuestion() {
   const isLearningInput = isLearning && learningPhase === "input";
   $("quiz").classList.toggle("card-mode", selectedMode === "card");
   $("quiz").classList.toggle("learning-input-mode", isLearningInput);
+  $("quiz").classList.toggle("learning-choice-mode", isLearning && learningPhase === "choice");
   $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
   $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
   $("progressTitle").textContent = isLearning ? "全体進捗" : "進捗";
