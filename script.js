@@ -41,8 +41,12 @@ async function init() {
     if (countSentenceTarget(sentence.sentence, item.word) !== 1) {
       throw new Error(`例文に対象単語が1回だけ含まれていません: ${item.word}`);
     }
+    if (!sentence.highlight || sentence.translation.split(sentence.highlight).length !== 2) {
+      throw new Error(`日本語訳の強調箇所が1か所ではありません: ${item.word}`);
+    }
     item.sentence = sentence.sentence;
     item.sentenceTranslation = sentence.translation;
+    item.sentenceHighlight = sentence.highlight;
   }
   renderRangeButtons();
   updateSentenceModeAvailability();
@@ -229,6 +233,21 @@ function renderSentencePrompt(sentence, word) {
   );
 }
 
+function renderSentenceTranslation(translation, highlight) {
+  const start = translation.indexOf(highlight);
+  if (start < 0 || translation.indexOf(highlight, start + highlight.length) >= 0) {
+    throw new Error(`日本語訳の強調箇所が1か所ではありません: ${highlight}`);
+  }
+  const emphasized = document.createElement("strong");
+  emphasized.className = "sentence-translation-highlight";
+  emphasized.textContent = highlight;
+  $("sentenceTranslation").replaceChildren(
+    document.createTextNode(translation.slice(0, start)),
+    emphasized,
+    document.createTextNode(translation.slice(start + highlight.length))
+  );
+}
+
 function renderQuestion() {
   isAnswered = false;
   const item = quizWords[currentIndex];
@@ -265,7 +284,7 @@ function renderQuestion() {
   $("sentenceTranslation").classList.toggle("hidden", !isSentence);
   if (isSentence) {
     renderSentencePrompt(item.sentence, item.word);
-    $("sentenceTranslation").textContent = item.sentenceTranslation;
+    renderSentenceTranslation(item.sentenceTranslation, item.sentenceHighlight);
   }
   resetTypingPractice(item.word);
   $("meaning").textContent = item.meaning;
@@ -283,8 +302,6 @@ function renderQuestion() {
   $("sentenceAnswer").value = "";
   $("sentenceAnswer").disabled = false;
   $("submitSentenceAnswer").disabled = false;
-  $("sentenceNext").classList.add("hidden");
-  $("sentenceNext").disabled = false;
   $("previousCard").disabled = currentIndex === 0;
   $("markUnknown").disabled = false;
   $("markKnown").disabled = false;
@@ -538,32 +555,21 @@ function answerSentenceInput() {
   isAnswered = true;
   $("sentenceAnswer").disabled = true;
   $("submitSentenceAnswer").disabled = true;
-  $("sentenceNext").classList.remove("hidden");
-  if (correct) {
-    learningMastered.add(item.id);
-    learningReview.delete(item.id);
-    saveAttempt(item.id, true);
-    setFeedback("正解！「覚えている」に入りました。", true);
-    $("sentenceNext").textContent = "次へ";
-  } else {
-    setFeedback(`不正解。答え: ${item.word}`, false);
-    $("sentenceNext").textContent = "覚えていない → 次に繰り越す";
-  }
-  updateProgressCounts();
-}
-
-function advanceSentenceQuestion() {
-  if (!isAnswered) return;
-  const item = quizWords[currentIndex];
-  if (!learningMastered.has(item.id)) {
+  if (!correct) {
     sentenceErrors.add(item.id);
     learningReview.add(item.id);
-    saveAttempt(item.id, false);
-    updateProgressCounts();
+  } else if (!sentenceErrors.has(item.id)) {
+    learningMastered.add(item.id);
+    learningReview.delete(item.id);
   }
-  currentIndex++;
-  if (currentIndex < quizWords.length) renderQuestion();
-  else finishSentenceBatch();
+  setFeedback(correct ? "正解！" : `答え: ${item.word}`, correct);
+  saveAttempt(item.id, !sentenceErrors.has(item.id));
+  updateProgressCounts();
+  setTimeout(() => {
+    currentIndex++;
+    if (currentIndex < quizWords.length) renderQuestion();
+    else finishSentenceBatch();
+  }, 800);
 }
 
 function finishSentenceBatch() {
@@ -602,7 +608,6 @@ function finishLearning() {
 $("submitEnglish").addEventListener("click", () => answerLearningInput());
 $("dontKnow").addEventListener("click", () => answerLearningInput(true));
 $("submitSentenceAnswer").addEventListener("click", answerSentenceInput);
-$("sentenceNext").addEventListener("click", advanceSentenceQuestion);
 $("typingPracticeInput").addEventListener("input", updateTypingPractice);
 $("typingSubmit").addEventListener("click", submitTypingPractice);
 $("typingPracticeInput").addEventListener("keydown", event => {

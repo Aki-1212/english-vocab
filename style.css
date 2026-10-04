@@ -74,9 +74,8 @@ h2 { margin-top: 0; }
   margin: 0 auto 14px; padding: 12px; border-radius: 12px;
   background: #f3f4f6; font-size: 18px; line-height: 1.6;
 }
+.sentence-translation-highlight { color: #28623b; background: #dff0e3; border-radius: 4px; padding: 0 2px; }
 .sentence-input { max-width: 520px; }
-.sentence-input .learning-actions { grid-template-columns: 1fr; }
-.sentence-input #sentenceNext { white-space: normal; }
 .sentence-mode .word-panel { padding-top: 36px; }
 .sentence-mode .word-number { margin-bottom: 8px; }
 .sentence-mode .feedback { margin-top: 8px; }
