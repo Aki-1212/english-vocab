@@ -23,44 +23,68 @@ let typingDrag = null;
 let typingPopupMoved = false;
 let activeRecognition = null;
 let activePracticeRecognition = null;
+let currentBook = "kikutan";
+
+const books = {
+  kikutan: {name: "キクタン", file: "kikutan-word.json"},
+  silver: {name: "銀フレ", file: "words.json"}
+};
 
 const $ = id => document.getElementById(id);
 
 async function init() {
-  const [wordsResponse, sentencesResponse] = await Promise.all([
-    fetch("words.json"),
-    fetch("sentences.json")
-  ]);
-  if (!wordsResponse.ok || !sentencesResponse.ok) {
-    throw new Error("単語または例文データを読み込めませんでした。");
-  }
-  words = await wordsResponse.json();
-  const sentences = await sentencesResponse.json();
-  const wordsById = new Map(words.map(item => [item.id, item]));
-  for (const sentence of sentences) {
-    const item = wordsById.get(sentence.id);
-    if (!item) throw new Error(`例文に対応する単語がありません: ${sentence.id}`);
-    if (countSentenceTarget(sentence.sentence, item.word) !== 1) {
-      throw new Error(`例文に対象単語が1回だけ含まれていません: ${item.word}`);
+  $("bookSelect").value = currentBook;
+  $("bookSelect").addEventListener("change", async event => {
+    try {
+      await loadBook(event.target.value);
+    } catch (err) {
+      console.error(err);
+      event.target.value = currentBook;
+      alert("教材データを読み込めませんでした。JSONファイルが同じフォルダにあるか確認してください。");
     }
-    if (!sentence.highlight || sentence.translation.split(sentence.highlight).length !== 2) {
-      throw new Error(`日本語訳の強調箇所が1か所ではありません: ${item.word}`);
+  });
+  await loadBook(currentBook);
+}
+
+async function loadBook(bookId) {
+  const book = books[bookId];
+  const response = await fetch(book.file);
+  if (!response.ok) throw new Error(`${book.file} を読み込めませんでした。`);
+  const nextWords = await response.json();
+
+  if (bookId === "silver") {
+    const sentencesResponse = await fetch("sentences.json");
+    if (!sentencesResponse.ok) throw new Error("例文データを読み込めませんでした。");
+    const sentences = await sentencesResponse.json();
+    const wordsById = new Map(nextWords.map(item => [item.id, item]));
+    for (const sentence of sentences) {
+      const item = wordsById.get(sentence.id);
+      if (!item) throw new Error(`例文に対応する単語がありません: ${sentence.id}`);
+      if (countSentenceTarget(sentence.sentence, item.word) !== 1) {
+        throw new Error(`例文に対象単語が1回だけ含まれていません: ${item.word}`);
+      }
+      if (!sentence.highlight || sentence.translation.split(sentence.highlight).length !== 2) {
+        throw new Error(`日本語訳の強調箇所が1か所ではありません: ${item.word}`);
+      }
+      item.sentence = sentence.sentence;
+      item.sentenceTranslation = sentence.translation;
+      item.sentenceHighlight = sentence.highlight;
     }
-    item.sentence = sentence.sentence;
-    item.sentenceTranslation = sentence.translation;
-    item.sentenceHighlight = sentence.highlight;
   }
+
+  currentBook = bookId;
+  words = nextWords;
   renderRangeButtons();
   updateSentenceModeAvailability();
   updateVoiceModeAvailability();
   const maxId = Math.max(...words.map(word => word.id));
-  document.title = `English Vocabulary 1–${maxId}`;
-  $("subtitle").textContent = `1–${maxId} Vocabulary Trainer`;
+  document.title = `${book.name} Vocabulary 1–${maxId}`;
+  $("subtitle").textContent = `${book.name} 1–${maxId} Vocabulary Trainer`;
   updateHistory();
 }
 init().catch(err => {
   console.error(err);
-  alert("単語・例文データを読み込めませんでした。words.json と sentences.json が同じフォルダにあるか確認してください。");
+  alert("教材データを読み込めませんでした。JSONファイルが同じフォルダにあるか確認してください。");
 });
 
 function showScreen(id) {
@@ -120,7 +144,7 @@ function updateSentenceModeAvailability() {
   button.disabled = !available;
   $("sentenceModeDescription").textContent = available
     ? "英文の空欄に単語を入力する"
-    : "例文は1〜50語に対応しています";
+    : currentBook === "silver" ? "例文は1〜50語に対応しています" : "文章学習は銀フレに対応しています";
 }
 
 function speechRecognitionConstructor() {
@@ -140,7 +164,7 @@ $("quizBack").addEventListener("click", () => showScreen("mode"));
 document.querySelectorAll("[data-mode]").forEach(btn => {
   btn.addEventListener("click", () => {
     selectedMode = btn.dataset.mode;
-    localStorage.setItem("english-vocab-last-range", JSON.stringify(selectedRange));
+    localStorage.setItem(getLastRangeKey(), JSON.stringify(selectedRange));
     renderRangeButtons();
     startQuiz(words.filter(w => w.id >= selectedRange[0] && w.id <= selectedRange[1]));
   });
@@ -148,11 +172,15 @@ document.querySelectorAll("[data-mode]").forEach(btn => {
 
 function getLastStartedRange() {
   try {
-    const range = JSON.parse(localStorage.getItem("english-vocab-last-range") || "null");
+    const range = JSON.parse(localStorage.getItem(getLastRangeKey()) || "null");
     return Array.isArray(range) && range.length === 2 && range.every(Number.isInteger) ? range : null;
   } catch {
     return null;
   }
+}
+
+function getLastRangeKey() {
+  return currentBook === "silver" ? "english-vocab-last-range" : `english-vocab-last-range-${currentBook}`;
 }
 
 function startQuiz(list, isRetry = false) {
@@ -1095,7 +1123,7 @@ function shuffle(arr) {
 }
 
 function saveAttempt(id, correct) {
-  const key = "english-vocab-history";
+  const key = getHistoryKey();
   const data = JSON.parse(localStorage.getItem(key) || '{"attempts":0,"correct":0,"wrong":0,"words":{}}');
   data.attempts++;
   if (correct) data.correct++; else data.wrong++;
@@ -1106,7 +1134,7 @@ function saveAttempt(id, correct) {
 }
 
 function removeAttempt(id, correct) {
-  const key = "english-vocab-history";
+  const key = getHistoryKey();
   const data = JSON.parse(localStorage.getItem(key) || "null");
   const wordData = data?.words?.[id];
   if (!data || !wordData || wordData.attempts === 0) return;
@@ -1119,8 +1147,12 @@ function removeAttempt(id, correct) {
   localStorage.setItem(key, JSON.stringify(data));
 }
 
+function getHistoryKey() {
+  return currentBook === "silver" ? "english-vocab-history" : `english-vocab-history-${currentBook}`;
+}
+
 function updateHistory() {
-  const data = JSON.parse(localStorage.getItem("english-vocab-history") || "null");
+  const data = JSON.parse(localStorage.getItem(getHistoryKey()) || "null");
   if (!data || data.attempts === 0) {
     $("historySummary").textContent = "まだ学習履歴がありません。";
     return;
@@ -1136,7 +1168,7 @@ function updateHistory() {
 
 $("resetHistory").addEventListener("click", () => {
   if (confirm("学習履歴を削除しますか？")) {
-    localStorage.removeItem("english-vocab-history");
+    localStorage.removeItem(getHistoryKey());
     updateHistory();
   }
 });

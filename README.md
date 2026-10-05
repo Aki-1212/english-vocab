@@ -8,12 +8,14 @@ GitHub + Vercel で公開できるシンプルな英単語学習アプリです�
 - `index.html`：画面
 - `style.css`：デザイン・スマホ対応
 - `script.js`：学習処理
-- `words.json`：単語データ
+- `words.json`：銀フレの単語データ
+- `kikutan-word.json`：キクタンの単語データ
 - `sentences.json`：文章学習モード用の英文・日本語訳（1〜50語）
 
 ## 現在の機能
 
-- 1–50 / 51–100 の範囲選択
+- 教材選択（キクタンが初期選択、銀フレにも切り替え可能）
+- 教材ごとの単語範囲選択
 - 4択モード
 - カードモード
 - 学習モード（10語ずつ4択・英語入力で確認し、未習得語を繰り返し出題）
@@ -43,7 +45,7 @@ GitHub + Vercel で公開できるシンプルな英単語学習アプリです�
 ## Vercel公開
 
 1. GitHubで新しいリポジトリを作る
-2. `index.html`、`style.css`、`script.js`、`words.json`、`sentences.json` をアップロード
+2. `index.html`、`style.css`、`script.js`、`words.json`、`kikutan-word.json`、`sentences.json` をアップロード
 3. Vercelで GitHub リポジトリを選択
 4. Deploy
 
