@@ -1,0 +1,6000 @@
+{
+  "id": 1,
+  "word": "cross",
+  "meaning": "～を横切る"
+},
+{
+  "id": 2,
+  "word": "improve",
+  "meaning": "～を改善する"
+},
+{
+  "id": 3,
+  "word": "rush",
+  "meaning": "急ぐ"
+},
+{
+  "id": 4,
+  "word": "support",
+  "meaning": "を支える"
+},
+{
+  "id": 5,
+  "word": "worry",
+  "meaning": "心配する"
+},
+{
+  "id": 6,
+  "word": "count",
+  "meaning": "～を勘定に入れる"
+},
+{
+  "id": 7,
+  "word": "offer",
+  "meaning": "～を提供する"
+},
+{
+  "id": 8,
+  "word": "fail",
+  "meaning": "失敗する"
+},
+{
+  "id": 9,
+  "word": "perform",
+  "meaning": "を演じる"
+},
+{
+  "id": 10,
+  "word": "help",
+  "meaning": "～の役に立つ"
+},
+{
+  "id": 11,
+  "word": "agree",
+  "meaning": "意見が一致する"
+},
+{
+  "id": 12,
+  "word": "follow",
+  "meaning": "～の後について行く"
+},
+{
+  "id": 13,
+  "word": "deliver",
+  "meaning": "～を配達する"
+},
+{
+  "id": 14,
+  "word": "struggle",
+  "meaning": "もがく"
+},
+{
+  "id": 15,
+  "word": "behave",
+  "meaning": "振る舞う"
+},
+{
+  "id": 16,
+  "word": "afford",
+  "meaning": "～を買う余裕がある"
+},
+{
+  "id": 17,
+  "word": "expect",
+  "meaning": "～を予期する"
+},
+{
+  "id": 18,
+  "word": "explain",
+  "meaning": "～を説明する"
+},
+{
+  "id": 19,
+  "word": "freeze",
+  "meaning": "凍る"
+},
+{
+  "id": 20,
+  "word": "hold",
+  "meaning": "～を開催する"
+},
+{
+  "id": 21,
+  "word": "raise",
+  "meaning": "～を上げる"
+},
+{
+  "id": 22,
+  "word": "design",
+  "meaning": "～を設計する"
+},
+{
+  "id": 23,
+  "word": "accept",
+  "meaning": "～を受け取る"
+},
+{
+  "id": 24,
+  "word": "pass",
+  "meaning": "に合格する"
+},
+{
+  "id": 25,
+  "word": "mean",
+  "meaning": "～を意味する"
+},
+{
+  "id": 26,
+  "word": "measure",
+  "meaning": "を測る"
+},
+{
+  "id": 27,
+  "word": "taste",
+  "meaning": "～の味がする"
+},
+{
+  "id": 28,
+  "word": "decide",
+  "meaning": "～を決定する"
+},
+{
+  "id": 29,
+  "word": "divide",
+  "meaning": "～を分ける"
+},
+{
+  "id": 30,
+  "word": "approach",
+  "meaning": "～に近づく"
+},
+{
+  "id": 31,
+  "word": "suggest",
+  "meaning": "～を提案する"
+},
+{
+  "id": 32,
+  "word": "develop",
+  "meaning": "～を発達[発展]させる"
+},
+{
+  "id": 33,
+  "word": "spread",
+  "meaning": "～を広げる"
+},
+{
+  "id": 34,
+  "word": "hide",
+  "meaning": "～を隠す"
+},
+{
+  "id": 35,
+  "word": "disappear",
+  "meaning": "消える"
+},
+{
+  "id": 36,
+  "word": "warn",
+  "meaning": "～に警告する"
+},
+{
+  "id": 37,
+  "word": "prepare",
+  "meaning": "～の用意をする"
+},
+{
+  "id": 38,
+  "word": "wonder",
+  "meaning": "～だろうか"
+},
+{
+  "id": 39,
+  "word": "introduce",
+  "meaning": "～を紹介する"
+},
+{
+  "id": 40,
+  "word": "express",
+  "meaning": "を表現する"
+},
+{
+  "id": 41,
+  "word": "gather",
+  "meaning": "集まる"
+},
+{
+  "id": 42,
+  "word": "fill",
+  "meaning": "を満たす"
+},
+{
+  "id": 43,
+  "word": "include",
+  "meaning": "～を含む"
+},
+{
+  "id": 44,
+  "word": "gain",
+  "meaning": "～を得る"
+},
+{
+  "id": 45,
+  "word": "belong",
+  "meaning": "所属する"
+},
+{
+  "id": 46,
+  "word": "serve",
+  "meaning": "を出す"
+},
+{
+  "id": 47,
+  "word": "draw",
+  "meaning": "～を描く"
+},
+{
+  "id": 48,
+  "word": "handle",
+  "meaning": "を扱う"
+},
+{
+  "id": 49,
+  "word": "lead",
+  "meaning": "～を導く"
+},
+{
+  "id": 50,
+  "word": "manage",
+  "meaning": "～をうまく取り扱う"
+},
+{
+  "id": 51,
+  "word": "mind",
+  "meaning": "～を嫌だと思う"
+},
+{
+  "id": 52,
+  "word": "join",
+  "meaning": "～に参加する"
+},
+{
+  "id": 53,
+  "word": "continue",
+  "meaning": "続く"
+},
+{
+  "id": 54,
+  "word": "bear",
+  "meaning": "～に耐える"
+},
+{
+  "id": 55,
+  "word": "prove",
+  "meaning": "～を証明する"
+},
+{
+  "id": 56,
+  "word": "blame",
+  "meaning": "～をとがめる"
+},
+{
+  "id": 57,
+  "word": "examine",
+  "meaning": "～を調査する"
+},
+{
+  "id": 58,
+  "word": "ship",
+  "meaning": "～を輸送する"
+},
+{
+  "id": 59,
+  "word": "direct",
+  "meaning": "を向ける"
+},
+{
+  "id": 60,
+  "word": "sort",
+  "meaning": "～を分類する"
+},
+{
+  "id": 61,
+  "word": "remember",
+  "meaning": "～を覚えている"
+},
+{
+  "id": 62,
+  "word": "feed",
+  "meaning": "～に餌を与える"
+},
+{
+  "id": 63,
+  "word": "allow",
+  "meaning": "～を許す"
+},
+{
+  "id": 64,
+  "word": "waste",
+  "meaning": "を浪費する"
+},
+{
+  "id": 65,
+  "word": "solve",
+  "meaning": "を解く"
+},
+{
+  "id": 66,
+  "word": "separate",
+  "meaning": "～を分ける"
+},
+{
+  "id": 67,
+  "word": "fit",
+  "meaning": "～に合う"
+},
+{
+  "id": 68,
+  "word": "publish",
+  "meaning": "～を出版する"
+},
+{
+  "id": 69,
+  "word": "apply",
+  "meaning": "申し込む"
+},
+{
+  "id": 70,
+  "word": "realize",
+  "meaning": "～を悟る"
+},
+{
+  "id": 71,
+  "word": "guess",
+  "meaning": "～を推測する"
+},
+{
+  "id": 72,
+  "word": "depend",
+  "meaning": "頼る"
+},
+{
+  "id": 73,
+  "word": "escape",
+  "meaning": "逃げる"
+},
+{
+  "id": 74,
+  "word": "prefer",
+  "meaning": "～が好きだ"
+},
+{
+  "id": 75,
+  "word": "provide",
+  "meaning": "～を供給[提供]する"
+},
+{
+  "id": 76,
+  "word": "steal",
+  "meaning": "～を(こっそり)盗む"
+},
+{
+  "id": 77,
+  "word": "earn",
+  "meaning": "を稼ぐ"
+},
+{
+  "id": 78,
+  "word": "notice",
+  "meaning": "～に気が付く"
+},
+{
+  "id": 79,
+  "word": "remove",
+  "meaning": "～を取り去る"
+},
+{
+  "id": 80,
+  "word": "suffer",
+  "meaning": "苦しむ"
+},
+{
+  "id": 81,
+  "word": "describe",
+  "meaning": "～の特徴を述べる"
+},
+{
+  "id": 82,
+  "word": "add",
+  "meaning": "～を加える"
+},
+{
+  "id": 83,
+  "word": "beat",
+  "meaning": "を打ち負かす"
+},
+{
+  "id": 84,
+  "word": "relax",
+  "meaning": "をくつろがせる"
+},
+{
+  "id": 85,
+  "word": "announce",
+  "meaning": "～を公表する"
+},
+{
+  "id": 86,
+  "word": "lend",
+  "meaning": "～を貸す"
+},
+{
+  "id": 87,
+  "word": "compare",
+  "meaning": "～を比較する"
+},
+{
+  "id": 88,
+  "word": "mention",
+  "meaning": "～に言及する"
+},
+{
+  "id": 89,
+  "word": "regard",
+  "meaning": "～を見なす"
+},
+{
+  "id": 90,
+  "word": "strike",
+  "meaning": "～を打つ"
+},
+{
+  "id": 91,
+  "word": "save",
+  "meaning": "～を救う"
+},
+{
+  "id": 92,
+  "word": "prevent",
+  "meaning": "～を防ぐ"
+},
+{
+  "id": 93,
+  "word": "cover",
+  "meaning": "～を扱う"
+},
+{
+  "id": 94,
+  "word": "appear",
+  "meaning": "～のように見える"
+},
+{
+  "id": 95,
+  "word": "smell",
+  "meaning": "～のにおいがする"
+},
+{
+  "id": 96,
+  "word": "repair",
+  "meaning": "～を修理する"
+},
+{
+  "id": 97,
+  "word": "doubt",
+  "meaning": "～を疑う"
+},
+{
+  "id": 98,
+  "word": "pay",
+  "meaning": "～を支払う"
+},
+{
+  "id": 99,
+  "word": "imagine",
+  "meaning": "～を想像する"
+},
+{
+  "id": 100,
+  "word": "destroy",
+  "meaning": "～を破壊する"
+},
+{
+  "id": 101,
+  "word": "intend",
+  "meaning": "～するつもりである"
+},
+{
+  "id": 102,
+  "word": "remain",
+  "meaning": "～のままでいる"
+},
+{
+  "id": 103,
+  "word": "aim",
+  "meaning": "努力する"
+},
+{
+  "id": 104,
+  "word": "claim",
+  "meaning": "～を主張する"
+},
+{
+  "id": 105,
+  "word": "fix",
+  "meaning": "～を修理する"
+},
+{
+  "id": 106,
+  "word": "create",
+  "meaning": "～を創造する"
+},
+{
+  "id": 107,
+  "word": "deal",
+  "meaning": "対処する"
+},
+{
+  "id": 108,
+  "word": "discuss",
+  "meaning": "～を話し合う"
+},
+{
+  "id": 109,
+  "word": "exist",
+  "meaning": "存在する"
+},
+{
+  "id": 110,
+  "word": "contain",
+  "meaning": "～を含む"
+},
+{
+  "id": 111,
+  "word": "miss",
+  "meaning": "～がいないのを寂しく思う"
+},
+{
+  "id": 112,
+  "word": "attend",
+  "meaning": "～に出席する"
+},
+{
+  "id": 113,
+  "word": "lay",
+  "meaning": "～を横たえる"
+},
+{
+  "id": 114,
+  "word": "hire",
+  "meaning": "～を雇う"
+},
+{
+  "id": 115,
+  "word": "hang",
+  "meaning": "～を掛ける"
+},
+{
+  "id": 116,
+  "word": "recover",
+  "meaning": "回復する"
+},
+{
+  "id": 117,
+  "word": "tie",
+  "meaning": "～を縛る"
+},
+{
+  "id": 118,
+  "word": "borrow",
+  "meaning": "～を借りる"
+},
+{
+  "id": 119,
+  "word": "reply",
+  "meaning": "返事をする"
+},
+{
+  "id": 120,
+  "word": "hurt",
+  "meaning": "痛む"
+},
+{
+  "id": 121,
+  "word": "reserve",
+  "meaning": "～を予約する"
+},
+{
+  "id": 122,
+  "word": "lift",
+  "meaning": "～を持ち上げる"
+},
+{
+  "id": 123,
+  "word": "propose",
+  "meaning": "～を提案する"
+},
+{
+  "id": 124,
+  "word": "inform",
+  "meaning": "～に知らせる"
+},
+{
+  "id": 125,
+  "word": "melt",
+  "meaning": "溶ける"
+},
+{
+  "id": 126,
+  "word": "deny",
+  "meaning": "～を否定する"
+},
+{
+  "id": 127,
+  "word": "breathe",
+  "meaning": "呼吸する"
+},
+{
+  "id": 128,
+  "word": "request",
+  "meaning": "～を願う"
+},
+{
+  "id": 129,
+  "word": "suit",
+  "meaning": "～に好都合である"
+},
+{
+  "id": 130,
+  "word": "complain",
+  "meaning": "不満を言う"
+},
+{
+  "id": 131,
+  "word": "arrange",
+  "meaning": "を取り決める"
+},
+{
+  "id": 132,
+  "word": "hate",
+  "meaning": "～をひどく嫌う"
+},
+{
+  "id": 133,
+  "word": "celebrate",
+  "meaning": "を祝う"
+},
+{
+  "id": 134,
+  "word": "permit",
+  "meaning": "～を許可する"
+},
+{
+  "id": 135,
+  "word": "rule",
+  "meaning": "～を支配する"
+},
+{
+  "id": 136,
+  "word": "dislike",
+  "meaning": "～を嫌う"
+},
+{
+  "id": 137,
+  "word": "admire",
+  "meaning": "～に感心[感嘆]する"
+},
+{
+  "id": 138,
+  "word": "owe",
+  "meaning": "を借りている"
+},
+{
+  "id": 139,
+  "word": "scream",
+  "meaning": "悲鳴を上げる"
+},
+{
+  "id": 140,
+  "word": "punish",
+  "meaning": "～を罰する"
+},
+{
+  "id": 141,
+  "word": "assist",
+  "meaning": "～を手伝う"
+},
+{
+  "id": 142,
+  "word": "blow",
+  "meaning": "吹く"
+},
+{
+  "id": 143,
+  "word": "bend",
+  "meaning": "～を曲げる"
+},
+{
+  "id": 144,
+  "word": "roll",
+  "meaning": "を転がす"
+},
+{
+  "id": 145,
+  "word": "burst",
+  "meaning": "爆発する"
+},
+{
+  "id": 146,
+  "word": "weigh",
+  "meaning": "～の重さがある"
+},
+{
+  "id": 147,
+  "word": "float",
+  "meaning": "浮かぶ"
+},
+{
+  "id": 148,
+  "word": "broadcast",
+  "meaning": "を放送する"
+},
+{
+  "id": 149,
+  "word": "defend",
+  "meaning": "～を守る"
+},
+{
+  "id": 150,
+  "word": "awake",
+  "meaning": "目が覚める"
+},
+{
+  "id": 151,
+  "word": "stretch",
+  "meaning": "をいっぱいに伸ばす"
+},
+{
+  "id": 152,
+  "word": "pour",
+  "meaning": "～を注ぐ"
+},
+{
+  "id": 153,
+  "word": "swallow",
+  "meaning": "を飲み込む"
+},
+{
+  "id": 154,
+  "word": "wipe",
+  "meaning": "を拭く"
+},
+{
+  "id": 155,
+  "word": "sweep",
+  "meaning": "～を掃除する"
+},
+{
+  "id": 156,
+  "word": "polish",
+  "meaning": "～を磨く"
+},
+{
+  "id": 157,
+  "word": "nod",
+  "meaning": "うなずく"
+},
+{
+  "id": 158,
+  "word": "pray",
+  "meaning": "祈る"
+},
+{
+  "id": 159,
+  "word": "forgive",
+  "meaning": "～を許す"
+},
+{
+  "id": 160,
+  "word": "drown",
+  "meaning": "溺れ死ぬ"
+},
+{
+  "id": 161,
+  "word": "way",
+  "meaning": "やり方"
+},
+{
+  "id": 162,
+  "word": "part",
+  "meaning": "役"
+},
+{
+  "id": 163,
+  "word": "brain",
+  "meaning": "脳"
+},
+{
+  "id": 164,
+  "word": "experience",
+  "meaning": "経験"
+},
+{
+  "id": 165,
+  "word": "result",
+  "meaning": "結果"
+},
+{
+  "id": 166,
+  "word": "reason",
+  "meaning": "理由"
+},
+{
+  "id": 167,
+  "word": "cause",
+  "meaning": "原因"
+},
+{
+  "id": 168,
+  "word": "effect",
+  "meaning": "結果"
+},
+{
+  "id": 169,
+  "word": "form",
+  "meaning": "(申込)用紙"
+},
+{
+  "id": 170,
+  "word": "education",
+  "meaning": "教育"
+},
+{
+  "id": 171,
+  "word": "ability",
+  "meaning": "能力"
+},
+{
+  "id": 172,
+  "word": "sense",
+  "meaning": "感覚"
+},
+{
+  "id": 173,
+  "word": "product",
+  "meaning": "製品"
+},
+{
+  "id": 174,
+  "word": "condition",
+  "meaning": "状態"
+},
+{
+  "id": 175,
+  "word": "view",
+  "meaning": "意見"
+},
+{
+  "id": 176,
+  "word": "memory",
+  "meaning": "記憶"
+},
+{
+  "id": 177,
+  "word": "law",
+  "meaning": "法律"
+},
+{
+  "id": 178,
+  "word": "nature",
+  "meaning": "自然"
+},
+{
+  "id": 179,
+  "word": "care",
+  "meaning": "世話"
+},
+{
+  "id": 180,
+  "word": "break",
+  "meaning": "休憩"
+},
+{
+  "id": 181,
+  "word": "amount",
+  "meaning": "総額"
+},
+{
+  "id": 182,
+  "word": "limit",
+  "meaning": "限界"
+},
+{
+  "id": 183,
+  "word": "line",
+  "meaning": "列"
+},
+{
+  "id": 184,
+  "word": "effort",
+  "meaning": "努力"
+},
+{
+  "id": 185,
+  "word": "force",
+  "meaning": "軍事力"
+},
+{
+  "id": 186,
+  "word": "role",
+  "meaning": "役割"
+},
+{
+  "id": 187,
+  "word": "industry",
+  "meaning": "産業"
+},
+{
+  "id": 188,
+  "word": "rate",
+  "meaning": "割合"
+},
+{
+  "id": 189,
+  "word": "knowledge",
+  "meaning": "知識"
+},
+{
+  "id": 190,
+  "word": "paper",
+  "meaning": "新聞"
+},
+{
+  "id": 191,
+  "word": "period",
+  "meaning": "期間"
+},
+{
+  "id": 192,
+  "word": "sign",
+  "meaning": "兆候"
+},
+{
+  "id": 193,
+  "word": "demand",
+  "meaning": "需要"
+},
+{
+  "id": 194,
+  "word": "disease",
+  "meaning": "病気"
+},
+{
+  "id": 195,
+  "word": "lack",
+  "meaning": "不足"
+},
+{
+  "id": 196,
+  "word": "material",
+  "meaning": "材料"
+},
+{
+  "id": 197,
+  "word": "understanding",
+  "meaning": "理解"
+},
+{
+  "id": 198,
+  "word": "chance",
+  "meaning": "可能性"
+},
+{
+  "id": 199,
+  "word": "purpose",
+  "meaning": "目的"
+},
+{
+  "id": 200,
+  "word": "exercise",
+  "meaning": "運動"
+},
+{
+  "id": 201,
+  "word": "position",
+  "meaning": "位置"
+},
+{
+  "id": 202,
+  "word": "conversation",
+  "meaning": "会話"
+},
+{
+  "id": 203,
+  "word": "trade",
+  "meaning": "貿易"
+},
+{
+  "id": 204,
+  "word": "policy",
+  "meaning": "政策"
+},
+{
+  "id": 205,
+  "word": "trouble",
+  "meaning": "心配(事)"
+},
+{
+  "id": 206,
+  "word": "habit",
+  "meaning": "習慣"
+},
+{
+  "id": 207,
+  "word": "detail",
+  "meaning": "細部"
+},
+{
+  "id": 208,
+  "word": "method",
+  "meaning": "方法"
+},
+{
+  "id": 209,
+  "word": "moment",
+  "meaning": "瞬間"
+},
+{
+  "id": 210,
+  "word": "flight",
+  "meaning": "飛行"
+},
+{
+  "id": 211,
+  "word": "audience",
+  "meaning": "聴衆"
+},
+{
+  "id": 212,
+  "word": "vote",
+  "meaning": "投票"
+},
+{
+  "id": 213,
+  "word": "traffic",
+  "meaning": "交通(量)"
+},
+{
+  "id": 214,
+  "word": "score",
+  "meaning": "得点"
+},
+{
+  "id": 215,
+  "word": "tool",
+  "meaning": "道具"
+},
+{
+  "id": 216,
+  "word": "planet",
+  "meaning": "惑星"
+},
+{
+  "id": 217,
+  "word": "grade",
+  "meaning": "学年"
+},
+{
+  "id": 218,
+  "word": "truth",
+  "meaning": "真実"
+},
+{
+  "id": 219,
+  "word": "progress",
+  "meaning": "進歩"
+},
+{
+  "id": 220,
+  "word": "content",
+  "meaning": "中身"
+},
+{
+  "id": 221,
+  "word": "danger",
+  "meaning": "危険"
+},
+{
+  "id": 222,
+  "word": "date",
+  "meaning": "日"
+},
+{
+  "id": 223,
+  "word": "practice",
+  "meaning": "実行"
+},
+{
+  "id": 224,
+  "word": "party",
+  "meaning": "政党"
+},
+{
+  "id": 225,
+  "word": "respect",
+  "meaning": "尊敬"
+},
+{
+  "id": 226,
+  "word": "error",
+  "meaning": "誤り"
+},
+{
+  "id": 227,
+  "word": "mass",
+  "meaning": "塊"
+},
+{
+  "id": 228,
+  "word": "citizen",
+  "meaning": "国民"
+},
+{
+  "id": 229,
+  "word": "track",
+  "meaning": "通った跡"
+},
+{
+  "id": 230,
+  "word": "degree",
+  "meaning": "度"
+},
+{
+  "id": 231,
+  "word": "bill",
+  "meaning": "請求書"
+},
+{
+  "id": 232,
+  "word": "direction",
+  "meaning": "方向"
+},
+{
+  "id": 233,
+  "word": "sight",
+  "meaning": "視力"
+},
+{
+  "id": 234,
+  "word": "favor",
+  "meaning": "好意"
+},
+{
+  "id": 235,
+  "word": "route",
+  "meaning": "道"
+},
+{
+  "id": 236,
+  "word": "fuel",
+  "meaning": "燃料"
+},
+{
+  "id": 237,
+  "word": "crowd",
+  "meaning": "群衆"
+},
+{
+  "id": 238,
+  "word": "drug",
+  "meaning": "薬"
+},
+{
+  "id": 239,
+  "word": "possibility",
+  "meaning": "可能性"
+},
+{
+  "id": 240,
+  "word": "medicine",
+  "meaning": "医薬品"
+},
+{
+  "id": 241,
+  "word": "cash",
+  "meaning": "現金"
+},
+{
+  "id": 242,
+  "word": "clerk",
+  "meaning": "店員"
+},
+{
+  "id": 243,
+  "word": "plate",
+  "meaning": "皿"
+},
+{
+  "id": 244,
+  "word": "journey",
+  "meaning": "旅"
+},
+{
+  "id": 245,
+  "word": "pain",
+  "meaning": "痛み"
+},
+{
+  "id": 246,
+  "word": "passenger",
+  "meaning": "乗客"
+},
+{
+  "id": 247,
+  "word": "freedom",
+  "meaning": "自由"
+},
+{
+  "id": 248,
+  "word": "electricity",
+  "meaning": "電気"
+},
+{
+  "id": 249,
+  "word": "harm",
+  "meaning": "損害"
+},
+{
+  "id": 250,
+  "word": "trust",
+  "meaning": "信用"
+},
+{
+  "id": 251,
+  "word": "square",
+  "meaning": "正方形"
+},
+{
+  "id": 252,
+  "word": "signal",
+  "meaning": "信号"
+},
+{
+  "id": 253,
+  "word": "path",
+  "meaning": "小道"
+},
+{
+  "id": 254,
+  "word": "praise",
+  "meaning": "称賛"
+},
+{
+  "id": 255,
+  "word": "vocabulary",
+  "meaning": "語彙"
+},
+{
+  "id": 256,
+  "word": "balance",
+  "meaning": "釣り合い"
+},
+{
+  "id": 257,
+  "word": "youth",
+  "meaning": "青春[青年]時代"
+},
+{
+  "id": 258,
+  "word": "strength",
+  "meaning": "力"
+},
+{
+  "id": 259,
+  "word": "pleasure",
+  "meaning": "喜び"
+},
+{
+  "id": 260,
+  "word": "fellow",
+  "meaning": "やつ"
+},
+{
+  "id": 261,
+  "word": "manner",
+  "meaning": "方法"
+},
+{
+  "id": 262,
+  "word": "quarter",
+  "meaning": "4分の1"
+},
+{
+  "id": 263,
+  "word": "muscle",
+  "meaning": "筋肉"
+},
+{
+  "id": 264,
+  "word": "prison",
+  "meaning": "刑務所"
+},
+{
+  "id": 265,
+  "word": "bottom",
+  "meaning": "底"
+},
+{
+  "id": 266,
+  "word": "department",
+  "meaning": "部"
+},
+{
+  "id": 267,
+  "word": "excuse",
+  "meaning": "言い訳"
+},
+{
+  "id": 268,
+  "word": "spirit",
+  "meaning": "精神"
+},
+{
+  "id": 269,
+  "word": "stuff",
+  "meaning": "材料"
+},
+{
+  "id": 270,
+  "word": "edge",
+  "meaning": "角"
+},
+{
+  "id": 271,
+  "word": "proof",
+  "meaning": "証拠"
+},
+{
+  "id": 272,
+  "word": "rank",
+  "meaning": "階級"
+},
+{
+  "id": 273,
+  "word": "root",
+  "meaning": "根"
+},
+{
+  "id": 274,
+  "word": "length",
+  "meaning": "長さ"
+},
+{
+  "id": 275,
+  "word": "flood",
+  "meaning": "洪水"
+},
+{
+  "id": 276,
+  "word": "height",
+  "meaning": "高さ"
+},
+{
+  "id": 277,
+  "word": "peak",
+  "meaning": "頂点"
+},
+{
+  "id": 278,
+  "word": "tip",
+  "meaning": "チップ"
+},
+{
+  "id": 279,
+  "word": "occasion",
+  "meaning": "場合"
+},
+{
+  "id": 280,
+  "word": "package",
+  "meaning": "荷物"
+},
+{
+  "id": 281,
+  "word": "judge",
+  "meaning": "裁判官"
+},
+{
+  "id": 282,
+  "word": "thought",
+  "meaning": "思考"
+},
+{
+  "id": 283,
+  "word": "examination",
+  "meaning": "検査"
+},
+{
+  "id": 284,
+  "word": "meaning",
+  "meaning": "意味"
+},
+{
+  "id": 285,
+  "word": "duty",
+  "meaning": "義務"
+},
+{
+  "id": 286,
+  "word": "anger",
+  "meaning": "怒り"
+},
+{
+  "id": 287,
+  "word": "furniture",
+  "meaning": "家具"
+},
+{
+  "id": 288,
+  "word": "enemy",
+  "meaning": "敵"
+},
+{
+  "id": 289,
+  "word": "subway",
+  "meaning": "地下鉄"
+},
+{
+  "id": 290,
+  "word": "wheel",
+  "meaning": "車輪"
+},
+{
+  "id": 291,
+  "word": "district",
+  "meaning": "地区"
+},
+{
+  "id": 292,
+  "word": "crash",
+  "meaning": "衝突(事故)"
+},
+{
+  "id": 293,
+  "word": "courage",
+  "meaning": "勇気"
+},
+{
+  "id": 294,
+  "word": "stream",
+  "meaning": "小川"
+},
+{
+  "id": 295,
+  "word": "load",
+  "meaning": "積み荷"
+},
+{
+  "id": 296,
+  "word": "fare",
+  "meaning": "運賃"
+},
+{
+  "id": 297,
+  "word": "row",
+  "meaning": "列"
+},
+{
+  "id": 298,
+  "word": "fault",
+  "meaning": "誤り"
+},
+{
+  "id": 299,
+  "word": "neighbor",
+  "meaning": "隣人"
+},
+{
+  "id": 300,
+  "word": "solid",
+  "meaning": "固体"
+},
+{
+  "id": 301,
+  "word": "murder",
+  "meaning": "殺人"
+},
+{
+  "id": 302,
+  "word": "heaven",
+  "meaning": "天国"
+},
+{
+  "id": 303,
+  "word": "headache",
+  "meaning": "頭痛"
+},
+{
+  "id": 304,
+  "word": "pause",
+  "meaning": "中断"
+},
+{
+  "id": 305,
+  "word": "rumor",
+  "meaning": "うわさ"
+},
+{
+  "id": 306,
+  "word": "depth",
+  "meaning": "深さ"
+},
+{
+  "id": 307,
+  "word": "cheer",
+  "meaning": "喝采"
+},
+{
+  "id": 308,
+  "word": "dust",
+  "meaning": "ほこり"
+},
+{
+  "id": 309,
+  "word": "throat",
+  "meaning": "喉"
+},
+{
+  "id": 310,
+  "word": "purse",
+  "meaning": "ハンドバッグ"
+},
+{
+  "id": 311,
+  "word": "poison",
+  "meaning": "毒"
+},
+{
+  "id": 312,
+  "word": "shade",
+  "meaning": "陰"
+},
+{
+  "id": 313,
+  "word": "sweat",
+  "meaning": "汗"
+},
+{
+  "id": 314,
+  "word": "nephew",
+  "meaning": "おい"
+},
+{
+  "id": 315,
+  "word": "thief",
+  "meaning": "泥棒"
+},
+{
+  "id": 316,
+  "word": "mankind",
+  "meaning": "人類"
+},
+{
+  "id": 317,
+  "word": "envelope",
+  "meaning": "封筒"
+},
+{
+  "id": 318,
+  "word": "crew",
+  "meaning": "乗組員"
+},
+{
+  "id": 319,
+  "word": "dentist",
+  "meaning": "歯医者"
+},
+{
+  "id": 320,
+  "word": "ceiling",
+  "meaning": "天井(板)"
+},
+{
+  "id": 321,
+  "word": "own",
+  "meaning": "自分自身の"
+},
+{
+  "id": 322,
+  "word": "close",
+  "meaning": "接近した"
+},
+{
+  "id": 323,
+  "word": "likely",
+  "meaning": "～しそうな"
+},
+{
+  "id": 324,
+  "word": "least",
+  "meaning": "最小の"
+},
+{
+  "id": 325,
+  "word": "certain",
+  "meaning": "確信して"
+},
+{
+  "id": 326,
+  "word": "several",
+  "meaning": "幾つかの"
+},
+{
+  "id": 327,
+  "word": "present",
+  "meaning": "現在の"
+},
+{
+  "id": 328,
+  "word": "complete",
+  "meaning": "全部そろった"
+},
+{
+  "id": 329,
+  "word": "common",
+  "meaning": "普通の"
+},
+{
+  "id": 330,
+  "word": "similar",
+  "meaning": "よく似た"
+},
+{
+  "id": 331,
+  "word": "native",
+  "meaning": "母国の"
+},
+{
+  "id": 332,
+  "word": "scientific",
+  "meaning": "科学(上)の"
+},
+{
+  "id": 333,
+  "word": "necessary",
+  "meaning": "必要な"
+},
+{
+  "id": 334,
+  "word": "whole",
+  "meaning": "すべての"
+},
+{
+  "id": 335,
+  "word": "correct",
+  "meaning": "正しい"
+},
+{
+  "id": 336,
+  "word": "particular",
+  "meaning": "特定の"
+},
+{
+  "id": 337,
+  "word": "expensive",
+  "meaning": "高価な"
+},
+{
+  "id": 338,
+  "word": "general",
+  "meaning": "全体の"
+},
+{
+  "id": 339,
+  "word": "professional",
+  "meaning": "職業の"
+},
+{
+  "id": 340,
+  "word": "official",
+  "meaning": "公式の"
+},
+{
+  "id": 341,
+  "word": "standard",
+  "meaning": "標準の"
+},
+{
+  "id": 342,
+  "word": "western",
+  "meaning": "西にある"
+},
+{
+  "id": 343,
+  "word": "positive",
+  "meaning": "前向きな"
+},
+{
+  "id": 344,
+  "word": "active",
+  "meaning": "活動的な"
+},
+{
+  "id": 345,
+  "word": "worth",
+  "meaning": "～の価値がある"
+},
+{
+  "id": 346,
+  "word": "male",
+  "meaning": "男性の"
+},
+{
+  "id": 347,
+  "word": "responsible",
+  "meaning": "責任がある"
+},
+{
+  "id": 348,
+  "word": "private",
+  "meaning": "個人的な"
+},
+{
+  "id": 349,
+  "word": "familiar",
+  "meaning": "よく知られた"
+},
+{
+  "id": 350,
+  "word": "aware",
+  "meaning": "気づいて"
+},
+{
+  "id": 351,
+  "word": "female",
+  "meaning": "女性の"
+},
+{
+  "id": 352,
+  "word": "regular",
+  "meaning": "規則正しい"
+},
+{
+  "id": 353,
+  "word": "intelligent",
+  "meaning": "頭のいい"
+},
+{
+  "id": 354,
+  "word": "equal",
+  "meaning": "等しい"
+},
+{
+  "id": 355,
+  "word": "former",
+  "meaning": "前の"
+},
+{
+  "id": 356,
+  "word": "fair",
+  "meaning": "公平な"
+},
+{
+  "id": 357,
+  "word": "opposite",
+  "meaning": "正反対の"
+},
+{
+  "id": 358,
+  "word": "rapid",
+  "meaning": "速い"
+},
+{
+  "id": 359,
+  "word": "favorite",
+  "meaning": "お気に入りの"
+},
+{
+  "id": 360,
+  "word": "tiny",
+  "meaning": "とても小さい"
+},
+{
+  "id": 361,
+  "word": "willing",
+  "meaning": "いとわない"
+},
+{
+  "id": 362,
+  "word": "comfortable",
+  "meaning": "快適な"
+},
+{
+  "id": 363,
+  "word": "terrible",
+  "meaning": "猛烈な"
+},
+{
+  "id": 364,
+  "word": "raw",
+  "meaning": "生の"
+},
+{
+  "id": 365,
+  "word": "broad",
+  "meaning": "広い"
+},
+{
+  "id": 366,
+  "word": "sudden",
+  "meaning": "突然の"
+},
+{
+  "id": 367,
+  "word": "nervous",
+  "meaning": "心配な"
+},
+{
+  "id": 368,
+  "word": "proper",
+  "meaning": "適切な"
+},
+{
+  "id": 369,
+  "word": "reasonable",
+  "meaning": "理にかなった"
+},
+{
+  "id": 370,
+  "word": "proud",
+  "meaning": "誇りに思う"
+},
+{
+  "id": 371,
+  "word": "helpful",
+  "meaning": "助けになる"
+},
+{
+  "id": 372,
+  "word": "exact",
+  "meaning": "正確な"
+},
+{
+  "id": 373,
+  "word": "thick",
+  "meaning": "厚い"
+},
+{
+  "id": 374,
+  "word": "distant",
+  "meaning": "遠い"
+},
+{
+  "id": 375,
+  "word": "narrow",
+  "meaning": "狭い"
+},
+{
+  "id": 376,
+  "word": "clever",
+  "meaning": "利口な"
+},
+{
+  "id": 377,
+  "word": "pleasant",
+  "meaning": "心地良い"
+},
+{
+  "id": 378,
+  "word": "violent",
+  "meaning": "暴力的な"
+},
+{
+  "id": 379,
+  "word": "noble",
+  "meaning": "高潔な"
+},
+{
+  "id": 380,
+  "word": "anxious",
+  "meaning": "心配して"
+},
+{
+  "id": 381,
+  "word": "plain",
+  "meaning": "分かりやすい"
+},
+{
+  "id": 382,
+  "word": "empty",
+  "meaning": "空の"
+},
+{
+  "id": 383,
+  "word": "precious",
+  "meaning": "貴重な"
+},
+{
+  "id": 384,
+  "word": "thin",
+  "meaning": "薄い"
+},
+{
+  "id": 385,
+  "word": "used",
+  "meaning": "慣れている"
+},
+{
+  "id": 386,
+  "word": "awful",
+  "meaning": "ひどい"
+},
+{
+  "id": 387,
+  "word": "junior",
+  "meaning": "年下の"
+},
+{
+  "id": 388,
+  "word": "deaf",
+  "meaning": "耳が聞こえない"
+},
+{
+  "id": 389,
+  "word": "honest",
+  "meaning": "正直な"
+},
+{
+  "id": 390,
+  "word": "tight",
+  "meaning": "きつい"
+},
+{
+  "id": 391,
+  "word": "spare",
+  "meaning": "予備の"
+},
+{
+  "id": 392,
+  "word": "rough",
+  "meaning": "ざらざらした"
+},
+{
+  "id": 393,
+  "word": "thirsty",
+  "meaning": "喉が渇いた"
+},
+{
+  "id": 394,
+  "word": "silly",
+  "meaning": "愚かな"
+},
+{
+  "id": 395,
+  "word": "absent",
+  "meaning": "不在の"
+},
+{
+  "id": 396,
+  "word": "neat",
+  "meaning": "きちんとした"
+},
+{
+  "id": 397,
+  "word": "brilliant",
+  "meaning": "きらめく"
+},
+{
+  "id": 398,
+  "word": "smooth",
+  "meaning": "滑らかな"
+},
+{
+  "id": 399,
+  "word": "boring",
+  "meaning": "退屈な"
+},
+{
+  "id": 400,
+  "word": "false",
+  "meaning": "事実に反する"
+},
+{
+  "id": 401,
+  "word": "actually",
+  "meaning": "実は"
+},
+{
+  "id": 402,
+  "word": "probably",
+  "meaning": "恐らく"
+},
+{
+  "id": 403,
+  "word": "instead",
+  "meaning": "その代わりに"
+},
+{
+  "id": 404,
+  "word": "nearly",
+  "meaning": "ほとんど"
+},
+{
+  "id": 405,
+  "word": "indeed",
+  "meaning": "本当に"
+},
+{
+  "id": 406,
+  "word": "pretty",
+  "meaning": "かなり"
+},
+{
+  "id": 407,
+  "word": "hardly",
+  "meaning": "ほとんど～ない"
+},
+{
+  "id": 408,
+  "word": "abroad",
+  "meaning": "外国に[へ]"
+},
+{
+  "id": 409,
+  "word": "frequently",
+  "meaning": "しばしば"
+},
+{
+  "id": 410,
+  "word": "immediately",
+  "meaning": "すぐに"
+},
+{
+  "id": 411,
+  "word": "gradually",
+  "meaning": "次第に"
+},
+{
+  "id": 412,
+  "word": "anyway",
+  "meaning": "とにかく"
+},
+{
+  "id": 413,
+  "word": "originally",
+  "meaning": "もともとは"
+},
+{
+  "id": 414,
+  "word": "somewhat",
+  "meaning": "幾分"
+},
+{
+  "id": 415,
+  "word": "seldom",
+  "meaning": "めったに～ない"
+},
+{
+  "id": 416,
+  "word": "lately",
+  "meaning": "最近"
+},
+{
+  "id": 417,
+  "word": "increase",
+  "meaning": "増加する"
+},
+{
+  "id": 418,
+  "word": "consider",
+  "meaning": "～をよく考える"
+},
+{
+  "id": 419,
+  "word": "require",
+  "meaning": "～を必要とする"
+},
+{
+  "id": 420,
+  "word": "tend",
+  "meaning": "～しがちである"
+},
+{
+  "id": 421,
+  "word": "reduce",
+  "meaning": "～を減らす"
+},
+{
+  "id": 422,
+  "word": "affect",
+  "meaning": "～に影響する"
+},
+{
+  "id": 423,
+  "word": "challenge",
+  "meaning": "～に挑む"
+},
+{
+  "id": 424,
+  "word": "encourage",
+  "meaning": "～を勇気づける"
+},
+{
+  "id": 425,
+  "word": "achieve",
+  "meaning": "～を成し遂げる"
+},
+{
+  "id": 426,
+  "word": "avoid",
+  "meaning": "～を避ける"
+},
+{
+  "id": 427,
+  "word": "recognize",
+  "meaning": "～を見分ける"
+},
+{
+  "id": 428,
+  "word": "argue",
+  "meaning": "議論する"
+},
+{
+  "id": 429,
+  "word": "refer",
+  "meaning": "言及する"
+},
+{
+  "id": 430,
+  "word": "advance",
+  "meaning": "前進する"
+},
+{
+  "id": 431,
+  "word": "treat",
+  "meaning": "～を扱う"
+},
+{
+  "id": 432,
+  "word": "occur",
+  "meaning": "起こる"
+},
+{
+  "id": 433,
+  "word": "relate",
+  "meaning": "～を関係づける"
+},
+{
+  "id": 434,
+  "word": "survive",
+  "meaning": "～より長生きする"
+},
+{
+  "id": 435,
+  "word": "maintain",
+  "meaning": "～を維持する"
+},
+{
+  "id": 436,
+  "word": "determine",
+  "meaning": "を明らかにする"
+},
+{
+  "id": 437,
+  "word": "search",
+  "meaning": "～を探す"
+},
+{
+  "id": 438,
+  "word": "ignore",
+  "meaning": "～を無視する"
+},
+{
+  "id": 439,
+  "word": "identify",
+  "meaning": "～を特定する"
+},
+{
+  "id": 440,
+  "word": "suppose",
+  "meaning": "～だと思う"
+},
+{
+  "id": 441,
+  "word": "seek",
+  "meaning": "を求める"
+},
+{
+  "id": 442,
+  "word": "establish",
+  "meaning": "～を設立する"
+},
+{
+  "id": 443,
+  "word": "attract",
+  "meaning": "を引く"
+},
+{
+  "id": 444,
+  "word": "replace",
+  "meaning": "～に取って代わる"
+},
+{
+  "id": 445,
+  "word": "connect",
+  "meaning": "～をつなぐ"
+},
+{
+  "id": 446,
+  "word": "contact",
+  "meaning": "～に連絡する"
+},
+{
+  "id": 447,
+  "word": "observe",
+  "meaning": "～を観察する"
+},
+{
+  "id": 448,
+  "word": "represent",
+  "meaning": "～を代表する"
+},
+{
+  "id": 449,
+  "word": "attempt",
+  "meaning": "～を試みる"
+},
+{
+  "id": 450,
+  "word": "desire",
+  "meaning": "～を(強く)望む"
+},
+{
+  "id": 451,
+  "word": "decrease",
+  "meaning": "減少する"
+},
+{
+  "id": 452,
+  "word": "select",
+  "meaning": "～を選ぶ"
+},
+{
+  "id": 453,
+  "word": "reflect",
+  "meaning": "～を反射する"
+},
+{
+  "id": 454,
+  "word": "graduate",
+  "meaning": "卒業する"
+},
+{
+  "id": 455,
+  "word": "rely",
+  "meaning": "頼る"
+},
+{
+  "id": 456,
+  "word": "release",
+  "meaning": "～を自由にする"
+},
+{
+  "id": 457,
+  "word": "invent",
+  "meaning": "～を発明する"
+},
+{
+  "id": 458,
+  "word": "satisfy",
+  "meaning": "～を満足させる"
+},
+{
+  "id": 459,
+  "word": "exchange",
+  "meaning": "～を交換する"
+},
+{
+  "id": 460,
+  "word": "display",
+  "meaning": "～を展示する"
+},
+{
+  "id": 461,
+  "word": "respond",
+  "meaning": "反応する"
+},
+{
+  "id": 462,
+  "word": "refuse",
+  "meaning": "を断る"
+},
+{
+  "id": 463,
+  "word": "adopt",
+  "meaning": "を採用する"
+},
+{
+  "id": 464,
+  "word": "recommend",
+  "meaning": "～を薦める"
+},
+{
+  "id": 465,
+  "word": "operate",
+  "meaning": "を操作する"
+},
+{
+  "id": 466,
+  "word": "threaten",
+  "meaning": "(人)を脅す"
+},
+{
+  "id": 467,
+  "word": "translate",
+  "meaning": "～を翻訳する"
+},
+{
+  "id": 468,
+  "word": "surround",
+  "meaning": "～を(取り)囲む"
+},
+{
+  "id": 469,
+  "word": "appreciate",
+  "meaning": "～に感謝する"
+},
+{
+  "id": 470,
+  "word": "delay",
+  "meaning": "～を延期する"
+},
+{
+  "id": 471,
+  "word": "settle",
+  "meaning": "移住する"
+},
+{
+  "id": 472,
+  "word": "reject",
+  "meaning": "を拒絶する"
+},
+{
+  "id": 473,
+  "word": "import",
+  "meaning": "～を輸入する"
+},
+{
+  "id": 474,
+  "word": "admit",
+  "meaning": "～を認める"
+},
+{
+  "id": 475,
+  "word": "explore",
+  "meaning": "～を探検する"
+},
+{
+  "id": 476,
+  "word": "oppose",
+  "meaning": "～に反対する"
+},
+{
+  "id": 477,
+  "word": "found",
+  "meaning": "～を創立する"
+},
+{
+  "id": 478,
+  "word": "remind",
+  "meaning": "～に思い出させる"
+},
+{
+  "id": 479,
+  "word": "insist",
+  "meaning": "～を強く主張する"
+},
+{
+  "id": 480,
+  "word": "commit",
+  "meaning": "を犯す"
+},
+{
+  "id": 481,
+  "word": "export",
+  "meaning": "～を輸出する"
+},
+{
+  "id": 482,
+  "word": "employ",
+  "meaning": "～を雇う"
+},
+{
+  "id": 483,
+  "word": "impress",
+  "meaning": "～に感銘を与える"
+},
+{
+  "id": 484,
+  "word": "confirm",
+  "meaning": "～を確認する"
+},
+{
+  "id": 485,
+  "word": "bury",
+  "meaning": "～を埋葬する"
+},
+{
+  "id": 486,
+  "word": "defeat",
+  "meaning": "～を負かす"
+},
+{
+  "id": 487,
+  "word": "approve",
+  "meaning": "～を承認する"
+},
+{
+  "id": 488,
+  "word": "transfer",
+  "meaning": "～を転任[転勤]させる"
+},
+{
+  "id": 489,
+  "word": "breed",
+  "meaning": "～を飼育する"
+},
+{
+  "id": 490,
+  "word": "occupy",
+  "meaning": "を占有する"
+},
+{
+  "id": 491,
+  "word": "attach",
+  "meaning": "～を添付する"
+},
+{
+  "id": 492,
+  "word": "regret",
+  "meaning": "～を後悔する"
+},
+{
+  "id": 493,
+  "word": "grant",
+  "meaning": "～を与える"
+},
+{
+  "id": 494,
+  "word": "retire",
+  "meaning": "退職する"
+},
+{
+  "id": 495,
+  "word": "suspect",
+  "meaning": "～を怪しいと思う"
+},
+{
+  "id": 496,
+  "word": "reform",
+  "meaning": "～を改革する"
+},
+{
+  "id": 497,
+  "word": "pretend",
+  "meaning": "～を装う"
+},
+{
+  "id": 498,
+  "word": "accompany",
+  "meaning": "に同行する"
+},
+{
+  "id": 499,
+  "word": "neglect",
+  "meaning": "を怠る"
+},
+{
+  "id": 500,
+  "word": "chase",
+  "meaning": "～を追いかける"
+},
+{
+  "id": 501,
+  "word": "spoil",
+  "meaning": "～を台無しにする"
+},
+{
+  "id": 502,
+  "word": "deserve",
+  "meaning": "に値する"
+},
+{
+  "id": 503,
+  "word": "possess",
+  "meaning": "を所有する"
+},
+{
+  "id": 504,
+  "word": "entertain",
+  "meaning": "～を楽しませる"
+},
+{
+  "id": 505,
+  "word": "arrest",
+  "meaning": "～を逮捕する"
+},
+{
+  "id": 506,
+  "word": "interrupt",
+  "meaning": "の邪魔をする"
+},
+{
+  "id": 507,
+  "word": "tap",
+  "meaning": "～をポンとたたく"
+},
+{
+  "id": 508,
+  "word": "rob",
+  "meaning": "～から奪う"
+},
+{
+  "id": 509,
+  "word": "dismiss",
+  "meaning": "を退ける"
+},
+{
+  "id": 510,
+  "word": "bind",
+  "meaning": "～を縛る"
+},
+{
+  "id": 511,
+  "word": "greet",
+  "meaning": "～にあいさつする"
+},
+{
+  "id": 512,
+  "word": "boast",
+  "meaning": "自慢する"
+},
+{
+  "id": 513,
+  "word": "beg",
+  "meaning": "を求める"
+},
+{
+  "id": 514,
+  "word": "swell",
+  "meaning": "膨らむ"
+},
+{
+  "id": 515,
+  "word": "lean",
+  "meaning": "身を乗り出す"
+},
+{
+  "id": 516,
+  "word": "yell",
+  "meaning": "大声で叫ぶ"
+},
+{
+  "id": 517,
+  "word": "crush",
+  "meaning": "～を押しつぶす"
+},
+{
+  "id": 518,
+  "word": "offend",
+  "meaning": "(人)の感情を害する"
+},
+{
+  "id": 519,
+  "word": "split",
+  "meaning": "分裂する"
+},
+{
+  "id": 520,
+  "word": "twist",
+  "meaning": "～をねじる"
+},
+{
+  "id": 521,
+  "word": "crack",
+  "meaning": "～をピシャリとたたく"
+},
+{
+  "id": 522,
+  "word": "scratch",
+  "meaning": "～を引っかく"
+},
+{
+  "id": 523,
+  "word": "mount",
+  "meaning": "に登る"
+},
+{
+  "id": 524,
+  "word": "knit",
+  "meaning": "～を編む"
+},
+{
+  "id": 525,
+  "word": "rub",
+  "meaning": "～をこする"
+},
+{
+  "id": 526,
+  "word": "quarrel",
+  "meaning": "けんかする"
+},
+{
+  "id": 527,
+  "word": "swear",
+  "meaning": "～を誓う"
+},
+{
+  "id": 528,
+  "word": "sigh",
+  "meaning": "ため息をつく"
+},
+{
+  "id": 529,
+  "word": "author",
+  "meaning": "著者"
+},
+{
+  "id": 530,
+  "word": "research",
+  "meaning": "研究"
+},
+{
+  "id": 531,
+  "word": "technology",
+  "meaning": "科学技術"
+},
+{
+  "id": 532,
+  "word": "government",
+  "meaning": "政府"
+},
+{
+  "id": 533,
+  "word": "skill",
+  "meaning": "技能"
+},
+{
+  "id": 534,
+  "word": "article",
+  "meaning": "記事"
+},
+{
+  "id": 535,
+  "word": "environment",
+  "meaning": "自然環境"
+},
+{
+  "id": 536,
+  "word": "value",
+  "meaning": "価値"
+},
+{
+  "id": 537,
+  "word": "influence",
+  "meaning": "影響力"
+},
+{
+  "id": 538,
+  "word": "experiment",
+  "meaning": "実験"
+},
+{
+  "id": 539,
+  "word": "population",
+  "meaning": "人口"
+},
+{
+  "id": 540,
+  "word": "benefit",
+  "meaning": "利益"
+},
+{
+  "id": 541,
+  "word": "blank",
+  "meaning": "空所"
+},
+{
+  "id": 542,
+  "word": "relationship",
+  "meaning": "関係"
+},
+{
+  "id": 543,
+  "word": "data",
+  "meaning": "資料"
+},
+{
+  "id": 544,
+  "word": "average",
+  "meaning": "平均"
+},
+{
+  "id": 545,
+  "word": "community",
+  "meaning": "地域社会(の人々)"
+},
+{
+  "id": 546,
+  "word": "theory",
+  "meaning": "理論"
+},
+{
+  "id": 547,
+  "word": "risk",
+  "meaning": "危険(性)"
+},
+{
+  "id": 548,
+  "word": "concern",
+  "meaning": "心配"
+},
+{
+  "id": 549,
+  "word": "statement",
+  "meaning": "声明"
+},
+{
+  "id": 550,
+  "word": "generation",
+  "meaning": "同時代の人々"
+},
+{
+  "id": 551,
+  "word": "situation",
+  "meaning": "状況"
+},
+{
+  "id": 552,
+  "word": "growth",
+  "meaning": "成長"
+},
+{
+  "id": 553,
+  "word": "project",
+  "meaning": "計画"
+},
+{
+  "id": 554,
+  "word": "emotion",
+  "meaning": "感情"
+},
+{
+  "id": 555,
+  "word": "expression",
+  "meaning": "表現"
+},
+{
+  "id": 556,
+  "word": "communication",
+  "meaning": "伝達"
+},
+{
+  "id": 557,
+  "word": "item",
+  "meaning": "項目"
+},
+{
+  "id": 558,
+  "word": "quality",
+  "meaning": "質"
+},
+{
+  "id": 559,
+  "word": "opportunity",
+  "meaning": "機会"
+},
+{
+  "id": 560,
+  "word": "impact",
+  "meaning": "影響(力)"
+},
+{
+  "id": 561,
+  "word": "economy",
+  "meaning": "経済"
+},
+{
+  "id": 562,
+  "word": "evidence",
+  "meaning": "証拠"
+},
+{
+  "id": 563,
+  "word": "function",
+  "meaning": "機能"
+},
+{
+  "id": 564,
+  "word": "climate",
+  "meaning": "気候"
+},
+{
+  "id": 565,
+  "word": "production",
+  "meaning": "生産"
+},
+{
+  "id": 566,
+  "word": "temperature",
+  "meaning": "温度"
+},
+{
+  "id": 567,
+  "word": "stress",
+  "meaning": "ストレス"
+},
+{
+  "id": 568,
+  "word": "intelligence",
+  "meaning": "知能"
+},
+{
+  "id": 569,
+  "word": "tax",
+  "meaning": "税金"
+},
+{
+  "id": 570,
+  "word": "customer",
+  "meaning": "顧客"
+},
+{
+  "id": 571,
+  "word": "expert",
+  "meaning": "専門家"
+},
+{
+  "id": 572,
+  "word": "wage",
+  "meaning": "賃金"
+},
+{
+  "id": 573,
+  "word": "advantage",
+  "meaning": "有利(な点)"
+},
+{
+  "id": 574,
+  "word": "variety",
+  "meaning": "さまざまな～"
+},
+{
+  "id": 575,
+  "word": "marriage",
+  "meaning": "結婚"
+},
+{
+  "id": 576,
+  "word": "response",
+  "meaning": "返答"
+},
+{
+  "id": 577,
+  "word": "income",
+  "meaning": "所得"
+},
+{
+  "id": 578,
+  "word": "range",
+  "meaning": "範囲"
+},
+{
+  "id": 579,
+  "word": "access",
+  "meaning": "利用する(面会する)権利"
+},
+{
+  "id": 580,
+  "word": "trend",
+  "meaning": "傾向"
+},
+{
+  "id": 581,
+  "word": "organization",
+  "meaning": "組織"
+},
+{
+  "id": 582,
+  "word": "argument",
+  "meaning": "口論"
+},
+{
+  "id": 583,
+  "word": "pressure",
+  "meaning": "圧力"
+},
+{
+  "id": 584,
+  "word": "cell",
+  "meaning": "細胞"
+},
+{
+  "id": 585,
+  "word": "labor",
+  "meaning": "労働"
+},
+{
+  "id": 586,
+  "word": "director",
+  "meaning": "監督"
+},
+{
+  "id": 587,
+  "word": "belief",
+  "meaning": "信じていること"
+},
+{
+  "id": 588,
+  "word": "performance",
+  "meaning": "演奏"
+},
+{
+  "id": 589,
+  "word": "feature",
+  "meaning": "特徴"
+},
+{
+  "id": 590,
+  "word": "reward",
+  "meaning": "報酬"
+},
+{
+  "id": 591,
+  "word": "device",
+  "meaning": "装置"
+},
+{
+  "id": 592,
+  "word": "structure",
+  "meaning": "構造"
+},
+{
+  "id": 593,
+  "word": "employee",
+  "meaning": "従業員"
+},
+{
+  "id": 594,
+  "word": "supply",
+  "meaning": "供給"
+},
+{
+  "id": 595,
+  "word": "background",
+  "meaning": "経歴"
+},
+{
+  "id": 596,
+  "word": "basis",
+  "meaning": "基礎"
+},
+{
+  "id": 597,
+  "word": "attitude",
+  "meaning": "態度"
+},
+{
+  "id": 598,
+  "word": "addition",
+  "meaning": "追加"
+},
+{
+  "id": 599,
+  "word": "scale",
+  "meaning": "規模"
+},
+{
+  "id": 600,
+  "word": "conduct",
+  "meaning": "行為"
+},
+{
+  "id": 601,
+  "word": "surface",
+  "meaning": "表面"
+},
+{
+  "id": 602,
+  "word": "chemical",
+  "meaning": "化学物質"
+},
+{
+  "id": 603,
+  "word": "gap",
+  "meaning": "隙間"
+},
+{
+  "id": 604,
+  "word": "principle",
+  "meaning": "原理"
+},
+{
+  "id": 605,
+  "word": "option",
+  "meaning": "選択"
+},
+{
+  "id": 606,
+  "word": "profit",
+  "meaning": "利益"
+},
+{
+  "id": 607,
+  "word": "failure",
+  "meaning": "失敗"
+},
+{
+  "id": 608,
+  "word": "interview",
+  "meaning": "面接"
+},
+{
+  "id": 609,
+  "word": "career",
+  "meaning": "経歴"
+},
+{
+  "id": 610,
+  "word": "creature",
+  "meaning": "生物"
+},
+{
+  "id": 611,
+  "word": "reality",
+  "meaning": "現実(性)"
+},
+{
+  "id": 612,
+  "word": "security",
+  "meaning": "安全保障"
+},
+{
+  "id": 613,
+  "word": "revolution",
+  "meaning": "革命"
+},
+{
+  "id": 614,
+  "word": "loss",
+  "meaning": "紛失"
+},
+{
+  "id": 615,
+  "word": "wealth",
+  "meaning": "富"
+},
+{
+  "id": 616,
+  "word": "property",
+  "meaning": "財産"
+},
+{
+  "id": 617,
+  "word": "literature",
+  "meaning": "文学"
+},
+{
+  "id": 618,
+  "word": "responsibility",
+  "meaning": "責任"
+},
+{
+  "id": 619,
+  "word": "competition",
+  "meaning": "競争"
+},
+{
+  "id": 620,
+  "word": "journal",
+  "meaning": "雑誌"
+},
+{
+  "id": 621,
+  "word": "discovery",
+  "meaning": "発見"
+},
+{
+  "id": 622,
+  "word": "description",
+  "meaning": "描写"
+},
+{
+  "id": 623,
+  "word": "childhood",
+  "meaning": "子どもの頃"
+},
+{
+  "id": 624,
+  "word": "series",
+  "meaning": "連続"
+},
+{
+  "id": 625,
+  "word": "crop",
+  "meaning": "作物"
+},
+{
+  "id": 626,
+  "word": "election",
+  "meaning": "選挙"
+},
+{
+  "id": 627,
+  "word": "personality",
+  "meaning": "個性"
+},
+{
+  "id": 628,
+  "word": "threat",
+  "meaning": "脅威"
+},
+{
+  "id": 629,
+  "word": "budget",
+  "meaning": "予算"
+},
+{
+  "id": 630,
+  "word": "crime",
+  "meaning": "犯罪"
+},
+{
+  "id": 631,
+  "word": "institution",
+  "meaning": "機関"
+},
+{
+  "id": 632,
+  "word": "location",
+  "meaning": "立地"
+},
+{
+  "id": 633,
+  "word": "reaction",
+  "meaning": "反応"
+},
+{
+  "id": 634,
+  "word": "fund",
+  "meaning": "資金"
+},
+{
+  "id": 635,
+  "word": "schedule",
+  "meaning": "予定"
+},
+{
+  "id": 636,
+  "word": "instrument",
+  "meaning": "道具"
+},
+{
+  "id": 637,
+  "word": "vision",
+  "meaning": "視力"
+},
+{
+  "id": 638,
+  "word": "technique",
+  "meaning": "(専門)技術"
+},
+{
+  "id": 639,
+  "word": "lecture",
+  "meaning": "講義"
+},
+{
+  "id": 640,
+  "word": "tale",
+  "meaning": "話"
+},
+{
+  "id": 641,
+  "word": "application",
+  "meaning": "申請"
+},
+{
+  "id": 642,
+  "word": "target",
+  "meaning": "標的"
+},
+{
+  "id": 643,
+  "word": "talent",
+  "meaning": "才能"
+},
+{
+  "id": 644,
+  "word": "majority",
+  "meaning": "大多数"
+},
+{
+  "id": 645,
+  "word": "vehicle",
+  "meaning": "乗り物"
+},
+{
+  "id": 646,
+  "word": "battery",
+  "meaning": "電池"
+},
+{
+  "id": 647,
+  "word": "authority",
+  "meaning": "権威"
+},
+{
+  "id": 648,
+  "word": "explanation",
+  "meaning": "説明"
+},
+{
+  "id": 649,
+  "word": "universe",
+  "meaning": "宇宙"
+},
+{
+  "id": 650,
+  "word": "management",
+  "meaning": "経営"
+},
+{
+  "id": 651,
+  "word": "novel",
+  "meaning": "(長編)小説"
+},
+{
+  "id": 652,
+  "word": "instruction",
+  "meaning": "使用説明書"
+},
+{
+  "id": 653,
+  "word": "regulation",
+  "meaning": "規則"
+},
+{
+  "id": 654,
+  "word": "appeal",
+  "meaning": "訴え"
+},
+{
+  "id": 655,
+  "word": "union",
+  "meaning": "連合体"
+},
+{
+  "id": 656,
+  "word": "treasure",
+  "meaning": "財宝"
+},
+{
+  "id": 657,
+  "word": "analysis",
+  "meaning": "分析"
+},
+{
+  "id": 658,
+  "word": "manufacture",
+  "meaning": "製造業"
+},
+{
+  "id": 659,
+  "word": "relation",
+  "meaning": "関係"
+},
+{
+  "id": 660,
+  "word": "alcohol",
+  "meaning": "アルコール飲料"
+},
+{
+  "id": 661,
+  "word": "physics",
+  "meaning": "物理学"
+},
+{
+  "id": 662,
+  "word": "review",
+  "meaning": "再考"
+},
+{
+  "id": 663,
+  "word": "tradition",
+  "meaning": "伝統"
+},
+{
+  "id": 664,
+  "word": "improvement",
+  "meaning": "改良"
+},
+{
+  "id": 665,
+  "word": "element",
+  "meaning": "要素"
+},
+{
+  "id": 666,
+  "word": "equipment",
+  "meaning": "備品"
+},
+{
+  "id": 667,
+  "word": "rhythm",
+  "meaning": "リズム"
+},
+{
+  "id": 668,
+  "word": "volume",
+  "meaning": "容積"
+},
+{
+  "id": 669,
+  "word": "stock",
+  "meaning": "在庫"
+},
+{
+  "id": 670,
+  "word": "aid",
+  "meaning": "援助"
+},
+{
+  "id": 671,
+  "word": "comment",
+  "meaning": "論評"
+},
+{
+  "id": 672,
+  "word": "fortune",
+  "meaning": "財産"
+},
+{
+  "id": 673,
+  "word": "combination",
+  "meaning": "組み合わせ"
+},
+{
+  "id": 674,
+  "word": "poetry",
+  "meaning": "詩"
+},
+{
+  "id": 675,
+  "word": "agency",
+  "meaning": "機関"
+},
+{
+  "id": 676,
+  "word": "continent",
+  "meaning": "大陸"
+},
+{
+  "id": 677,
+  "word": "document",
+  "meaning": "書類"
+},
+{
+  "id": 678,
+  "word": "credit",
+  "meaning": "信用"
+},
+{
+  "id": 679,
+  "word": "geography",
+  "meaning": "地理学"
+},
+{
+  "id": 680,
+  "word": "organ",
+  "meaning": "器官"
+},
+{
+  "id": 681,
+  "word": "contract",
+  "meaning": "契約"
+},
+{
+  "id": 682,
+  "word": "agreement",
+  "meaning": "協定"
+},
+{
+  "id": 683,
+  "word": "employment",
+  "meaning": "雇用"
+},
+{
+  "id": 684,
+  "word": "confidence",
+  "meaning": "信頼"
+},
+{
+  "id": 685,
+  "word": "trap",
+  "meaning": "わな"
+},
+{
+  "id": 686,
+  "word": "religion",
+  "meaning": "宗教"
+},
+{
+  "id": 687,
+  "word": "victim",
+  "meaning": "犠牲者"
+},
+{
+  "id": 688,
+  "word": "committee",
+  "meaning": "委員会"
+},
+{
+  "id": 689,
+  "word": "witness",
+  "meaning": "目撃者"
+},
+{
+  "id": 690,
+  "word": "criminal",
+  "meaning": "犯人"
+},
+{
+  "id": 691,
+  "word": "selection",
+  "meaning": "選択"
+},
+{
+  "id": 692,
+  "word": "seed",
+  "meaning": "種"
+},
+{
+  "id": 693,
+  "word": "lane",
+  "meaning": "車線"
+},
+{
+  "id": 694,
+  "word": "kingdom",
+  "meaning": "王国"
+},
+{
+  "id": 695,
+  "word": "merchant",
+  "meaning": "商人"
+},
+{
+  "id": 696,
+  "word": "neighborhood",
+  "meaning": "近所"
+},
+{
+  "id": 697,
+  "word": "fee",
+  "meaning": "料金"
+},
+{
+  "id": 698,
+  "word": "client",
+  "meaning": "顧客"
+},
+{
+  "id": 699,
+  "word": "exception",
+  "meaning": "例外"
+},
+{
+  "id": 700,
+  "word": "victory",
+  "meaning": "勝利"
+},
+{
+  "id": 701,
+  "word": "expense",
+  "meaning": "費用"
+},
+{
+  "id": 702,
+  "word": "justice",
+  "meaning": "司法"
+},
+{
+  "id": 703,
+  "word": "relief",
+  "meaning": "安心"
+},
+{
+  "id": 704,
+  "word": "honor",
+  "meaning": "名誉"
+},
+{
+  "id": 705,
+  "word": "wallet",
+  "meaning": "財布"
+},
+{
+  "id": 706,
+  "word": "atom",
+  "meaning": "原子"
+},
+{
+  "id": 707,
+  "word": "frame",
+  "meaning": "枠"
+},
+{
+  "id": 708,
+  "word": "slave",
+  "meaning": "奴隷"
+},
+{
+  "id": 709,
+  "word": "ceremony",
+  "meaning": "式"
+},
+{
+  "id": 710,
+  "word": "mineral",
+  "meaning": "鉱物"
+},
+{
+  "id": 711,
+  "word": "motion",
+  "meaning": "動き"
+},
+{
+  "id": 712,
+  "word": "setting",
+  "meaning": "環境"
+},
+{
+  "id": 713,
+  "word": "employer",
+  "meaning": "雇い主"
+},
+{
+  "id": 714,
+  "word": "string",
+  "meaning": "ひも"
+},
+{
+  "id": 715,
+  "word": "finance",
+  "meaning": "財政"
+},
+{
+  "id": 716,
+  "word": "border",
+  "meaning": "国境(線)"
+},
+{
+  "id": 717,
+  "word": "minister",
+  "meaning": "大臣"
+},
+{
+  "id": 718,
+  "word": "ray",
+  "meaning": "光線"
+},
+{
+  "id": 719,
+  "word": "faith",
+  "meaning": "信頼"
+},
+{
+  "id": 720,
+  "word": "composition",
+  "meaning": "構成"
+},
+{
+  "id": 721,
+  "word": "cure",
+  "meaning": "治療(法)"
+},
+{
+  "id": 722,
+  "word": "bomb",
+  "meaning": "爆弾"
+},
+{
+  "id": 723,
+  "word": "flash",
+  "meaning": "きらめき"
+},
+{
+  "id": 724,
+  "word": "license",
+  "meaning": "許可"
+},
+{
+  "id": 725,
+  "word": "specialist",
+  "meaning": "専門家"
+},
+{
+  "id": 726,
+  "word": "affair",
+  "meaning": "用事"
+},
+{
+  "id": 727,
+  "word": "shame",
+  "meaning": "残念なこと"
+},
+{
+  "id": 728,
+  "word": "protest",
+  "meaning": "抗議"
+},
+{
+  "id": 729,
+  "word": "passion",
+  "meaning": "情熱"
+},
+{
+  "id": 730,
+  "word": "soil",
+  "meaning": "土"
+},
+{
+  "id": 731,
+  "word": "pile",
+  "meaning": "(物の)積み重ね"
+},
+{
+  "id": 732,
+  "word": "horizon",
+  "meaning": "地平線"
+},
+{
+  "id": 733,
+  "word": "instant",
+  "meaning": "瞬間"
+},
+{
+  "id": 734,
+  "word": "insurance",
+  "meaning": "保険"
+},
+{
+  "id": 735,
+  "word": "shelf",
+  "meaning": "棚"
+},
+{
+  "id": 736,
+  "word": "glance",
+  "meaning": "ちらりと見ること"
+},
+{
+  "id": 737,
+  "word": "necessity",
+  "meaning": "必要"
+},
+{
+  "id": 738,
+  "word": "ruin",
+  "meaning": "破滅"
+},
+{
+  "id": 739,
+  "word": "appointment",
+  "meaning": "約束"
+},
+{
+  "id": 740,
+  "word": "vitamin",
+  "meaning": "ビタミン"
+},
+{
+  "id": 741,
+  "word": "profession",
+  "meaning": "職業"
+},
+{
+  "id": 742,
+  "word": "sum",
+  "meaning": "金額"
+},
+{
+  "id": 743,
+  "word": "alarm",
+  "meaning": "警報装置"
+},
+{
+  "id": 744,
+  "word": "dawn",
+  "meaning": "夜明け"
+},
+{
+  "id": 745,
+  "word": "housework",
+  "meaning": "家事"
+},
+{
+  "id": 746,
+  "word": "soul",
+  "meaning": "魂"
+},
+{
+  "id": 747,
+  "word": "weapon",
+  "meaning": "武器"
+},
+{
+  "id": 748,
+  "word": "earthquake",
+  "meaning": "地震"
+},
+{
+  "id": 749,
+  "word": "sympathy",
+  "meaning": "同情"
+},
+{
+  "id": 750,
+  "word": "delight",
+  "meaning": "大喜び"
+},
+{
+  "id": 751,
+  "word": "lung",
+  "meaning": "肺"
+},
+{
+  "id": 752,
+  "word": "rent",
+  "meaning": "賃貸料"
+},
+{
+  "id": 753,
+  "word": "hunger",
+  "meaning": "空腹感"
+},
+{
+  "id": 754,
+  "word": "fever",
+  "meaning": "熱"
+},
+{
+  "id": 755,
+  "word": "dirt",
+  "meaning": "汚れ"
+},
+{
+  "id": 756,
+  "word": "refrigerator",
+  "meaning": "冷蔵庫"
+},
+{
+  "id": 757,
+  "word": "pity",
+  "meaning": "残念なこと"
+},
+{
+  "id": 758,
+  "word": "flour",
+  "meaning": "小麦粉"
+},
+{
+  "id": 759,
+  "word": "cellphone",
+  "meaning": "携帯電話"
+},
+{
+  "id": 760,
+  "word": "ladder",
+  "meaning": "はしご"
+},
+{
+  "id": 761,
+  "word": "leisure",
+  "meaning": "余暇"
+},
+{
+  "id": 762,
+  "word": "angle",
+  "meaning": "角度"
+},
+{
+  "id": 763,
+  "word": "thread",
+  "meaning": "糸"
+},
+{
+  "id": 764,
+  "word": "wheat",
+  "meaning": "小麦"
+},
+{
+  "id": 765,
+  "word": "cough",
+  "meaning": "せき"
+},
+{
+  "id": 766,
+  "word": "funeral",
+  "meaning": "葬式"
+},
+{
+  "id": 767,
+  "word": "flock",
+  "meaning": "群れ"
+},
+{
+  "id": 768,
+  "word": "liberty",
+  "meaning": "自由"
+},
+{
+  "id": 769,
+  "word": "luggage",
+  "meaning": "手荷物"
+},
+{
+  "id": 770,
+  "word": "chairman",
+  "meaning": "議長"
+},
+{
+  "id": 771,
+  "word": "temper",
+  "meaning": "気分"
+},
+{
+  "id": 772,
+  "word": "jail",
+  "meaning": "拘置所"
+},
+{
+  "id": 773,
+  "word": "drawer",
+  "meaning": "引き出し"
+},
+{
+  "id": 774,
+  "word": "scissors",
+  "meaning": "はさみ"
+},
+{
+  "id": 775,
+  "word": "wound",
+  "meaning": "傷"
+},
+{
+  "id": 776,
+  "word": "merit",
+  "meaning": "長所"
+},
+{
+  "id": 777,
+  "word": "pill",
+  "meaning": "錠剤"
+},
+{
+  "id": 778,
+  "word": "engineering",
+  "meaning": "工学"
+},
+{
+  "id": 779,
+  "word": "means",
+  "meaning": "手段"
+},
+{
+  "id": 780,
+  "word": "lightning",
+  "meaning": "稲妻"
+},
+{
+  "id": 781,
+  "word": "ambulance",
+  "meaning": "救急車"
+},
+{
+  "id": 782,
+  "word": "goods",
+  "meaning": "商品"
+},
+{
+  "id": 783,
+  "word": "statue",
+  "meaning": "像"
+},
+{
+  "id": 784,
+  "word": "signature",
+  "meaning": "署名"
+},
+{
+  "id": 785,
+  "word": "public",
+  "meaning": "公共の"
+},
+{
+  "id": 786,
+  "word": "individual",
+  "meaning": "個々の"
+},
+{
+  "id": 787,
+  "word": "global",
+  "meaning": "世界的な"
+},
+{
+  "id": 788,
+  "word": "physical",
+  "meaning": "身体の"
+},
+{
+  "id": 789,
+  "word": "patient",
+  "meaning": "辛抱強い"
+},
+{
+  "id": 790,
+  "word": "various",
+  "meaning": "さまざまな"
+},
+{
+  "id": 791,
+  "word": "political",
+  "meaning": "政治の"
+},
+{
+  "id": 792,
+  "word": "available",
+  "meaning": "利用できる"
+},
+{
+  "id": 793,
+  "word": "due",
+  "meaning": "到着予定で"
+},
+{
+  "id": 794,
+  "word": "complex",
+  "meaning": "複雑な"
+},
+{
+  "id": 795,
+  "word": "traditional",
+  "meaning": "伝統的な"
+},
+{
+  "id": 796,
+  "word": "huge",
+  "meaning": "巨大な"
+},
+{
+  "id": 797,
+  "word": "serious",
+  "meaning": "本気の"
+},
+{
+  "id": 798,
+  "word": "essential",
+  "meaning": "不可欠の"
+},
+{
+  "id": 799,
+  "word": "suitable",
+  "meaning": "適した"
+},
+{
+  "id": 800,
+  "word": "moral",
+  "meaning": "道徳(上)の"
+},
+{
+  "id": 801,
+  "word": "negative",
+  "meaning": "否定的な"
+},
+{
+  "id": 802,
+  "word": "mental",
+  "meaning": "精神的な"
+},
+{
+  "id": 803,
+  "word": "effective",
+  "meaning": "効果的な"
+},
+{
+  "id": 804,
+  "word": "financial",
+  "meaning": "財政(上)の"
+},
+{
+  "id": 805,
+  "word": "specific",
+  "meaning": "特定の"
+},
+{
+  "id": 806,
+  "word": "religious",
+  "meaning": "宗教の"
+},
+{
+  "id": 807,
+  "word": "smart",
+  "meaning": "賢い"
+},
+{
+  "id": 808,
+  "word": "original",
+  "meaning": "最初の"
+},
+{
+  "id": 809,
+  "word": "wealthy",
+  "meaning": "裕福な"
+},
+{
+  "id": 810,
+  "word": "creative",
+  "meaning": "創造的な"
+},
+{
+  "id": 811,
+  "word": "unusual",
+  "meaning": "異常な"
+},
+{
+  "id": 812,
+  "word": "previous",
+  "meaning": "以前の"
+},
+{
+  "id": 813,
+  "word": "industrial",
+  "meaning": "産業の"
+},
+{
+  "id": 814,
+  "word": "unique",
+  "meaning": "唯一の"
+},
+{
+  "id": 815,
+  "word": "extra",
+  "meaning": "余分の"
+},
+{
+  "id": 816,
+  "word": "ordinary",
+  "meaning": "普通の"
+},
+{
+  "id": 817,
+  "word": "entire",
+  "meaning": "全体の"
+},
+{
+  "id": 818,
+  "word": "vast",
+  "meaning": "広大な"
+},
+{
+  "id": 819,
+  "word": "northern",
+  "meaning": "北の"
+},
+{
+  "id": 820,
+  "word": "domestic",
+  "meaning": "国内の"
+},
+{
+  "id": 821,
+  "word": "educational",
+  "meaning": "教育(上)の"
+},
+{
+  "id": 822,
+  "word": "southern",
+  "meaning": "南の"
+},
+{
+  "id": 823,
+  "word": "independent",
+  "meaning": "独立した"
+},
+{
+  "id": 824,
+  "word": "conscious",
+  "meaning": "気付いている"
+},
+{
+  "id": 825,
+  "word": "obvious",
+  "meaning": "明らかな"
+},
+{
+  "id": 826,
+  "word": "ideal",
+  "meaning": "理想的な"
+},
+{
+  "id": 827,
+  "word": "tough",
+  "meaning": "難しい"
+},
+{
+  "id": 828,
+  "word": "rare",
+  "meaning": "まれな"
+},
+{
+  "id": 829,
+  "word": "senior",
+  "meaning": "身分[地位]が上の"
+},
+{
+  "id": 830,
+  "word": "attractive",
+  "meaning": "魅力的な"
+},
+{
+  "id": 831,
+  "word": "typical",
+  "meaning": "典型的な"
+},
+{
+  "id": 832,
+  "word": "military",
+  "meaning": "軍の"
+},
+{
+  "id": 833,
+  "word": "odd",
+  "meaning": "奇数の"
+},
+{
+  "id": 834,
+  "word": "unknown",
+  "meaning": "未知の"
+},
+{
+  "id": 835,
+  "word": "visual",
+  "meaning": "視覚の"
+},
+{
+  "id": 836,
+  "word": "commercial",
+  "meaning": "産業(上)の"
+},
+{
+  "id": 837,
+  "word": "underground",
+  "meaning": "地下の"
+},
+{
+  "id": 838,
+  "word": "sufficient",
+  "meaning": "十分な"
+},
+{
+  "id": 839,
+  "word": "convenient",
+  "meaning": "便利な"
+},
+{
+  "id": 840,
+  "word": "upset",
+  "meaning": "取り乱した"
+},
+{
+  "id": 841,
+  "word": "considerable",
+  "meaning": "かなりの"
+},
+{
+  "id": 842,
+  "word": "additional",
+  "meaning": "追加の"
+},
+{
+  "id": 843,
+  "word": "sensitive",
+  "meaning": "敏感な"
+},
+{
+  "id": 844,
+  "word": "strict",
+  "meaning": "厳しい"
+},
+{
+  "id": 845,
+  "word": "permanent",
+  "meaning": "永遠の"
+},
+{
+  "id": 846,
+  "word": "calm",
+  "meaning": "落ち着いた"
+},
+{
+  "id": 847,
+  "word": "eager",
+  "meaning": "熱心な"
+},
+{
+  "id": 848,
+  "word": "evil",
+  "meaning": "邪悪な"
+},
+{
+  "id": 849,
+  "word": "absolute",
+  "meaning": "絶対の"
+},
+{
+  "id": 850,
+  "word": "dramatic",
+  "meaning": "劇的な"
+},
+{
+  "id": 851,
+  "word": "minor",
+  "meaning": "重要でない"
+},
+{
+  "id": 852,
+  "word": "classic",
+  "meaning": "最高水準の"
+},
+{
+  "id": 853,
+  "word": "frank",
+  "meaning": "率直な"
+},
+{
+  "id": 854,
+  "word": "shy",
+  "meaning": "内気の"
+},
+{
+  "id": 855,
+  "word": "democratic",
+  "meaning": "民主主義の"
+},
+{
+  "id": 856,
+  "word": "principal",
+  "meaning": "主要な"
+},
+{
+  "id": 857,
+  "word": "keen",
+  "meaning": "熱心な"
+},
+{
+  "id": 858,
+  "word": "alike",
+  "meaning": "似ている"
+},
+{
+  "id": 859,
+  "word": "temporary",
+  "meaning": "一時の"
+},
+{
+  "id": 860,
+  "word": "slight",
+  "meaning": "わずかな"
+},
+{
+  "id": 861,
+  "word": "rude",
+  "meaning": "無礼な"
+},
+{
+  "id": 862,
+  "word": "dull",
+  "meaning": "面白くない"
+},
+{
+  "id": 863,
+  "word": "casual",
+  "meaning": "普段の"
+},
+{
+  "id": 864,
+  "word": "cruel",
+  "meaning": "残酷な"
+},
+{
+  "id": 865,
+  "word": "bold",
+  "meaning": "大胆な"
+},
+{
+  "id": 866,
+  "word": "steady",
+  "meaning": "変わらない"
+},
+{
+  "id": 867,
+  "word": "useless",
+  "meaning": "無益な"
+},
+{
+  "id": 868,
+  "word": "mysterious",
+  "meaning": "謎めいた"
+},
+{
+  "id": 869,
+  "word": "mad",
+  "meaning": "怒って"
+},
+{
+  "id": 870,
+  "word": "vague",
+  "meaning": "あいまいな"
+},
+{
+  "id": 871,
+  "word": "lazy",
+  "meaning": "怠惰な"
+},
+{
+  "id": 872,
+  "word": "ashamed",
+  "meaning": "恥じて"
+},
+{
+  "id": 873,
+  "word": "brave",
+  "meaning": "勇敢な"
+},
+{
+  "id": 874,
+  "word": "polite",
+  "meaning": "丁寧な"
+},
+{
+  "id": 875,
+  "word": "gentle",
+  "meaning": "優しい"
+},
+{
+  "id": 876,
+  "word": "horrible",
+  "meaning": "恐ろしい"
+},
+{
+  "id": 877,
+  "word": "grateful",
+  "meaning": "感謝して"
+},
+{
+  "id": 878,
+  "word": "sore",
+  "meaning": "痛い"
+},
+{
+  "id": 879,
+  "word": "guilty",
+  "meaning": "有罪の"
+},
+{
+  "id": 880,
+  "word": "fond",
+  "meaning": "好きで"
+},
+{
+  "id": 881,
+  "word": "latest",
+  "meaning": "最新の"
+},
+{
+  "id": 882,
+  "word": "promising",
+  "meaning": "前途[将来]有望な"
+},
+{
+  "id": 883,
+  "word": "frightened",
+  "meaning": "おびえた"
+},
+{
+  "id": 884,
+  "word": "fancy",
+  "meaning": "高級な"
+},
+{
+  "id": 885,
+  "word": "pale",
+  "meaning": "青白い"
+},
+{
+  "id": 886,
+  "word": "loose",
+  "meaning": "ほどけている"
+},
+{
+  "id": 887,
+  "word": "stupid",
+  "meaning": "愚かな"
+},
+{
+  "id": 888,
+  "word": "jealous",
+  "meaning": "ねたんで"
+},
+{
+  "id": 889,
+  "word": "sincere",
+  "meaning": "誠実な"
+},
+{
+  "id": 890,
+  "word": "naked",
+  "meaning": "裸の"
+},
+{
+  "id": 891,
+  "word": "bound",
+  "meaning": "～行きの"
+},
+{
+  "id": 892,
+  "word": "sour",
+  "meaning": "酸っぱい"
+},
+{
+  "id": 893,
+  "word": "disappointed",
+  "meaning": "失望した"
+},
+{
+  "id": 894,
+  "word": "bare",
+  "meaning": "むき出しの"
+},
+{
+  "id": 895,
+  "word": "sensible",
+  "meaning": "分別のある"
+},
+{
+  "id": 896,
+  "word": "stiff",
+  "meaning": "凝った"
+},
+{
+  "id": 897,
+  "word": "therefore",
+  "meaning": "その結果"
+},
+{
+  "id": 898,
+  "word": "extremely",
+  "meaning": "極めて"
+},
+{
+  "id": 899,
+  "word": "particularly",
+  "meaning": "とりわけ"
+},
+{
+  "id": 900,
+  "word": "rarely",
+  "meaning": "めったに～(し)ない"
+},
+{
+  "id": 901,
+  "word": "mostly",
+  "meaning": "ほとんどの場合"
+},
+{
+  "id": 902,
+  "word": "largely",
+  "meaning": "大部分は"
+},
+{
+  "id": 903,
+  "word": "rapidly",
+  "meaning": "急速に"
+},
+{
+  "id": 904,
+  "word": "otherwise",
+  "meaning": "もしそうでなければ"
+},
+{
+  "id": 905,
+  "word": "moreover",
+  "meaning": "さらに"
+},
+{
+  "id": 906,
+  "word": "thus",
+  "meaning": "このように"
+},
+{
+  "id": 907,
+  "word": "namely",
+  "meaning": "すなわち"
+},
+{
+  "id": 908,
+  "word": "slightly",
+  "meaning": "わずかに"
+},
+{
+  "id": 909,
+  "word": "properly",
+  "meaning": "きちんと"
+},
+{
+  "id": 910,
+  "word": "entirely",
+  "meaning": "完全に"
+},
+{
+  "id": 911,
+  "word": "merely",
+  "meaning": "ただ"
+},
+{
+  "id": 912,
+  "word": "besides",
+  "meaning": "その上"
+},
+{
+  "id": 913,
+  "word": "involve",
+  "meaning": "～を伴う"
+},
+{
+  "id": 914,
+  "word": "decline",
+  "meaning": "低下する"
+},
+{
+  "id": 915,
+  "word": "indicate",
+  "meaning": "～を指摘する"
+},
+{
+  "id": 916,
+  "word": "promote",
+  "meaning": "～を促進する"
+},
+{
+  "id": 917,
+  "word": "bite",
+  "meaning": "～をかむ"
+},
+{
+  "id": 918,
+  "word": "expand",
+  "meaning": "～を拡大する"
+},
+{
+  "id": 919,
+  "word": "debate",
+  "meaning": "～を議論する"
+},
+{
+  "id": 920,
+  "word": "estimate",
+  "meaning": "～を見積もる"
+},
+{
+  "id": 921,
+  "word": "contract",
+  "meaning": "対照を成す"
+},
+{
+  "id": 922,
+  "word": "assume",
+  "meaning": "～を本当[確か]だと思う"
+},
+{
+  "id": 923,
+  "word": "enable",
+  "meaning": "～が...できるようにする"
+},
+{
+  "id": 924,
+  "word": "adapt",
+  "meaning": "～を適合させる"
+},
+{
+  "id": 925,
+  "word": "distinguish",
+  "meaning": "見分ける"
+},
+{
+  "id": 926,
+  "word": "organize",
+  "meaning": "を計画[準備]する"
+},
+{
+  "id": 927,
+  "word": "recall",
+  "meaning": "～を思い出す"
+},
+{
+  "id": 928,
+  "word": "demonstrate",
+  "meaning": "～を証明[論証]する"
+},
+{
+  "id": 929,
+  "word": "convince",
+  "meaning": "～に納得させる"
+},
+{
+  "id": 930,
+  "word": "combine",
+  "meaning": "～を結び付ける"
+},
+{
+  "id": 931,
+  "word": "vary",
+  "meaning": "違う"
+},
+{
+  "id": 932,
+  "word": "preserve",
+  "meaning": "～を保存する"
+},
+{
+  "id": 933,
+  "word": "conclude",
+  "meaning": "～と結論を下す"
+},
+{
+  "id": 934,
+  "word": "expose",
+  "meaning": "～をさらす"
+},
+{
+  "id": 935,
+  "word": "encounter",
+  "meaning": "に遭う"
+},
+{
+  "id": 936,
+  "word": "adjust",
+  "meaning": "～を調整する"
+},
+{
+  "id": 937,
+  "word": "compete",
+  "meaning": "競争する"
+},
+{
+  "id": 938,
+  "word": "consist",
+  "meaning": "成り立つ"
+},
+{
+  "id": 939,
+  "word": "overcome",
+  "meaning": "～を克服する"
+},
+{
+  "id": 940,
+  "word": "stare",
+  "meaning": "じっと見つめる"
+},
+{
+  "id": 941,
+  "word": "inspire",
+  "meaning": "～を奮い立たせる"
+},
+{
+  "id": 942,
+  "word": "differ",
+  "meaning": "異なる"
+},
+{
+  "id": 943,
+  "word": "locate",
+  "meaning": "～の場所を突き止める"
+},
+{
+  "id": 944,
+  "word": "acquire",
+  "meaning": "を獲得する"
+},
+{
+  "id": 945,
+  "word": "concentrate",
+  "meaning": "集中する"
+},
+{
+  "id": 946,
+  "word": "ban",
+  "meaning": "～を禁止する"
+},
+{
+  "id": 947,
+  "word": "calculate",
+  "meaning": "～を計算する"
+},
+{
+  "id": 948,
+  "word": "launch",
+  "meaning": "を始める"
+},
+{
+  "id": 949,
+  "word": "apologize",
+  "meaning": "謝る"
+},
+{
+  "id": 950,
+  "word": "emphasize",
+  "meaning": "～を強調する"
+},
+{
+  "id": 951,
+  "word": "bother",
+  "meaning": "～を悩ます"
+},
+{
+  "id": 952,
+  "word": "investigate",
+  "meaning": "～を調査する"
+},
+{
+  "id": 953,
+  "word": "quit",
+  "meaning": "を辞める"
+},
+{
+  "id": 954,
+  "word": "disagree",
+  "meaning": "意見が合わない"
+},
+{
+  "id": 955,
+  "word": "absorb",
+  "meaning": "～を吸収する"
+},
+{
+  "id": 956,
+  "word": "resemble",
+  "meaning": "～に似ている"
+},
+{
+  "id": 957,
+  "word": "accomplish",
+  "meaning": "を成し遂げる"
+},
+{
+  "id": 958,
+  "word": "exhibit",
+  "meaning": "～を展示する"
+},
+{
+  "id": 959,
+  "word": "restore",
+  "meaning": "を回復する"
+},
+{
+  "id": 960,
+  "word": "distribute",
+  "meaning": "～を分配する"
+},
+{
+  "id": 961,
+  "word": "rescue",
+  "meaning": "～を救助する"
+},
+{
+  "id": 962,
+  "word": "imitate",
+  "meaning": "～をまねる"
+},
+{
+  "id": 963,
+  "word": "pursue",
+  "meaning": "～を追い求める"
+},
+{
+  "id": 964,
+  "word": "resolve",
+  "meaning": "～を解決する"
+},
+{
+  "id": 965,
+  "word": "explode",
+  "meaning": "爆発する"
+},
+{
+  "id": 966,
+  "word": "persuade",
+  "meaning": "～を説得する"
+},
+{
+  "id": 967,
+  "word": "wander",
+  "meaning": "歩き回る"
+},
+{
+  "id": 968,
+  "word": "injure",
+  "meaning": "～を傷つける"
+},
+{
+  "id": 969,
+  "word": "invade",
+  "meaning": "～を侵略する"
+},
+{
+  "id": 970,
+  "word": "hesitate",
+  "meaning": "ためらう"
+},
+{
+  "id": 971,
+  "word": "conquer",
+  "meaning": "を征服[制圧]する"
+},
+{
+  "id": 972,
+  "word": "insult",
+  "meaning": "～を侮辱する"
+},
+{
+  "id": 973,
+  "word": "whisper",
+  "meaning": "ささやく"
+},
+{
+  "id": 974,
+  "word": "decay",
+  "meaning": "腐る"
+},
+{
+  "id": 975,
+  "word": "fold",
+  "meaning": "～を折りたたむ"
+},
+{
+  "id": 976,
+  "word": "assure",
+  "meaning": "～に保証する"
+},
+{
+  "id": 977,
+  "word": "species",
+  "meaning": "種"
+},
+{
+  "id": 978,
+  "word": "behavior",
+  "meaning": "振る舞い"
+},
+{
+  "id": 979,
+  "word": "factor",
+  "meaning": "要因"
+},
+{
+  "id": 980,
+  "word": "task",
+  "meaning": "仕事"
+},
+{
+  "id": 981,
+  "word": "source",
+  "meaning": "源"
+},
+{
+  "id": 982,
+  "word": "survey",
+  "meaning": "調査"
+},
+{
+  "id": 983,
+  "word": "region",
+  "meaning": "地域"
+},
+{
+  "id": 984,
+  "word": "resource",
+  "meaning": "資源"
+},
+{
+  "id": 985,
+  "word": "billion",
+  "meaning": "10億"
+},
+{
+  "id": 986,
+  "word": "pollution",
+  "meaning": "汚染"
+},
+{
+  "id": 987,
+  "word": "solution",
+  "meaning": "解決策[法]"
+},
+{
+  "id": 988,
+  "word": "conclusion",
+  "meaning": "結論"
+},
+{
+  "id": 989,
+  "word": "aspect",
+  "meaning": "局面"
+},
+{
+  "id": 990,
+  "word": "potential",
+  "meaning": "可能性"
+},
+{
+  "id": 991,
+  "word": "crisis",
+  "meaning": "危機"
+},
+{
+  "id": 992,
+  "word": "paragraph",
+  "meaning": "段落"
+},
+{
+  "id": 993,
+  "word": "site",
+  "meaning": "場所"
+},
+{
+  "id": 994,
+  "word": "instance",
+  "meaning": "例"
+},
+{
+  "id": 995,
+  "word": "capacity",
+  "meaning": "収容能力"
+},
+{
+  "id": 996,
+  "word": "conflict",
+  "meaning": "紛争"
+},
+{
+  "id": 997,
+  "word": "poverty",
+  "meaning": "貧乏"
+},
+{
+  "id": 998,
+  "word": "transportation",
+  "meaning": "輸送"
+},
+{
+  "id": 999,
+  "word": "identity",
+  "meaning": "身元"
+},
+{
+  "id": 1000,
+  "word": "athlete",
+  "meaning": "運動選手"
+},
+{
+  "id": 1001,
+  "word": "quantity",
+  "meaning": "量"
+},
+{
+  "id": 1002,
+  "word": "definition",
+  "meaning": "定義"
+},
+{
+  "id": 1003,
+  "word": "household",
+  "meaning": "世帯"
+},
+{
+  "id": 1004,
+  "word": "outcome",
+  "meaning": "結果"
+},
+{
+  "id": 1005,
+  "word": "disaster",
+  "meaning": "災害"
+},
+{
+  "id": 1006,
+  "word": "origin",
+  "meaning": "起源"
+},
+{
+  "id": 1007,
+  "word": "ancestor",
+  "meaning": "祖先"
+},
+{
+  "id": 1008,
+  "word": "layer",
+  "meaning": "層"
+},
+{
+  "id": 1009,
+  "word": "destination",
+  "meaning": "目的地"
+},
+{
+  "id": 1010,
+  "word": "tendency",
+  "meaning": "傾向"
+},
+{
+  "id": 1011,
+  "word": "welfare",
+  "meaning": "福祉"
+},
+{
+  "id": 1012,
+  "word": "conference",
+  "meaning": "会議"
+},
+{
+  "id": 1013,
+  "word": "disadvantage",
+  "meaning": "不利"
+},
+{
+  "id": 1014,
+  "word": "cancer",
+  "meaning": "がん"
+},
+{
+  "id": 1015,
+  "word": "atmosphere",
+  "meaning": "大気"
+},
+{
+  "id": 1016,
+  "word": "proportion",
+  "meaning": "割合"
+},
+{
+  "id": 1017,
+  "word": "debt",
+  "meaning": "借金"
+},
+{
+  "id": 1018,
+  "word": "oxygen",
+  "meaning": "酸素"
+},
+{
+  "id": 1019,
+  "word": "advertisement",
+  "meaning": "広告"
+},
+{
+  "id": 1020,
+  "word": "liquid",
+  "meaning": "液体"
+},
+{
+  "id": 1021,
+  "word": "editor",
+  "meaning": "編集者"
+},
+{
+  "id": 1022,
+  "word": "incident",
+  "meaning": "出来事"
+},
+{
+  "id": 1023,
+  "word": "portion",
+  "meaning": "部分"
+},
+{
+  "id": 1024,
+  "word": "shortage",
+  "meaning": "不足"
+},
+{
+  "id": 1025,
+  "word": "cooperation",
+  "meaning": "協力"
+},
+{
+  "id": 1026,
+  "word": "grain",
+  "meaning": "粒"
+},
+{
+  "id": 1027,
+  "word": "destruction",
+  "meaning": "破壊"
+},
+{
+  "id": 1028,
+  "word": "wisdom",
+  "meaning": "知恵"
+},
+{
+  "id": 1029,
+  "word": "shelter",
+  "meaning": "避難所"
+},
+{
+  "id": 1030,
+  "word": "genius",
+  "meaning": "天才"
+},
+{
+  "id": 1031,
+  "word": "charity",
+  "meaning": "慈善団体"
+},
+{
+  "id": 1032,
+  "word": "tribe",
+  "meaning": "部族"
+},
+{
+  "id": 1033,
+  "word": "harvest",
+  "meaning": "収穫"
+},
+{
+  "id": 1034,
+  "word": "criticism",
+  "meaning": "批評"
+},
+{
+  "id": 1035,
+  "word": "logic",
+  "meaning": "論理"
+},
+{
+  "id": 1036,
+  "word": "suburb",
+  "meaning": "郊外"
+},
+{
+  "id": 1037,
+  "word": "instinct",
+  "meaning": "本能"
+},
+{
+  "id": 1038,
+  "word": "privacy",
+  "meaning": "私生活"
+},
+{
+  "id": 1039,
+  "word": "entry",
+  "meaning": "入ること"
+},
+{
+  "id": 1040,
+  "word": "laughter",
+  "meaning": "笑い"
+},
+{
+  "id": 1041,
+  "word": "occupation",
+  "meaning": "職業"
+},
+{
+  "id": 1042,
+  "word": "virtue",
+  "meaning": "美徳"
+},
+{
+  "id": 1043,
+  "word": "sidewalk",
+  "meaning": "歩道"
+},
+{
+  "id": 1044,
+  "word": "summit",
+  "meaning": "首脳会議[会談]"
+},
+{
+  "id": 1045,
+  "word": "laundry",
+  "meaning": "洗濯物"
+},
+{
+  "id": 1046,
+  "word": "scholarship",
+  "meaning": "奨学金"
+},
+{
+  "id": 1047,
+  "word": "glow",
+  "meaning": "輝き"
+},
+{
+  "id": 1048,
+  "word": "manual",
+  "meaning": "(取扱)説明書"
+},
+{
+  "id": 1049,
+  "word": "cosmos",
+  "meaning": "宇宙"
+},
+{
+  "id": 1050,
+  "word": "anniversary",
+  "meaning": "記念日"
+},
+{
+  "id": 1051,
+  "word": "republic",
+  "meaning": "共和国"
+},
+{
+  "id": 1052,
+  "word": "tide",
+  "meaning": "潮の干満"
+},
+{
+  "id": 1053,
+  "word": "nap",
+  "meaning": "仮眠"
+},
+{
+  "id": 1054,
+  "word": "ash",
+  "meaning": "灰"
+},
+{
+  "id": 1055,
+  "word": "sorrow",
+  "meaning": "悲しみ"
+},
+{
+  "id": 1056,
+  "word": "width",
+  "meaning": "幅"
+},
+{
+  "id": 1057,
+  "word": "medium",
+  "meaning": "中くらいの"
+},
+{
+  "id": 1058,
+  "word": "recent",
+  "meaning": "最近の"
+},
+{
+  "id": 1059,
+  "word": "appropriate",
+  "meaning": "適切な"
+},
+{
+  "id": 1060,
+  "word": "current",
+  "meaning": "現在の"
+},
+{
+  "id": 1061,
+  "word": "ancient",
+  "meaning": "古代の"
+},
+{
+  "id": 1062,
+  "word": "artificial",
+  "meaning": "人工の"
+},
+{
+  "id": 1063,
+  "word": "primary",
+  "meaning": "最も重要な"
+},
+{
+  "id": 1064,
+  "word": "extreme",
+  "meaning": "極端な"
+},
+{
+  "id": 1065,
+  "word": "characteristic",
+  "meaning": "特有の"
+},
+{
+  "id": 1066,
+  "word": "nuclear",
+  "meaning": "原子力の"
+},
+{
+  "id": 1067,
+  "word": "efficient",
+  "meaning": "能率的な"
+},
+{
+  "id": 1068,
+  "word": "overall",
+  "meaning": "総合的な"
+},
+{
+  "id": 1069,
+  "word": "enormous",
+  "meaning": "巨大な"
+},
+{
+  "id": 1070,
+  "word": "unlikely",
+  "meaning": "起こりそうもない"
+},
+{
+  "id": 1071,
+  "word": "severe",
+  "meaning": "厳しい"
+},
+{
+  "id": 1072,
+  "word": "harmful",
+  "meaning": "有害な"
+},
+{
+  "id": 1073,
+  "word": "annual",
+  "meaning": "年に1度の"
+},
+{
+  "id": 1074,
+  "word": "stable",
+  "meaning": "安定した"
+},
+{
+  "id": 1075,
+  "word": "constant",
+  "meaning": "一定の"
+},
+{
+  "id": 1076,
+  "word": "curious",
+  "meaning": "好奇心が強い"
+},
+{
+  "id": 1077,
+  "word": "remote",
+  "meaning": "遠い"
+},
+{
+  "id": 1078,
+  "word": "accurate",
+  "meaning": "正確な"
+},
+{
+  "id": 1079,
+  "word": "contrary",
+  "meaning": "反対の"
+},
+{
+  "id": 1080,
+  "word": "brief",
+  "meaning": "短時間の"
+},
+{
+  "id": 1081,
+  "word": "latter",
+  "meaning": "後者の"
+},
+{
+  "id": 1082,
+  "word": "legal",
+  "meaning": "合法の"
+},
+{
+  "id": 1083,
+  "word": "remarkable",
+  "meaning": "注目に値する"
+},
+{
+  "id": 1084,
+  "word": "generous",
+  "meaning": "気前の良い"
+},
+{
+  "id": 1085,
+  "word": "nearby",
+  "meaning": "近くの"
+},
+{
+  "id": 1086,
+  "word": "elderly",
+  "meaning": "初老の"
+},
+{
+  "id": 1087,
+  "word": "tropical",
+  "meaning": "熱帯(地方)の"
+},
+{
+  "id": 1088,
+  "word": "delicate",
+  "meaning": "壊れやすい"
+},
+{
+  "id": 1089,
+  "word": "enthusiastic",
+  "meaning": "熱狂的な"
+},
+{
+  "id": 1090,
+  "word": "classical",
+  "meaning": "古典の"
+},
+{
+  "id": 1091,
+  "word": "miserable",
+  "meaning": "惨めな"
+},
+{
+  "id": 1092,
+  "word": "counter",
+  "meaning": "反対の"
+},
+{
+  "id": 1093,
+  "word": "lively",
+  "meaning": "元気の良い"
+},
+{
+  "id": 1094,
+  "word": "selfish",
+  "meaning": "利己的な"
+},
+{
+  "id": 1095,
+  "word": "innocent",
+  "meaning": "無罪の"
+},
+{
+  "id": 1096,
+  "word": "ugly",
+  "meaning": "醜い"
+},
+{
+  "id": 1097,
+  "word": "gradual",
+  "meaning": "徐々の"
+},
+{
+  "id": 1098,
+  "word": "nasty",
+  "meaning": "意地悪な"
+},
+{
+  "id": 1099,
+  "word": "tidy",
+  "meaning": "整頓された"
+},
+{
+  "id": 1100,
+  "word": "involved",
+  "meaning": "関係した"
+},
+{
+  "id": 1101,
+  "word": "complicated",
+  "meaning": "複雑な"
+},
+{
+  "id": 1102,
+  "word": "tender",
+  "meaning": "柔らかい"
+},
+{
+  "id": 1103,
+  "word": "marvelous",
+  "meaning": "素晴らしい"
+},
+{
+  "id": 1104,
+  "word": "scared",
+  "meaning": "怖がった"
+},
+{
+  "id": 1105,
+  "word": "eventually",
+  "meaning": "結局は"
+},
+{
+  "id": 1106,
+  "word": "relatively",
+  "meaning": "比較的"
+},
+{
+  "id": 1107,
+  "word": "unfortunately",
+  "meaning": "不幸にも"
+},
+{
+  "id": 1108,
+  "word": "nevertheless",
+  "meaning": "それにもかかわらず"
+},
+{
+  "id": 1109,
+  "word": "fairly",
+  "meaning": "かなり"
+},
+{
+  "id": 1110,
+  "word": "roughly",
+  "meaning": "おおよそ"
+},
+{
+  "id": 1111,
+  "word": "possibly",
+  "meaning": "ひょっとすると"
+},
+{
+  "id": 1112,
+  "word": "occasionally",
+  "meaning": "時折"
+},
+{
+  "id": 1113,
+  "word": "totally",
+  "meaning": "全く"
+},
+{
+  "id": 1114,
+  "word": "seriously",
+  "meaning": "真面目に"
+},
+{
+  "id": 1115,
+  "word": "absolutely",
+  "meaning": "完全に"
+},
+{
+  "id": 1116,
+  "word": "somehow",
+  "meaning": "何とかして"
+},
+{
+  "id": 1117,
+  "word": "overseas",
+  "meaning": "海外に"
+},
+{
+  "id": 1118,
+  "word": "fortunately",
+  "meaning": "幸運にも"
+},
+{
+  "id": 1119,
+  "word": "basically",
+  "meaning": "基本的に"
+},
+{
+  "id": 1120,
+  "word": "meanwhile",
+  "meaning": "その間に"
+},
+{
+  "id": 1121,
+  "word": "will",
+  "meaning": "意志(力)"
+},
+{
+  "id": 1122,
+  "word": "even",
+  "meaning": "平らな"
+},
+{
+  "id": 1123,
+  "word": "change",
+  "meaning": "小銭"
+},
+{
+  "id": 1124,
+  "word": "long",
+  "meaning": "待ち望む"
+},
+{
+  "id": 1125,
+  "word": "right",
+  "meaning": "権利"
+},
+{
+  "id": 1126,
+  "word": "back",
+  "meaning": "背中"
+},
+{
+  "id": 1127,
+  "word": "state",
+  "meaning": "を明言する"
+},
+{
+  "id": 1128,
+  "word": "book",
+  "meaning": "～を予約する"
+},
+{
+  "id": 1129,
+  "word": "last",
+  "meaning": "続く"
+},
+{
+  "id": 1130,
+  "word": "leave",
+  "meaning": "休暇"
+},
+{
+  "id": 1131,
+  "word": "company",
+  "meaning": "仲間"
+},
+{
+  "id": 1132,
+  "word": "interest",
+  "meaning": "利子"
+},
+{
+  "id": 1133,
+  "word": "class",
+  "meaning": "階級"
+},
+{
+  "id": 1134,
+  "word": "turn",
+  "meaning": "順番"
+},
+{
+  "id": 1135,
+  "word": "end",
+  "meaning": "端"
+},
+{
+  "id": 1136,
+  "word": "story",
+  "meaning": "階"
+},
+{
+  "id": 1137,
+  "word": "order",
+  "meaning": "順序"
+},
+{
+  "id": 1138,
+  "word": "move",
+  "meaning": "～を感動させる"
+},
+{
+  "id": 1139,
+  "word": "face",
+  "meaning": "に直面する"
+},
+{
+  "id": 1140,
+  "word": "sound",
+  "meaning": "深い"
+},
+{
+  "id": 1141,
+  "word": "process",
+  "meaning": "～を加工する"
+},
+{
+  "id": 1142,
+  "word": "term",
+  "meaning": "(専門)用語"
+},
+{
+  "id": 1143,
+  "word": "case",
+  "meaning": "事件"
+},
+{
+  "id": 1144,
+  "word": "produce",
+  "meaning": "農産物"
+},
+{
+  "id": 1145,
+  "word": "matter",
+  "meaning": "重要である"
+},
+{
+  "id": 1146,
+  "word": "sentence",
+  "meaning": "判決"
+},
+{
+  "id": 1147,
+  "word": "run",
+  "meaning": "～を経営[運営、管理]する"
+},
+{
+  "id": 1148,
+  "word": "word",
+  "meaning": "約束"
+},
+{
+  "id": 1149,
+  "word": "passage",
+  "meaning": "通路"
+},
+{
+  "id": 1150,
+  "word": "cost",
+  "meaning": "犠牲"
+},
+{
+  "id": 1151,
+  "word": "issue",
+  "meaning": "発行物"
+},
+{
+  "id": 1152,
+  "word": "share",
+  "meaning": "株"
+},
+{
+  "id": 1153,
+  "word": "note",
+  "meaning": "～に注意[注目]する"
+},
+{
+  "id": 1154,
+  "word": "meet",
+  "meaning": "を満たす"
+},
+{
+  "id": 1155,
+  "word": "room",
+  "meaning": "空間"
+},
+{
+  "id": 1156,
+  "word": "major",
+  "meaning": "専攻する"
+},
+{
+  "id": 1157,
+  "word": "store",
+  "meaning": "～を蓄える"
+},
+{
+  "id": 1158,
+  "word": "minute",
+  "meaning": "微小の"
+},
+{
+  "id": 1159,
+  "word": "head",
+  "meaning": "～に向かう"
+},
+{
+  "id": 1160,
+  "word": "stand",
+  "meaning": "～を我慢する"
+},
+{
+  "id": 1161,
+  "word": "earth",
+  "meaning": "土"
+},
+{
+  "id": 1162,
+  "word": "plant",
+  "meaning": "工場"
+},
+{
+  "id": 1163,
+  "word": "park",
+  "meaning": "(車)を駐車する"
+},
+{
+  "id": 1164,
+  "word": "letter",
+  "meaning": "文字"
+},
+{
+  "id": 1165,
+  "word": "object",
+  "meaning": "反対する"
+},
+{
+  "id": 1166,
+  "word": "check",
+  "meaning": "小切手"
+},
+{
+  "id": 1167,
+  "word": "subject",
+  "meaning": "主題"
+},
+{
+  "id": 1168,
+  "word": "character",
+  "meaning": "(表意)文字"
+},
+{
+  "id": 1169,
+  "word": "account",
+  "meaning": "占める"
+},
+{
+  "id": 1170,
+  "word": "figure",
+  "meaning": "数"
+},
+{
+  "id": 1171,
+  "word": "rest",
+  "meaning": "残り"
+},
+{
+  "id": 1172,
+  "word": "fine",
+  "meaning": "罰金"
+},
+{
+  "id": 1173,
+  "word": "wear",
+  "meaning": "すり切れる"
+},
+{
+  "id": 1174,
+  "word": "copy",
+  "meaning": "1部"
+},
+{
+  "id": 1175,
+  "word": "charge",
+  "meaning": "責任"
+},
+{
+  "id": 1176,
+  "word": "diet",
+  "meaning": "食事"
+},
+{
+  "id": 1177,
+  "word": "address",
+  "meaning": "演説"
+},
+{
+  "id": 1178,
+  "word": "press",
+  "meaning": "報道機関"
+},
+{
+  "id": 1179,
+  "word": "fire",
+  "meaning": "～を解雇する"
+},
+{
+  "id": 1180,
+  "word": "firm",
+  "meaning": "硬い"
+},
+{
+  "id": 1181,
+  "word": "board",
+  "meaning": "取締役会"
+},
+{
+  "id": 1182,
+  "word": "race",
+  "meaning": "人種"
+},
+{
+  "id": 1183,
+  "word": "succeed",
+  "meaning": "～の後を継ぐ"
+},
+{
+  "id": 1184,
+  "word": "arm",
+  "meaning": "武器"
+},
+{
+  "id": 1185,
+  "word": "relative",
+  "meaning": "親族"
+},
+{
+  "id": 1186,
+  "word": "custom",
+  "meaning": "税関(手続き)"
+},
+{
+  "id": 1187,
+  "word": "gift",
+  "meaning": "才能"
+},
+{
+  "id": 1188,
+  "word": "stick",
+  "meaning": "くっつく"
+},
+{
+  "id": 1189,
+  "word": "channel",
+  "meaning": "経路[手段]"
+},
+{
+  "id": 1190,
+  "word": "desert",
+  "meaning": "～を見捨てる"
+},
+{
+  "id": 1191,
+  "word": "court",
+  "meaning": "裁判所"
+},
+{
+  "id": 1192,
+  "word": "capital",
+  "meaning": "資本(金)"
+},
+{
+  "id": 1193,
+  "word": "tear",
+  "meaning": "～を引き裂く"
+},
+{
+  "id": 1194,
+  "word": "ground",
+  "meaning": "根拠"
+},
+{
+  "id": 1195,
+  "word": "branch",
+  "meaning": "支店"
+},
+{
+  "id": 1196,
+  "word": "trial",
+  "meaning": "裁判"
+},
+{
+  "id": 1197,
+  "word": "jam",
+  "meaning": "混雑"
+},
+{
+  "id": 1198,
+  "word": "resort",
+  "meaning": "訴える"
+},
+{
+  "id": 1199,
+  "word": "faint",
+  "meaning": "気絶する"
+},
+{
+  "id": 1200,
+  "word": "tune",
+  "meaning": "曲"
+}
