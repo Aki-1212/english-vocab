@@ -53,6 +53,13 @@ async function loadBook(bookId) {
   if (!response.ok) throw new Error(`${book.file} を読み込めませんでした。`);
   const nextWords = await response.json();
 
+  if (bookId === "kikutan") {
+    const pronunciationResponse = await fetch("kikutan-pronunciation.json");
+    if (!pronunciationResponse.ok) throw new Error("発音記号データを読み込めませんでした。");
+    const pronunciations = await pronunciationResponse.json();
+    for (const item of nextWords) item.pronunciation = pronunciations[item.id];
+  }
+
   if (bookId === "silver") {
     const sentencesResponse = await fetch("sentences.json");
     if (!sentencesResponse.ok) throw new Error("例文データを読み込めませんでした。");
@@ -362,6 +369,8 @@ function renderQuestion() {
   }
   $("wordNumber").textContent = `No. ${item.id}`;
   $("word").textContent = isInputPrompt ? item.meaning : item.word;
+  $("pronunciation").textContent = item.pronunciation || "";
+  $("pronunciation").classList.toggle("hidden", selectedMode !== "card" || !item.pronunciation);
   $("word").classList.toggle("hidden", isSentence);
   $("sentencePrompt").classList.toggle("hidden", !isSentence);
   $("sentenceTranslation").classList.toggle("hidden", !isSentence);

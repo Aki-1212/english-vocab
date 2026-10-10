@@ -50,6 +50,7 @@ h2 { margin-top: 0; }
 .word-panel.card-known { border-color: #77aa83; background: #f3f8f4; }
 .word-panel.card-unknown { border-color: #d99a55; background: #fff7ee; }
 .word-number { color: #6b7280; font-size: 14px; }
+.pronunciation { color: #6b7280; font-size: 15px; line-height: 18px; }
 .word-display-row { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
 .word { font-size: clamp(38px, 9.5vw, 60px); font-weight: 800; margin: 18px 0; word-break: break-word; }
 .speak-btn {
@@ -86,7 +87,7 @@ h2 { margin-top: 0; }
 .sentence-mode .word-panel { padding-top: 36px; }
 .sentence-mode .word-number { margin-bottom: 8px; }
 .sentence-mode .feedback { margin-top: 8px; }
-#quiz.card-mode .word { margin: 10px 0 4px; }
+#quiz.card-mode .word { margin: 2px 0 4px; }
 #quiz.card-mode .feedback { min-height: 24px; margin-top: 0; font-size: 13px; line-height: 24px; }
 #quiz.card-mode .meaning { margin-top: 8px; }
 #quiz.card-mode .word-panel { touch-action: pan-y; }
