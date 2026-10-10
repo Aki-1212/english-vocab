@@ -39,6 +39,8 @@
       <div class="mode-grid">
         <button class="choice-btn" data-mode="choice"><strong>4択モード</strong><span>4つの選択肢から答える</span></button>
         <button class="choice-btn" data-mode="card"><strong>カードモード</strong><span>答えを確認して進む</span></button>
+        <button class="choice-btn" id="cardOneStarMode" data-mode="card-one-star"><strong>カードモード ★1のみ</strong><span>星が1つの単語</span></button>
+        <button class="choice-btn" id="cardTwoStarsMode" data-mode="card-two-stars"><strong>カードモード ★2のみ</strong><span>星が2つの単語</span></button>
         <button class="choice-btn" data-mode="learning"><strong>学習モード</strong><span>4択のあと、英語を入力する</span></button>
         <button class="choice-btn" data-mode="voice" id="voiceModeButton"><strong>音声モード</strong><span id="voiceModeDescription">4択のあと、英語を音声で答える</span></button>
         <button class="choice-btn" data-mode="sentence" id="sentenceModeButton"><strong>文章学習モード</strong><span id="sentenceModeDescription">英文の空欄に単語を入力する</span></button>
@@ -64,6 +66,10 @@
     <div id="wordPanel" class="panel word-panel">
       <button id="speakBtn" class="speak-btn" aria-label="発音を聞く">🔊 発音</button>
       <button id="hintBtn" class="hint-btn hidden" aria-label="英単語のヒントを表示">ヒント</button>
+      <div id="cardStars" class="card-stars hidden" aria-label="単語の星評価">
+        <button class="card-star" type="button" data-star="0" aria-label="星1を切り替え" aria-pressed="false">★</button>
+        <button class="card-star" type="button" data-star="1" aria-label="星2を切り替え" aria-pressed="false">★</button>
+      </div>
       <div class="word-number" id="wordNumber">No. 1</div>
       <div class="word" id="word">begin</div>
       <div id="sentencePrompt" class="sentence-prompt hidden"></div>

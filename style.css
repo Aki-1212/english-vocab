@@ -58,6 +58,13 @@ h2 { margin-top: 0; }
 }
 .word-panel > .speak-btn { position: absolute; top: 16px; right: 16px; }
 .word-panel > .hint-btn { position: absolute; top: 16px; right: 16px; }
+.card-stars { position: absolute; top: 14px; left: 14px; display: flex; gap: 4px; }
+.card-star {
+  width: 36px; height: 36px; padding: 0; border: 1px solid #d1d5db; border-radius: 6px;
+  background: #fff; color: #9ca3af; cursor: pointer; font-size: 21px; line-height: 1;
+}
+.card-star[aria-pressed="true"] { border-color: #d6a52d; background: #fff8df; color: #b7791f; }
+.card-star:focus-visible { outline: 2px solid #4b8067; outline-offset: 2px; }
 .hint-btn {
   border: 1px solid #c9ded0; border-radius: 999px; background: #f3f8f4;
   color: #28623b; padding: 9px 16px; cursor: pointer; font-weight: 700;

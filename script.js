@@ -24,6 +24,7 @@ let typingPopupMoved = false;
 let activeRecognition = null;
 let activePracticeRecognition = null;
 let currentBook = "kikutan";
+let cardStars = {};
 
 const books = {
   kikutan: {name: "キクタン", file: "kikutan-word.json"},
@@ -74,7 +75,16 @@ async function loadBook(bookId) {
 
   currentBook = bookId;
   words = nextWords;
+  try {
+    const storedStars = JSON.parse(localStorage.getItem(getCardStarsKey()) || "{}");
+    cardStars = Object.fromEntries(Object.entries(storedStars)
+      .filter(([, stars]) => Array.isArray(stars))
+      .map(([id, stars]) => [id, [Boolean(stars[0]), Boolean(stars[1])] ]));
+  } catch {
+    cardStars = {};
+  }
   renderRangeButtons();
+  updateCardModeAvailability();
   updateSentenceModeAvailability();
   updateVoiceModeAvailability();
   const maxId = Math.max(...words.map(word => word.id));
@@ -129,6 +139,7 @@ function renderRangeButtons() {
     button.addEventListener("click", () => {
       selectedRange = [start, end];
       $("selectedRangeTitle").textContent = `${start}–${end}`;
+      updateCardModeAvailability();
       updateSentenceModeAvailability();
       showScreen("mode");
     });
@@ -163,12 +174,30 @@ $("modeBack").addEventListener("click", () => showScreen("home"));
 $("quizBack").addEventListener("click", () => showScreen("mode"));
 document.querySelectorAll("[data-mode]").forEach(btn => {
   btn.addEventListener("click", () => {
-    selectedMode = btn.dataset.mode;
+    const mode = btn.dataset.mode;
+    selectedMode = mode.startsWith("card-") ? "card" : mode;
     localStorage.setItem(getLastRangeKey(), JSON.stringify(selectedRange));
     renderRangeButtons();
-    startQuiz(words.filter(w => w.id >= selectedRange[0] && w.id <= selectedRange[1]));
+    let selectedWords = words.filter(w => w.id >= selectedRange[0] && w.id <= selectedRange[1]);
+    if (mode === "card-one-star") selectedWords = selectedWords.filter(word => getCardStarCount(word) === 1);
+    if (mode === "card-two-stars") selectedWords = selectedWords.filter(word => getCardStarCount(word) === 2);
+    if (selectedWords.length) startQuiz(selectedWords);
   });
 });
+
+function getCardStarsKey() {
+  return `english-vocab-card-stars-${currentBook}`;
+}
+
+function getCardStarCount(word) {
+  return (cardStars[word.id] || []).filter(Boolean).length;
+}
+
+function updateCardModeAvailability() {
+  const rangeWords = words.filter(word => word.id >= selectedRange[0] && word.id <= selectedRange[1]);
+  $("cardOneStarMode").disabled = !rangeWords.some(word => getCardStarCount(word) === 1);
+  $("cardTwoStarsMode").disabled = !rangeWords.some(word => getCardStarCount(word) === 2);
+}
 
 function getLastStartedRange() {
   try {
@@ -313,6 +342,8 @@ function renderQuestion() {
   $("quiz").classList.toggle("sentence-mode", isSentence);
   $("wordPanel").classList.toggle("card-known", selectedMode === "card" && previousAnswer === true);
   $("wordPanel").classList.toggle("card-unknown", selectedMode === "card" && previousAnswer === false);
+  $("cardStars").classList.toggle("hidden", selectedMode !== "card");
+  updateCardStarButtons(item);
   $("progressTitle").textContent = isLearning || isSentence ? "全体進捗" : "進捗";
   $("learningStageProgress").classList.toggle("hidden", !isLearning && !isSentence);
   if (isLearning || isSentence) {
@@ -343,6 +374,7 @@ function renderQuestion() {
   $("meaning").classList.toggle("hidden", previousAnswer === null || isLearning || isSentence);
   $("feedback").textContent = "";
   $("feedback").className = "feedback";
+  $("feedback").classList.toggle("hidden", selectedMode === "card");
   $("speakBtn").classList.toggle("hidden", isInputPrompt || isSentence);
   learningHintCount = 0;
   $("hintBtn").classList.toggle("hidden", !isLearningInput && !isVoiceInput);
@@ -368,10 +400,6 @@ function renderQuestion() {
   $("submitEnglish").disabled = false;
   $("dontKnow").disabled = false;
   $("choiceDontKnow").disabled = false;
-  if (selectedMode === "card" && previousAnswer !== null) {
-    setFeedback(previousAnswer ? "覚えている" : "覚えていない", previousAnswer);
-  }
-
   const showChoices = selectedMode === "choice" || (isLearning && learningPhase === "choice");
   $("choices").classList.toggle("hidden", !showChoices);
   $("choiceDontKnow").classList.toggle("hidden", !isLearning || learningPhase !== "choice");
@@ -818,6 +846,27 @@ function revealAnswer() {
   speak(item.word);
 }
 
+function updateCardStarButtons(item) {
+  const stars = cardStars[item.id] || [false, false];
+  document.querySelectorAll(".card-star").forEach((button, index) => {
+    button.setAttribute("aria-pressed", String(Boolean(stars[index])));
+  });
+}
+
+document.querySelectorAll(".card-star").forEach(button => {
+  button.addEventListener("click", () => {
+    const item = quizWords[currentIndex];
+    const index = Number(button.dataset.star);
+    const stars = [...(cardStars[item.id] || [false, false])];
+    stars[index] = !stars[index];
+    if (stars.some(Boolean)) cardStars[item.id] = stars;
+    else delete cardStars[item.id];
+    localStorage.setItem(getCardStarsKey(), JSON.stringify(cardStars));
+    updateCardStarButtons(item);
+    updateCardModeAvailability();
+  });
+});
+
 $("wordPanel").addEventListener("click", event => {
   if (event.target.closest("button")) return;
   revealAnswer();
@@ -860,6 +909,7 @@ function answerCard(known) {
   $("markKnown").disabled = true;
   $("previousCard").disabled = true;
   const item = quizWords[currentIndex];
+  $("meaning").classList.remove("hidden");
   cardAnswers[currentIndex] = known;
   score = cardAnswers.filter(answer => answer === true).length;
   wrongWords = quizWords.filter((_, index) => cardAnswers[index] === false);
@@ -875,7 +925,6 @@ function answerCard(known) {
   $("wordPanel").classList.toggle("card-unknown", !known);
   $("markUnknown").classList.toggle("selected", !known);
   $("markKnown").classList.toggle("selected", known);
-  setFeedback(known ? "覚えている" : "覚えていない", known);
   setTimeout(nextQuestion, 650);
 }
 

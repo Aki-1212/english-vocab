@@ -1022,7 +1022,7 @@
 {
   "id": 205,
   "word": "trouble",
-  "meaning": "心配(事)"
+  "meaning": "困ったこと、問題、迷惑"
 },
 {
   "id": 206,
@@ -1112,12 +1112,12 @@
 {
   "id": 223,
   "word": "practice",
-  "meaning": "実行"
+  "meaning": "練習、開業、実行"
 },
 {
   "id": 224,
   "word": "party",
-  "meaning": "政党"
+  "meaning": "宴会、集まり、政党"
 },
 {
   "id": 225,
@@ -1147,7 +1147,7 @@
 {
   "id": 230,
   "word": "degree",
-  "meaning": "度"
+  "meaning": "度、学位、程度"
 },
 {
   "id": 231,
@@ -1182,7 +1182,7 @@
 {
   "id": 237,
   "word": "crowd",
-  "meaning": "群衆"
+  "meaning": "群衆、人混み"
 },
 {
   "id": 238,
@@ -1297,12 +1297,12 @@
 {
   "id": 260,
   "word": "fellow",
-  "meaning": "やつ"
+  "meaning": "奴、男、仲間"
 },
 {
   "id": 261,
   "word": "manner",
-  "meaning": "方法"
+  "meaning": "行儀、方法、態度"
 },
 {
   "id": 262,
@@ -1342,12 +1342,12 @@
 {
   "id": 269,
   "word": "stuff",
-  "meaning": "材料"
+  "meaning": "もの、道具、詰め込む"
 },
 {
   "id": 270,
   "word": "edge",
-  "meaning": "角"
+  "meaning": "端、強み、刃"
 },
 {
   "id": 271,
@@ -1392,7 +1392,7 @@
 {
   "id": 279,
   "word": "occasion",
-  "meaning": "場合"
+  "meaning": "行事、機会、場面"
 },
 {
   "id": 280,
@@ -1407,7 +1407,7 @@
 {
   "id": 282,
   "word": "thought",
-  "meaning": "思考"
+  "meaning": "考え、思い、意見、配慮"
 },
 {
   "id": 283,
@@ -1467,7 +1467,7 @@
 {
   "id": 294,
   "word": "stream",
-  "meaning": "小川"
+  "meaning": "配信、小川"
 },
 {
   "id": 295,
@@ -1567,7 +1567,7 @@
 {
   "id": 314,
   "word": "nephew",
-  "meaning": "おい"
+  "meaning": "甥、甥っ子"
 },
 {
   "id": 315,
@@ -1617,7 +1617,7 @@
 {
   "id": 324,
   "word": "least",
-  "meaning": "最小の"
+  "meaning": "少なくとも、せめて"
 },
 {
   "id": 325,
@@ -1632,12 +1632,12 @@
 {
   "id": 327,
   "word": "present",
-  "meaning": "現在の"
+  "meaning": "贈り物、現在、今のところ"
 },
 {
   "id": 328,
   "word": "complete",
-  "meaning": "全部そろった"
+  "meaning": "完了した、完成した"
 },
 {
   "id": 329,
@@ -1802,7 +1802,7 @@
 {
   "id": 361,
   "word": "willing",
-  "meaning": "いとわない"
+  "meaning": "～する気がある、自発的な、積極的な"
 },
 {
   "id": 362,
@@ -1822,7 +1822,7 @@
 {
   "id": 365,
   "word": "broad",
-  "meaning": "広い"
+  "meaning": "（幅・面積が）広い、広範な"
 },
 {
   "id": 366,
@@ -1837,12 +1837,12 @@
 {
   "id": 368,
   "word": "proper",
-  "meaning": "適切な"
+  "meaning": "適切な、ちゃんとした"
 },
 {
   "id": 369,
   "word": "reasonable",
-  "meaning": "理にかなった"
+  "meaning": "手頃な、妥当な、理にかなった"
 },
 {
   "id": 370,
@@ -1897,7 +1897,7 @@
 {
   "id": 380,
   "word": "anxious",
-  "meaning": "心配して"
+  "meaning": "不安な、心配な、～したくてたまらない"
 },
 {
   "id": 381,
@@ -1922,7 +1922,7 @@
 {
   "id": 385,
   "word": "used",
-  "meaning": "慣れている"
+  "meaning": "中古の、～に慣れている"
 },
 {
   "id": 386,
@@ -1972,7 +1972,7 @@
 {
   "id": 395,
   "word": "absent",
-  "meaning": "不在の"
+  "meaning": "欠席の、不在の"
 },
 {
   "id": 396,
@@ -1992,7 +1992,7 @@
 {
   "id": 399,
   "word": "boring",
-  "meaning": "退屈な"
+  "meaning": "退屈な、つまらない"
 },
 {
   "id": 400,
